@@ -4,5 +4,6 @@ icon/
 img/
 movies/
 save/
+MapExporter/
 data/MapInfos.json
 desktop.ini
