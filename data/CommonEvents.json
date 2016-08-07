@@ -514,12 +514,151 @@
         "id": 7,
         "list": [
             {
+                "code": 225,
+                "indent": 0,
+                "parameters": [
+                    4,
+                    9,
+                    10,
+                    false
+                ]
+            },
+            {
+                "code": 205,
+                "indent": 0,
+                "parameters": [
+                    -1,
+                    {
+                        "list": [
+                            {
+                                "code": 24,
+                                "indent": 0
+                            },
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    6
+                                ]
+                            },
+                            {
+                                "code": 13,
+                                "indent": null
+                            },
+                            {
+                                "code": 13,
+                                "indent": null
+                            },
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 44,
+                                "indent": null,
+                                "parameters": [
+                                    {
+                                        "name": "Blow4",
+                                        "pan": 0,
+                                        "pitch": 100,
+                                        "volume": 90
+                                    }
+                                ]
+                            },
+                            {
+                                "code": 0
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": true,
+                        "wait": true
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 24,
+                        "indent": 0
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            6
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 13,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 13,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            4
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 44,
+                        "indent": null,
+                        "parameters": [
+                            {
+                                "name": "Blow4",
+                                "pan": 0,
+                                "pitch": 100,
+                                "volume": 90
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "code": 0,
                 "indent": 0,
                 "parameters": []
             }
         ],
-        "name": "",
+        "name": "Touched Panicking Dude",
         "switchId": 1,
         "trigger": 0
     },

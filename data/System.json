@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 20,
+    "editMapId": 7,
     "elements": [
         "",
         "Physical",
@@ -327,9 +327,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 17,
-    "startX": 27,
-    "startY": 5,
+    "startMapId": 7,
+    "startX": 4,
+    "startY": 22,
     "switches": [
         "",
         "End Autorun1",
@@ -538,7 +538,7 @@
         "",
         ""
     ],
-    "versionId": 20047608,
+    "versionId": 22022156,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
