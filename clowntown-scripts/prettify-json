@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Prettify the .json files in /data so diffs work properly.
+for f in ../data/*.json; do
+    python -m json.tool $f > temp_prettified.json
+    mv temp_prettified.json $f
+done
+
