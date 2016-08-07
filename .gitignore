@@ -8,3 +8,8 @@ MapExporter/
 data/MapInfos.json
 MapExporter
 desktop.ini
+
+#vim files
+*.swp
+*~
+*.swo
