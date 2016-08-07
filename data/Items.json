@@ -1,23 +1,700 @@
 [
-null,
-{"id":1,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Restores 20% + 100 HP","effects":[{"code":11,"dataId":0,"value1":0.2,"value2":100}],"hitType":0,"iconIndex":168,"itypeId":1,"name":"Healing Fragment","note":"","occasion":0,"price":25,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":2,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Recovers 20% + 75 of MP.","effects":[{"code":12,"dataId":0,"value1":0.2,"value2":75}],"hitType":0,"iconIndex":265,"itypeId":1,"name":"Manapple","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":3,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Restores 30% + 200 HP","effects":[{"code":11,"dataId":0,"value1":0.3,"value2":200}],"hitType":0,"iconIndex":162,"itypeId":1,"name":"Healing Orb","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":4,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Restores 30% + 100 SP","effects":[{"code":12,"dataId":0,"value1":0.3,"value2":100}],"hitType":0,"iconIndex":163,"itypeId":1,"name":"Ba-Mana","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":5,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Restores 20% + 100 of both MP and HP to the entire party","effects":[{"code":11,"dataId":0,"value1":0.2,"value2":100},{"code":12,"dataId":0,"value1":0.2,"value2":100}],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Simple Feast","note":"","occasion":0,"price":0,"repeats":1,"scope":8,"speed":0,"successRate":100,"tpGain":0},
-{"id":6,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Revives one KO'd ally.","effects":[{"code":22,"dataId":1,"value1":1,"value2":0},{"code":11,"dataId":0,"value1":0.2,"value2":100},{"code":12,"dataId":0,"value1":0.2,"value2":100}],"hitType":0,"iconIndex":273,"itypeId":1,"name":"Smelling Salt","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":7,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Fully restores 100% of both HP and SP. Removes all negative states.","effects":[{"code":11,"dataId":0,"value1":1,"value2":0},{"code":12,"dataId":0,"value1":1,"value2":0},{"code":22,"dataId":8,"value1":1,"value2":0},{"code":22,"dataId":4,"value1":1,"value2":0},{"code":22,"dataId":5,"value1":1,"value2":0},{"code":22,"dataId":6,"value1":1,"value2":0},{"code":22,"dataId":9,"value1":1,"value2":0},{"code":22,"dataId":10,"value1":1,"value2":0},{"code":22,"dataId":15,"value1":1,"value2":0},{"code":22,"dataId":17,"value1":1,"value2":0}],"hitType":0,"iconIndex":304,"itypeId":1,"name":"Essence of Vhyr","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":8,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Removes poison state of one ally","effects":[{"code":22,"dataId":4,"value1":1,"value2":0}],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Kingswort Elixer","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":9,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Removes all negatives states of one ally.","effects":[{"code":22,"dataId":4,"value1":1,"value2":0},{"code":22,"dataId":5,"value1":1,"value2":0},{"code":22,"dataId":6,"value1":1,"value2":0},{"code":22,"dataId":7,"value1":1,"value2":0},{"code":22,"dataId":8,"value1":1,"value2":0},{"code":22,"dataId":9,"value1":1,"value2":0},{"code":22,"dataId":10,"value1":1,"value2":0},{"code":22,"dataId":15,"value1":1,"value2":0}],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Vitalial Water","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":10,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"A recognizable insignia of a bandit group. ","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Bandit Patch","note":"","occasion":3,"price":4,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":11,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Remains of a ghost...spooky.","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Ectoplasm","note":"","occasion":3,"price":6,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":12,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"Wolf Fang","note":"","occasion":3,"price":6,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":13,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":3,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":14,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":15,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":16,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":17,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":18,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":19,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":20,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[],"hitType":0,"iconIndex":0,"itypeId":1,"name":"","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0}
+    null,
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Restores 20% + 100 HP",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 100
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 168,
+        "id": 1,
+        "itypeId": 1,
+        "name": "Healing Fragment",
+        "note": "",
+        "occasion": 0,
+        "price": 25,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Recovers 20% + 75 of MP.",
+        "effects": [
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 75
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 265,
+        "id": 2,
+        "itypeId": 1,
+        "name": "Manapple",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Restores 30% + 200 HP",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.3,
+                "value2": 200
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 162,
+        "id": 3,
+        "itypeId": 1,
+        "name": "Healing Orb",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Restores 30% + 100 SP",
+        "effects": [
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 0.3,
+                "value2": 100
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 163,
+        "id": 4,
+        "itypeId": 1,
+        "name": "Ba-Mana",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Restores 20% + 100 of both MP and HP to the entire party",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 100
+            },
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 100
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 5,
+        "itypeId": 1,
+        "name": "Simple Feast",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Revives one KO'd ally.",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 100
+            },
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 0.2,
+                "value2": 100
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 273,
+        "id": 6,
+        "itypeId": 1,
+        "name": "Smelling Salt",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Fully restores 100% of both HP and SP. Removes all negative states.",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 8,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 4,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 5,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 9,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 10,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 15,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 17,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 304,
+        "id": 7,
+        "itypeId": 1,
+        "name": "Essence of Vhyr",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Removes poison state of one ally",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 4,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 8,
+        "itypeId": 1,
+        "name": "Kingswort Elixer",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Removes all negatives states of one ally.",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 4,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 5,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 8,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 9,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 10,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 15,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 9,
+        "itypeId": 1,
+        "name": "Vitalial Water",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "A recognizable insignia of a bandit group. ",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 10,
+        "itypeId": 1,
+        "name": "Bandit Patch",
+        "note": "",
+        "occasion": 3,
+        "price": 4,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "Remains of a ghost...spooky.",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 11,
+        "itypeId": 1,
+        "name": "Ectoplasm",
+        "note": "",
+        "occasion": 3,
+        "price": 6,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 12,
+        "itypeId": 1,
+        "name": "Wolf Fang",
+        "note": "",
+        "occasion": 3,
+        "price": 6,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 13,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 14,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 15,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 16,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 17,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 18,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 19,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 20,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    }
 ]

@@ -1,136 +1,3629 @@
 [
-null,
-{"id":1,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Cloak","note":"","params":[0,0,0,8,0,0,0,0],"price":0},
-{"id":2,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"White Cloak","note":"","params":[0,0,0,11,0,0,0,0],"price":0},
-{"id":3,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Mage Cloak","note":"","params":[0,0,0,17,3,0,0,0],"price":0},
-{"id":4,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Amber Cloak","note":"","params":[0,0,0,21,0,0,0,0],"price":0},
-{"id":5,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Silk Cloak","note":"","params":[0,0,0,33,0,0,0,10],"price":0},
-{"id":6,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Elder Cloak","note":"","params":[0,0,0,39,0,0,0,0],"price":0},
-{"id":7,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Battle Cloak*","note":"","params":[0,0,0,50,10,10,0,0],"price":0},
-{"id":8,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Holy Cloak","note":"","params":[0,0,0,45,0,0,0,0],"price":0},
-{"id":9,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Rune Cloak","note":"","params":[0,0,0,48,10,0,0,0],"price":0},
-{"id":10,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Warlock Garb","note":"","params":[0,0,0,54,0,0,0,0],"price":0},
-{"id":11,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Pheonix Cloak","note":"","params":[0,0,0,54,0,0,0,0],"price":0},
-{"id":12,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Mortality Cloak","note":"","params":[0,0,0,60,0,0,0,0],"price":0},
-{"id":13,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":138,"name":"Star Cloak","note":"","params":[0,0,0,60,0,0,0,0],"price":0},
-{"id":14,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Soft Leather","note":"","params":[0,0,0,10,0,0,0,0],"price":0},
-{"id":15,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Hard Leather","note":"","params":[0,0,0,13,0,0,0,0],"price":0},
-{"id":16,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Chain Mail","note":"","params":[0,0,0,15,0,0,0,0],"price":0},
-{"id":17,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Ring Mail","note":"","params":[0,0,0,20,0,0,0,0],"price":0},
-{"id":18,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Lamellar Leather","note":"","params":[0,0,0,22,0,0,0,0],"price":0},
-{"id":19,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Iron Mail","note":"","params":[0,0,0,25,0,0,0,0],"price":0},
-{"id":20,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Splint Mail","note":"","params":[0,0,0,30,0,0,0,0],"price":0},
-{"id":21,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Breastplate","note":"","params":[0,0,0,34,0,0,0,0],"price":0},
-{"id":22,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Battlesuit","note":"","params":[0,0,0,38,0,0,0,0],"price":0},
-{"id":23,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Silver Mail","note":"","params":[0,0,0,42,0,0,0,0],"price":0},
-{"id":24,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Mythril Armor","note":"","params":[0,0,0,46,0,0,0,0],"price":0},
-{"id":25,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Rune Mail","note":"","params":[0,0,0,50,10,0,0,0],"price":0},
-{"id":26,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Brunnhilde*","note":"","params":[0,20,0,50,20,20,0,0],"price":0},
-{"id":27,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Rare Plate","note":"","params":[0,0,0,60,0,0,0,0],"price":0},
-{"id":28,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Star Mail","note":"","params":[0,0,0,65,0,0,0,0],"price":0},
-{"id":29,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"Dragon Mail","note":"","params":[0,0,0,70,0,0,0,0],"price":0},
-{"id":30,"atypeId":4,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"Golden Armor","note":"","params":[0,0,0,75,0,0,0,0],"price":0},
-{"id":31,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Leather Guard","note":"","params":[0,0,0,9,0,0,0,0],"price":0},
-{"id":32,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Fine Guard","note":"","params":[0,0,0,13,0,0,0,0],"price":0},
-{"id":33,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Iron Guard","note":"","params":[0,0,0,20,0,0,0,0],"price":0},
-{"id":34,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Lunar Guard","note":"","params":[0,0,0,23,0,0,0,20],"price":0},
-{"id":35,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Elven Protector","note":"","params":[0,0,0,30,0,0,20,0],"price":0},
-{"id":36,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Silver Guard","note":"","params":[0,0,0,40,0,0,0,0],"price":0},
-{"id":37,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Mythril Guard","note":"","params":[0,0,0,46,0,0,0,0],"price":0},
-{"id":38,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Rune Guard","note":"","params":[0,0,0,48,10,0,0,0],"price":0},
-{"id":39,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Solar Guard","note":"","params":[0,0,0,50,0,0,0,0],"price":0},
-{"id":40,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Rare Guard","note":"","params":[0,0,0,56,0,0,0,0],"price":0},
-{"id":41,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Mana Guard**","note":"","params":[0,50,0,62,0,0,0,0],"price":0},
-{"id":42,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Star Guard","note":"","params":[0,0,0,62,0,0,0,0],"price":0},
-{"id":43,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Elemental Guard","note":"","params":[0,0,0,66,0,0,0,0],"price":0},
-{"id":44,"atypeId":3,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"Prism Guard","note":"","params":[0,0,0,66,0,0,0,0],"price":0},
-{"id":45,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Leather Helm","note":"","params":[0,0,0,4,0,2,0,0],"price":0},
-{"id":46,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Iron Helm","note":"","params":[0,0,0,6,0,3,0,0],"price":0},
-{"id":47,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Solid Helm","note":"","params":[0,0,0,10,0,5,0,0],"price":0},
-{"id":48,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Cross Helm","note":"","params":[0,0,0,14,0,7,0,0],"price":0},
-{"id":49,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Duel Helm","note":"","params":[0,0,0,17,0,8,0,0],"price":0},
-{"id":50,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Rune Helm","note":"","params":[0,0,0,20,10,10,0,0],"price":0},
-{"id":51,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Rare Helm","note":"","params":[0,0,0,24,10,12,0,0],"price":0},
-{"id":52,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Star Helm","note":"","params":[0,0,0,26,10,13,0,0],"price":0},
-{"id":53,"atypeId":5,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":132,"name":"Golden Helm","note":"","params":[0,0,0,30,10,15,0,0],"price":0},
-{"id":54,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Circlet","note":"","params":[0,0,0,1,1,3,0,0],"price":0},
-{"id":55,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Silver Circlet","note":"","params":[0,0,0,2,4,5,0,0],"price":0},
-{"id":56,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Gold Circlet","note":"","params":[0,0,0,4,2,9,0,0],"price":0},
-{"id":57,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Mythril Circlet","note":"","params":[0,0,0,5,8,11,0,0],"price":0},
-{"id":58,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Holy Circlet","note":"","params":[0,0,0,6,9,12,0,0],"price":0},
-{"id":59,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Rune Circlet","note":"","params":[0,0,0,6,10,13,0,0],"price":0},
-{"id":60,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Star Circlet","note":"","params":[0,0,0,10,14,20,0,0],"price":0},
-{"id":61,"atypeId":6,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"Elemental Circlet","note":"","params":[0,0,0,12,15,25,0,0],"price":0},
-{"id":62,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Ribbon","note":"","params":[0,0,0,2,0,4,0,0],"price":0},
-{"id":63,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Blue Ribbon","note":"","params":[0,0,0,5,0,10,0,0],"price":0},
-{"id":64,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Striped Ribbon","note":"","params":[0,0,0,7,0,14,0,0],"price":0},
-{"id":65,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Tartan Ribbon","note":"","params":[0,0,0,8,0,17,0,0],"price":0},
-{"id":66,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Enchanted Ribbon","note":"","params":[0,0,0,10,0,20,0,0],"price":0},
-{"id":67,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Infused Ribbon","note":"","params":[0,0,0,12,0,24,0,0],"price":0},
-{"id":68,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Magical Ribbon","note":"","params":[0,0,0,13,0,26,0,0],"price":0},
-{"id":69,"atypeId":7,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":149,"name":"Elemental Ribbon","note":"","params":[0,0,0,14,10,28,0,0],"price":0},
-{"id":70,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Robe","note":"","params":[0,0,0,10,0,0,0,0],"price":0},
-{"id":71,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Feather Robe","note":"","params":[0,0,0,14,0,0,0,0],"price":0},
-{"id":72,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"White Robe","note":"","params":[0,0,0,20,0,0,0,0],"price":0},
-{"id":73,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Moon Robe","note":"","params":[0,0,0,21,0,0,0,0],"price":0},
-{"id":74,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Misty Robe","note":"","params":[0,0,0,23,0,0,20,0],"price":0},
-{"id":75,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Magic Robe","note":"","params":[0,0,0,29,0,0,0,0],"price":0},
-{"id":76,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Silk Robe","note":"","params":[0,0,0,36,0,0,0,20],"price":0},
-{"id":77,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Ancient Robe","note":"","params":[0,0,0,40,0,0,0,0],"price":0},
-{"id":78,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Rune Robe","note":"","params":[0,0,0,44,10,0,0,0],"price":0},
-{"id":79,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Holy Robe","note":"","params":[0,50,0,50,0,0,0,0],"price":0},
-{"id":80,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Heavenly Robe","note":"","params":[0,0,0,54,0,0,0,0],"price":0},
-{"id":81,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Shaman's Robe","note":"","params":[0,0,0,60,0,0,0,0],"price":0},
-{"id":82,"atypeId":2,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":139,"name":"Elemental Robe","note":"","params":[0,0,0,65,0,0,0,0],"price":0},
-{"id":83,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Beret","note":"","params":[0,0,0,3,1,0,0,0],"price":0},
-{"id":84,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Mage Hat","note":"","params":[0,0,0,8,2,0,0,0],"price":0},
-{"id":85,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Round Beret","note":"","params":[0,0,0,10,3,0,0,0],"price":0},
-{"id":86,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Pointed Hat","note":"","params":[0,0,0,13,4,0,0,0],"price":0},
-{"id":87,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Rune Hat","note":"","params":[0,0,0,15,10,0,0,0],"price":0},
-{"id":88,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0.05}],"iconIndex":130,"name":"Headband","note":"","params":[0,0,0,18,5,0,0,0],"price":0},
-{"id":89,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Star Cap","note":"","params":[0,0,0,20,10,0,0,0],"price":0},
-{"id":90,"atypeId":8,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"Pirate Hat","note":"","params":[0,0,0,21,12,0,0,0],"price":0},
-{"id":91,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Leather Gauntlet","note":"","params":[0,0,0,3,0,0,0,0],"price":0},
-{"id":92,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Iron Guantlet","note":"","params":[0,0,0,6,0,0,0,0],"price":0},
-{"id":93,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Claw Guantlet","note":"","params":[0,0,10,10,0,0,0,0],"price":0},
-{"id":94,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Mythril Guantlet","note":"","params":[0,0,0,13,0,0,0,0],"price":0},
-{"id":95,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Rune Guantlet","note":"","params":[0,0,0,15,10,0,0,0],"price":0},
-{"id":96,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Rare Guantlet","note":"","params":[0,0,0,18,0,0,0,0],"price":0},
-{"id":97,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":143,"name":"Star Gauntlet","note":"","params":[0,0,0,20,0,0,0,0],"price":0},
-{"id":98,"atypeId":9,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.15}],"iconIndex":143,"name":"Hyper Guantlet*","note":"","params":[0,0,0,21,0,0,50,0],"price":0},
-{"id":99,"atypeId":10,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Leather Gloves","note":"","params":[0,0,0,1,0,1,0,0],"price":0},
-{"id":100,"atypeId":10,"description":"Winter is coming...","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Winter Gloves","note":"","params":[0,0,0,3,0,3,0,0],"price":0},
-{"id":101,"atypeId":10,"description":"If you rub your hands quickly, will they catch on fire?","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Heated Gloves","note":"","params":[0,0,0,5,0,5,0,0],"price":0},
-{"id":102,"atypeId":10,"description":"Gloves designed for fighting is the new trend!","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Fashionable Gloves","note":"","params":[0,0,0,6,0,6,0,20],"price":0},
-{"id":103,"atypeId":10,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Silk Gloves","note":"","params":[0,0,0,8,0,8,0,0],"price":0},
-{"id":104,"atypeId":10,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Cat Mittens","note":"","params":[0,0,0,10,0,10,0,0],"price":0},
-{"id":105,"atypeId":10,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":142,"name":"Champion Gloves","note":"","params":[0,0,0,11,0,11,0,0],"price":0},
-{"id":106,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Bracelet","note":"","params":[0,0,0,1,0,2,0,0],"price":0},
-{"id":107,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Iron Bracelet","note":"","params":[0,0,0,2,0,4,0,0],"price":0},
-{"id":108,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Lapis Bracelet","note":"","params":[0,0,0,3,0,7,0,20],"price":0},
-{"id":109,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Angel Bracelet","note":"","params":[0,0,0,4,0,8,0,40],"price":0},
-{"id":110,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Mythril Bracelet","note":"","params":[0,0,0,5,0,10,0,0],"price":0},
-{"id":111,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Drapunir*","note":"","params":[500,50,0,6,0,12,50,50],"price":0},
-{"id":112,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Star Bracelet","note":"","params":[0,0,0,6,0,13,0,0],"price":0},
-{"id":113,"atypeId":12,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":144,"name":"Shield Bracelet","note":"","params":[0,0,0,7,0,15,0,0],"price":0},
-{"id":114,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Toy Ring","note":"","params":[0,0,0,0,0,3,0,0],"price":0},
-{"id":115,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Iron Ring","note":"","params":[0,0,0,0,0,6,0,0],"price":0},
-{"id":116,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Garnet Ring","note":"","params":[0,0,0,0,0,9,0,0],"price":0},
-{"id":117,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Amethyst Ring","note":"","params":[0,0,0,0,0,13,0,0],"price":0},
-{"id":118,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Pearl Ring","note":"","params":[0,0,0,0,0,15,0,0],"price":0},
-{"id":119,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Topaz Ring","note":"","params":[0,0,0,0,0,18,0,0],"price":0},
-{"id":120,"atypeId":11,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Quartet Ring","note":"","params":[0,0,0,0,0,20,0,0],"price":0},
-{"id":121,"atypeId":11,"description":"It's the perfect ring...for kicking butt!","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Dream Ring","note":"","params":[0,0,1,0,0,22,0,0],"price":0},
-{"id":122,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Stone Belt","note":"","params":[0,0,0,5,0,0,-5,0],"price":0},
-{"id":123,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Magic Charm","note":"","params":[0,0,0,0,3,6,0,0],"price":0},
-{"id":124,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Demon Fang","note":"","params":[0,0,5,0,0,4,0,0],"price":0},
-{"id":125,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Amplifier Belt","note":"","params":[0,50,0,0,5,0,0,0],"price":0},
-{"id":126,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Fake Champion Charm","note":"","params":[0,0,2,2,2,2,0,0],"price":0},
-{"id":127,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0.05},{"code":22,"dataId":3,"value":0.05}],"iconIndex":209,"name":"Issac's Gift (Lyon)","note":"","params":[0,0,5,12,0,0,0,0],"price":0},
-{"id":128,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.05},{"code":22,"dataId":2,"value":0.02}],"iconIndex":209,"name":"Sheva's Gift (Lyon)","note":"","params":[0,0,0,0,5,12,0,0],"price":0},
-{"id":129,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0.05},{"code":22,"dataId":3,"value":0.05}],"iconIndex":209,"name":"Issac's Gift (Elle)","note":"","params":[0,0,5,12,2,0,0,0],"price":0},
-{"id":130,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.05},{"code":22,"dataId":2,"value":0.02}],"iconIndex":209,"name":"Sheva's Gift (Elle)","note":"","params":[0,0,0,0,5,12,0,0],"price":0},
-{"id":131,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Albien's Keepsake","note":"","params":[0,0,0,14,10,14,0,0],"price":0},
-{"id":132,"atypeId":13,"description":"","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":209,"name":"Damaged Keepsake","note":"","params":[0,0,5,10,5,10,5,5],"price":0},
-{"id":133,"atypeId":13,"description":"Increase agility and defense by 2.","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":140,"name":"Boots","note":"If Lyon finds this item at Level 3:\n- He will attack first against bandit leader.\n\nIf Lyon is level 2 or does not find it\n- Bandit leader will attack first.","params":[0,0,0,2,0,0,2,0],"price":0}
+    null,
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 1,
+        "name": "Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 2,
+        "name": "White Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            11,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 3,
+        "name": "Mage Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            17,
+            3,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 4,
+        "name": "Amber Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 5,
+        "name": "Silk Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            33,
+            0,
+            0,
+            0,
+            10
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 6,
+        "name": "Elder Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 7,
+        "name": "Battle Cloak*",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            50,
+            10,
+            10,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 8,
+        "name": "Holy Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 9,
+        "name": "Rune Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            48,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 10,
+        "name": "Warlock Garb",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            54,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 11,
+        "name": "Pheonix Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            54,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 12,
+        "name": "Mortality Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            60,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 138,
+        "id": 13,
+        "name": "Star Cloak",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            60,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 14,
+        "name": "Soft Leather",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 15,
+        "name": "Hard Leather",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 16,
+        "name": "Chain Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            15,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 17,
+        "name": "Ring Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 18,
+        "name": "Lamellar Leather",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 19,
+        "name": "Iron Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            25,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 20,
+        "name": "Splint Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 21,
+        "name": "Breastplate",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            34,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 22,
+        "name": "Battlesuit",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            38,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 23,
+        "name": "Silver Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            42,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 24,
+        "name": "Mythril Armor",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 25,
+        "name": "Rune Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            50,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 26,
+        "name": "Brunnhilde*",
+        "note": "",
+        "params": [
+            0,
+            20,
+            0,
+            50,
+            20,
+            20,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 27,
+        "name": "Rare Plate",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            60,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 28,
+        "name": "Star Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            65,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 137,
+        "id": 29,
+        "name": "Dragon Mail",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            70,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 4,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 0,
+        "id": 30,
+        "name": "Golden Armor",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 31,
+        "name": "Leather Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 32,
+        "name": "Fine Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 33,
+        "name": "Iron Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 34,
+        "name": "Lunar Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            0,
+            20
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 35,
+        "name": "Elven Protector",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            20,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 36,
+        "name": "Silver Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 37,
+        "name": "Mythril Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 38,
+        "name": "Rune Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            48,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 39,
+        "name": "Solar Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 40,
+        "name": "Rare Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            56,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 41,
+        "name": "Mana Guard**",
+        "note": "",
+        "params": [
+            0,
+            50,
+            0,
+            62,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 42,
+        "name": "Star Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 43,
+        "name": "Elemental Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            66,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 3,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 136,
+        "id": 44,
+        "name": "Prism Guard",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            66,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 45,
+        "name": "Leather Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            4,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 46,
+        "name": "Iron Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 47,
+        "name": "Solid Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            5,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 48,
+        "name": "Cross Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            14,
+            0,
+            7,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 49,
+        "name": "Duel Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            17,
+            0,
+            8,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 50,
+        "name": "Rune Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            10,
+            10,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 51,
+        "name": "Rare Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            24,
+            10,
+            12,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 52,
+        "name": "Star Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            26,
+            10,
+            13,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 5,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 132,
+        "id": 53,
+        "name": "Golden Helm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            30,
+            10,
+            15,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 54,
+        "name": "Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            3,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 55,
+        "name": "Silver Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            4,
+            5,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 56,
+        "name": "Gold Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            4,
+            2,
+            9,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 57,
+        "name": "Mythril Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            8,
+            11,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 58,
+        "name": "Holy Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            9,
+            12,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 59,
+        "name": "Rune Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            10,
+            13,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 60,
+        "name": "Star Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            14,
+            20,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 6,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 134,
+        "id": 61,
+        "name": "Elemental Circlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            12,
+            15,
+            25,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 62,
+        "name": "Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            4,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 63,
+        "name": "Blue Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            10,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 64,
+        "name": "Striped Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            7,
+            0,
+            14,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 65,
+        "name": "Tartan Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            17,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 66,
+        "name": "Enchanted Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            20,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 67,
+        "name": "Infused Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            12,
+            0,
+            24,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 68,
+        "name": "Magical Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            13,
+            0,
+            26,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 7,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 149,
+        "id": 69,
+        "name": "Elemental Ribbon",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            14,
+            10,
+            28,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 70,
+        "name": "Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 71,
+        "name": "Feather Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 72,
+        "name": "White Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 73,
+        "name": "Moon Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 74,
+        "name": "Misty Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            20,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 75,
+        "name": "Magic Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            29,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 76,
+        "name": "Silk Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0,
+            0,
+            20
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 77,
+        "name": "Ancient Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 78,
+        "name": "Rune Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            44,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 79,
+        "name": "Holy Robe",
+        "note": "",
+        "params": [
+            0,
+            50,
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 80,
+        "name": "Heavenly Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            54,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 81,
+        "name": "Shaman's Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            60,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 2,
+        "description": "",
+        "etypeId": 3,
+        "iconIndex": 139,
+        "id": 82,
+        "name": "Elemental Robe",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            65,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 83,
+        "name": "Beret",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 84,
+        "name": "Mage Hat",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            8,
+            2,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 85,
+        "name": "Round Beret",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            3,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 86,
+        "name": "Pointed Hat",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            13,
+            4,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 87,
+        "name": "Rune Hat",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            15,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 88,
+        "name": "Headband",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            18,
+            5,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 89,
+        "name": "Star Cap",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 8,
+        "description": "",
+        "etypeId": 2,
+        "iconIndex": 130,
+        "id": 90,
+        "name": "Pirate Hat",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            21,
+            12,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 91,
+        "name": "Leather Gauntlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 92,
+        "name": "Iron Guantlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 93,
+        "name": "Claw Guantlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            10,
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 94,
+        "name": "Mythril Guantlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 95,
+        "name": "Rune Guantlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            15,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 96,
+        "name": "Rare Guantlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 97,
+        "name": "Star Gauntlet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 9,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 143,
+        "id": 98,
+        "name": "Hyper Guantlet*",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            50,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.15
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 99,
+        "name": "Leather Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "Winter is coming...",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 100,
+        "name": "Winter Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "If you rub your hands quickly, will they catch on fire?",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 101,
+        "name": "Heated Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            5,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "Gloves designed for fighting is the new trend!",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 102,
+        "name": "Fashionable Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            20
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 103,
+        "name": "Silk Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 104,
+        "name": "Cat Mittens",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 10,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 142,
+        "id": 105,
+        "name": "Champion Gloves",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            11,
+            0,
+            11,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 106,
+        "name": "Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 107,
+        "name": "Iron Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            4,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 108,
+        "name": "Lapis Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            7,
+            0,
+            20
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 109,
+        "name": "Angel Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            4,
+            0,
+            8,
+            0,
+            40
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 110,
+        "name": "Mythril Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            10,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 111,
+        "name": "Drapunir*",
+        "note": "",
+        "params": [
+            500,
+            50,
+            0,
+            6,
+            0,
+            12,
+            50,
+            50
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 112,
+        "name": "Star Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            13,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 12,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 144,
+        "id": 113,
+        "name": "Shield Bracelet",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            7,
+            0,
+            15,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 114,
+        "name": "Toy Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 115,
+        "name": "Iron Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 116,
+        "name": "Garnet Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            9,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 117,
+        "name": "Amethyst Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 118,
+        "name": "Pearl Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 119,
+        "name": "Topaz Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 120,
+        "name": "Quartet Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 11,
+        "description": "It's the perfect ring...for kicking butt!",
+        "etypeId": 4,
+        "iconIndex": 147,
+        "id": 121,
+        "name": "Dream Ring",
+        "note": "",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            22,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 122,
+        "name": "Stone Belt",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 123,
+        "name": "Magic Charm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            6,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 124,
+        "name": "Demon Fang",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            0,
+            0,
+            4,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 125,
+        "name": "Amplifier Belt",
+        "note": "",
+        "params": [
+            0,
+            50,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 126,
+        "name": "Fake Champion Charm",
+        "note": "",
+        "params": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 127,
+        "name": "Issac's Gift (Lyon)",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            12,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 3,
+                "value": 0.05
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 128,
+        "name": "Sheva's Gift (Lyon)",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            12,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.02
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 129,
+        "name": "Issac's Gift (Elle)",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            12,
+            2,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 3,
+                "value": 0.05
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 130,
+        "name": "Sheva's Gift (Elle)",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            12,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.02
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 131,
+        "name": "Albien's Keepsake",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            14,
+            10,
+            14,
+            0,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "",
+        "etypeId": 5,
+        "iconIndex": 209,
+        "id": 132,
+        "name": "Damaged Keepsake",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            10,
+            5,
+            10,
+            5,
+            5
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "atypeId": 13,
+        "description": "Increase agility and defense by 2.",
+        "etypeId": 5,
+        "iconIndex": 140,
+        "id": 133,
+        "name": "Boots",
+        "note": "If Lyon finds this item at Level 3:\n- He will attack first against bandit leader.\n\nIf Lyon is level 2 or does not find it\n- Bandit leader will attack first.",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 0,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    }
 ]
