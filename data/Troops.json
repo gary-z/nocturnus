@@ -542,8 +542,15 @@
     },
     {
         "id": 7,
-        "members": [],
-        "name": "",
+        "members": [
+            {
+                "enemyId": 3,
+                "hidden": false,
+                "x": 228,
+                "y": 394
+            }
+        ],
+        "name": "Bandit Tutorial",
         "pages": [
             {
                 "conditions": {
@@ -558,7 +565,7 @@
                     "turnA": 0,
                     "turnB": 0,
                     "turnEnding": false,
-                    "turnValid": false
+                    "turnValid": true
                 },
                 "list": [
                     {
