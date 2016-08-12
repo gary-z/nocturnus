@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 24,
+    "editMapId": 21,
     "elements": [
         "",
         "Physical",
@@ -159,7 +159,8 @@
     "optSlipDeath": false,
     "optTransparent": false,
     "partyMembers": [
-        1
+        1,
+        2
     ],
     "ship": {
         "bgm": {
@@ -327,9 +328,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 24,
-    "startX": 4,
-    "startY": 9,
+    "startMapId": 17,
+    "startX": 23,
+    "startY": 5,
     "switches": [
         "",
         "End Autorun1",
@@ -618,7 +619,7 @@
         "",
         ""
     ],
-    "versionId": 13245033,
+    "versionId": 24768822,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
