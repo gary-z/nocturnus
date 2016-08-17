@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 21,
+    "editMapId": 7,
     "elements": [
         "",
         "Physical",
@@ -328,8 +328,8 @@
             "volume": 90
         }
     ],
-    "startMapId": 17,
-    "startX": 23,
+    "startMapId": 7,
+    "startX": 18,
     "startY": 5,
     "switches": [
         "",
@@ -617,9 +617,9 @@
         "",
         "",
         "",
-        ""
+        "Has Lost Girl"
     ],
-    "versionId": 24768822,
+    "versionId": 21146275,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
