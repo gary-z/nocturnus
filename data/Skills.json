@@ -25,7 +25,7 @@
         "message2": "",
         "mpCost": 0,
         "name": "Attack",
-        "note": "Skill #1 will be used when you select\nthe Attack command.",
+        "note": "<setup action>\ndisplay action\nimmortal: targets, true\n</setup action>\n\n<target action>\nif user.attackMotion() !== 'missile'\n  motion walk: user\n  move user: targets, front, 75\n  motion wait: user\n  motion walk: user\n  motion wait: user\n  motion walk: user\n  motion wait: user\n  motion walk: user\n  motion wait: user\n  motion walk: user\n  motion wait: user\n  motion walk: user\nelse\n  perform start\nend\nwait for movement\nmotion attack: user\nwait: 10\nattack animation: target\nwait for animation\naction effect\nif user.attackMotion() !== 'missile'\n  jump user: 100, 50\n  move user: backward, 300, 50\n  motion evade: user\n  wait for jump\n  move user: return, 50\n  motion escape: user\n  wait: 25\n  motion escape: user\n  wait: 25\nelse\n  motion escape: user\n  move user: return, 25\n</target action>",
         "occasion": 1,
         "repeats": 1,
         "requiredWtypeId1": 0,

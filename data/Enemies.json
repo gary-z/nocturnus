@@ -37,7 +37,7 @@
         "params": [
             99999,
             0,
-            20,
+            200,
             30,
             30,
             30,
@@ -73,7 +73,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "Rat",
+        "battlerName": "Bandit",
         "dropItems": [
             {
                 "dataId": 1,
@@ -142,7 +142,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "Actor1_3",
+        "battlerName": "bandit2",
         "dropItems": [
             {
                 "dataId": 1,
@@ -164,7 +164,7 @@
         "gold": 1,
         "id": 3,
         "name": "Bandit",
-        "note": "",
+        "note": "<Sideview Battler: Bandit>\n<Sideview Battler Size: 64,64>\n\n<Sideview Battler Motion>\n  Name: idle\n  Index: 0\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: walk\n  Index: 4\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: wait\n  Index: 0\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: chant\n  Index: 0\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: guard\n  Index: 3\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: damage\n  Index: 1\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: evade\n  Index: 4\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: thrust\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: swing\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: missile\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: skill\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: spell\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: item\n  Index: 6\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: escape\n  Index: 5\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: victory\n  Index: 0\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: dying\n  Index: 2\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: abnormal\n  Index: 2\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: sleep\n  Index: 2\n  Loop\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>\n\n<Sideview Battler Motion>\n  Name: dead\n  Index: 10\n  Frames: 4\n  Speed: 8\n</Sideview Battler Motion>",
         "params": [
             150,
             0,

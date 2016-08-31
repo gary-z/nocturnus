@@ -35,11 +35,11 @@
         },
         {
             "type": 1,
-            "weaponImageId": 1
+            "weaponImageId": 0
         },
         {
-            "type": 1,
-            "weaponImageId": 2
+            "type": 2,
+            "weaponImageId": 0
         },
         {
             "type": 1,
@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 7,
+    "editMapId": 2,
     "elements": [
         "",
         "Physical",
@@ -587,7 +587,7 @@
             "level": 1
         }
     ],
-    "testTroopId": 7,
+    "testTroopId": 2,
     "title1Name": "Tower2",
     "title2Name": "Medieval",
     "titleBgm": {
@@ -699,7 +699,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 89550462,
+    "versionId": 2819910,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

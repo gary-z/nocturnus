@@ -1,7 +1,7 @@
 [
     null,
     {
-        "battlerName": "Actor1_1",
+        "battlerName": "&Test-battle",
         "characterIndex": 0,
         "characterName": "Main",
         "classId": 1,
@@ -24,7 +24,7 @@
         "traits": []
     },
     {
-        "battlerName": "Actor2_4",
+        "battlerName": "&Elle-battle",
         "characterIndex": 1,
         "characterName": "Main",
         "classId": 2,
