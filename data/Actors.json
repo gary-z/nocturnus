@@ -1,7 +1,7 @@
 [
     null,
     {
-        "battlerName": "&Test-battle",
+        "battlerName": "lyon[4,18,1,0,false]",
         "characterIndex": 0,
         "characterName": "Main",
         "classId": 1,
@@ -19,7 +19,7 @@
         "maxLevel": 99,
         "name": "Lyon Talger",
         "nickname": "Lyon",
-        "note": "",
+        "note": " <sprite motion: 'lyon[4,18,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 15, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 18, loop: false, speed: 8\n  thrust:   index: 17, loop: false, speed: 8\n  swing:    index: 7, loop: false, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 9, loop: false, speed: 8\n  spell:    index: 12, loop: false, speed: 8\n  item:     index: 8, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 18, loop: true, speed: 8\n  victory:  index: 10, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
         "profile": "Loves to test the elements.",
         "traits": []
     },

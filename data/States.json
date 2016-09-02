@@ -489,7 +489,7 @@
         "overlay": 0,
         "priority": 50,
         "removeAtBattleEnd": true,
-        "removeByDamage": false,
+        "removeByDamage": true,
         "removeByRestriction": false,
         "removeByWalking": false,
         "restriction": 4,

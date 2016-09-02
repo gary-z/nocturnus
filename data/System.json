@@ -83,7 +83,7 @@
         }
     ],
     "battleBgm": {
-        "name": "Draw your sword!",
+        "name": "Pierce your Enemy!",
         "pan": 0,
         "pitch": 100,
         "volume": 90
@@ -587,7 +587,7 @@
             "level": 1
         }
     ],
-    "testTroopId": 2,
+    "testTroopId": 5,
     "title1Name": "Tower2",
     "title2Name": "Medieval",
     "titleBgm": {
@@ -699,7 +699,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 2819910,
+    "versionId": 60249641,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
