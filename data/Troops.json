@@ -223,12 +223,24 @@
                 },
                 "list": [
                     {
+                        "code": 241,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "name": "Sinister",
+                                "pan": 0,
+                                "pitch": 100,
+                                "volume": 90
+                            }
+                        ]
+                    },
+                    {
                         "code": 0,
                         "indent": 0,
                         "parameters": []
                     }
                 ],
-                "span": 0
+                "span": 2
             }
         ]
     },

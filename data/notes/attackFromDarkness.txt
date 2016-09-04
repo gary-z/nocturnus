@@ -1,0 +1,75 @@
+<action sequence: movement>
+</action sequence>
+<action sequence: execute>
+  motion: user, walk
+  move: user, to target, 5, -50, 0
+  wait: user, move
+  motion: user, walk
+  move: user, to target, 20, behind
+  se: play, Wind1
+  wait: user, move
+  direction: user, home
+  motion: user, walk
+  move: user, to target, 20, front
+  se: play, Wind1
+  wait: user, move
+  direction: all targets, behind
+  motion: all targets, attack
+  se: play, Evasion1
+  direction: user, opponents
+  motion: user, walk
+  move: user, to target, 15, behind
+  wait: user, move
+  direction: user, home
+  motion: user, walk
+  move: user, to target, 15, front
+  se: play, Wind1
+  wait: user, move
+  direction: user, opponents
+  motion: user, walk
+  move: user, to target, 15, behind
+  se: play, Wind1
+  wait: user, move
+  direction: user, home
+  direction: all targets, behind
+  motion: user, attack
+  animation: all targets, 1
+  effect: all targets, 10%
+  motion: user, walk
+  move: user, to target, 15, front
+  wait: user, move
+  direction: user, opponents
+  motion: user, walk
+  move: user, to target, 10, behind
+  wait: user, move
+  direction: user, home
+  motion: user, walk
+  move: user, to target, 10, front
+  se: play, Wind1
+  wait: user, move
+  direction: user, opponents
+  direction: all targets, behind
+  motion: all targets, attack
+  se: play, Evasion1
+  motion: user, walk
+  move: user, to target, 10, behind
+  wait: user, move
+  direction: all targets, behind
+  direction: user, home
+  motion: user, walk
+  move: user, to target, 10, front
+  se: play, Wind1
+  wait: user, move
+  direction: user, opponents
+  motion: user, attack
+  animation: all targets, 12
+  effect: all targets, 90%
+  wait: user, 25
+</action sequence>
+<action sequence: return>
+  direction: all targets, targets
+  motion: user, walk, true 
+  move: user, to home, 5 
+  wait: user, move
+  direction: user, opponents
+</action sequence>

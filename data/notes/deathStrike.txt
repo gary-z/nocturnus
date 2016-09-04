@@ -1,0 +1,39 @@
+<action sequence: movement>
+</action sequence>
+<action sequence: execute>
+  bgm: save
+  bgm: fade out, 70
+  se: play, Darkness1
+  tint: lower, dark, 50
+  motion: user, walk, true
+  opacity: user, 0, 50
+  wait: user, 50
+  move: user, to target, 0, 50, 0
+  wait: user, move
+  direction: user, home
+  wait: user, 40
+  motion: user, spell, true
+  opacity: user, 255, 50
+  se: play, Darkness8
+  wait: user, 80
+  motion: user, attack
+  animation: all targets, 102
+  effect: all targets, 100%
+  wait: user, 30
+  motion: all targets, dying, true
+</action sequence>
+<action sequence: return>
+  bgm: resume
+  bgm: fade in, 40
+  tint: lower, clear, 40
+  opacity: user, 0, 30
+  se: play, Darkness8
+  wait: user, 30
+  move: user, to home
+  wait: user, move
+  direction: user, opponents
+  opacity: user, 255, 30
+  se: play, Darkness8
+  wait: user, 30
+  motion: all targets, idle
+</action sequence>
