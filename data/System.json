@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 2,
+    "editMapId": 12,
     "elements": [
         "",
         "Physical",
@@ -159,8 +159,7 @@
     "optSlipDeath": false,
     "optTransparent": false,
     "partyMembers": [
-        1,
-        2
+        1
     ],
     "ship": {
         "bgm": {
@@ -328,9 +327,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 7,
-    "startX": 18,
-    "startY": 5,
+    "startMapId": 6,
+    "startX": 14,
+    "startY": 17,
     "switches": [
         "",
         "End Autorun1",
@@ -373,7 +372,7 @@
         "",
         "",
         "",
-        "",
+        "MURSHEED SWITCHES",
         "",
         "",
         "",
@@ -699,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 29740287,
+    "versionId": 13138218,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

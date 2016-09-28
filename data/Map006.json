@@ -5444,105 +5444,7 @@
             "x": 8,
             "y": 16
         },
-        {
-            "id": 3,
-            "name": "EV003",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 4,
-                        "characterName": "!Flame",
-                        "direction": 2,
-                        "pattern": 1,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 117,
-                            "indent": 0,
-                            "parameters": [
-                                6
-                            ]
-                        },
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 5,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 1,
-                                "indent": null
-                            },
-                            {
-                                "code": 3,
-                                "indent": null
-                            },
-                            {
-                                "code": 3,
-                                "indent": null
-                            },
-                            {
-                                "code": 4,
-                                "indent": null
-                            },
-                            {
-                                "code": 4,
-                                "indent": null
-                            },
-                            {
-                                "code": 2,
-                                "indent": null
-                            },
-                            {
-                                "code": 2,
-                                "indent": null
-                            },
-                            {
-                                "code": 1,
-                                "indent": null
-                            },
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 1,
-                    "stepAnime": true,
-                    "through": false,
-                    "trigger": 2,
-                    "walkAnime": true
-                }
-            ],
-            "x": 11,
-            "y": 18
-        },
+        null,
         {
             "id": 4,
             "name": "EV004",
@@ -5682,23 +5584,6 @@
                             "code": 101,
                             "indent": 0,
                             "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\LyonSHIT! That girl is on FIRE!!!!"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 0,
-                            "parameters": [
                                 "",
                                 0,
                                 0,
@@ -5709,7 +5594,58 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[16] HELP MEH!!!"
+                                "\\msgevent[16]\\lspi[130]\\unknownIs anyone there?!\\.\\.  Help me,\\.\\. please!\\.\\.\\.  Anyone?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\LyonSomeone's stuck!\\.\\. I think I see her on the other side,\\. through these flames."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonThese flames are.\\..\\.. peculiar.\\.\\.\\. If I were to guess,\\. they seem to be dancing\\..\\..\\.. in patterns."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI don't have time to question it.\\.\\.\\. If I don't hurry,\\. someone may not make it."
                             ]
                         },
                         {
@@ -7214,7 +7150,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[016]Get me out of here!"
+                                "\\msgevent[016]\\lspi[130]\\n<Distraught Woman>Thank goodness!\\.\\.\\.\\. I thought I was going to die in here\\..\\..\\.. All alone\\..\\..\\.."
                             ]
                         },
                         {
@@ -7226,12 +7162,10 @@
                             ]
                         },
                         {
-                            "code": 129,
+                            "code": 355,
                             "indent": 0,
                             "parameters": [
-                                7,
-                                0,
-                                false
+                                "$gameParty.addGuestActor(18);"
                             ]
                         },
                         {
