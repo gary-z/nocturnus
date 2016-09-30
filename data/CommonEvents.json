@@ -183,36 +183,18 @@
         "id": 5,
         "list": [
             {
-                "code": 111,
-                "indent": 0,
-                "parameters": [
-                    11,
-                    "pageup"
-                ]
-            },
-            {
                 "code": 355,
-                "indent": 1,
+                "indent": 0,
                 "parameters": [
                     "MRP.MapExporter();"
                 ]
             },
             {
                 "code": 230,
-                "indent": 1,
+                "indent": 0,
                 "parameters": [
                     60
                 ]
-            },
-            {
-                "code": 0,
-                "indent": 1,
-                "parameters": []
-            },
-            {
-                "code": 412,
-                "indent": 0,
-                "parameters": []
             },
             {
                 "code": 0,
@@ -222,7 +204,7 @@
         ],
         "name": "Snapshot",
         "switchId": 1,
-        "trigger": 2
+        "trigger": 0
     },
     {
         "id": 6,
@@ -274,9 +256,8 @@
                 "code": 111,
                 "indent": 0,
                 "parameters": [
-                    4,
-                    7,
-                    0
+                    12,
+                    "$gameParty.hasGuestActor(18);"
                 ]
             },
             {

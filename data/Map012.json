@@ -5510,7 +5510,7 @@
                         "variableValid": false,
                         "variableValue": 0
                     },
-                    "directionFix": false,
+                    "directionFix": true,
                     "image": {
                         "characterIndex": 5,
                         "characterName": "Damage2",
@@ -5624,6 +5624,16 @@
                                     "pitch": 100,
                                     "volume": 90
                                 }
+                            ]
+                        },
+                        {
+                            "code": 126,
+                            "indent": 2,
+                            "parameters": [
+                                14,
+                                0,
+                                0,
+                                1
                             ]
                         },
                         {

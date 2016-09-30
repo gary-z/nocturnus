@@ -2877,16 +2877,56 @@
                             ]
                         },
                         {
+                            "code": 221,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                1,
+                                "Darkness",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 1,
                             "parameters": [
                                 0,
                                 14,
-                                8,
-                                8,
+                                18,
+                                18,
                                 0,
                                 0
                             ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 1,
+                            "parameters": []
                         },
                         {
                             "code": 0,
