@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 5,
+    "editMapId": 14,
     "elements": [
         "",
         "Physical",
@@ -328,8 +328,8 @@
         }
     ],
     "startMapId": 5,
-    "startX": 13,
-    "startY": 9,
+    "startX": 8,
+    "startY": 6,
     "switches": [
         "",
         "End Autorun1",
@@ -374,9 +374,9 @@
         "",
         "MURSHEED SWITCHES",
         "BanditLeaderAppears",
-        "",
-        "",
-        "",
+        "SummonFLAME",
+        "Eventp3",
+        "CalmFlame",
         "",
         "",
         "",
@@ -604,7 +604,7 @@
         "PlayerY",
         "NextMap",
         "Damage",
-        "",
+        "RNGSteps",
         "",
         "",
         "",
@@ -698,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 15753654,
+    "versionId": 96926786,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

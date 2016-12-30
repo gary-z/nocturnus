@@ -219,9 +219,26 @@
                     "turnA": 0,
                     "turnB": 0,
                     "turnEnding": false,
-                    "turnValid": false
+                    "turnValid": true
                 },
                 "list": [
+                    {
+                        "code": 101,
+                        "indent": 0,
+                        "parameters": [
+                            "SF_People2",
+                            7,
+                            0,
+                            2
+                        ]
+                    },
+                    {
+                        "code": 401,
+                        "indent": 0,
+                        "parameters": [
+                            "\\n<Bandit Leader>\\lspi[50]Come then,\\.\\. boy!\\.\\. See how futile your efforts are!"
+                        ]
+                    },
                     {
                         "code": 241,
                         "indent": 0,
@@ -235,12 +252,17 @@
                         ]
                     },
                     {
+                        "code": 214,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
                         "code": 0,
                         "indent": 0,
                         "parameters": []
                     }
                 ],
-                "span": 2
+                "span": 0
             }
         ]
     },
