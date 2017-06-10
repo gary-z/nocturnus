@@ -3042,6 +3042,14 @@
                             ]
                         },
                         {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3064,7 +3072,7 @@
                     "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 3,
                     "walkAnime": true
                 },
                 {
@@ -3074,7 +3082,7 @@
                         "itemId": 1,
                         "itemValid": false,
                         "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
+                        "selfSwitchValid": true,
                         "switch1Id": 1,
                         "switch1Valid": false,
                         "switch2Id": 1,

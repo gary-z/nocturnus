@@ -25,9 +25,21 @@
                     "turnA": 0,
                     "turnB": 0,
                     "turnEnding": false,
-                    "turnValid": false
+                    "turnValid": true
                 },
                 "list": [
+                    {
+                        "code": 311,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            0,
+                            1,
+                            0,
+                            1000,
+                            true
+                        ]
+                    },
                     {
                         "code": 0,
                         "indent": 0,
@@ -252,7 +264,55 @@
                         ]
                     },
                     {
-                        "code": 214,
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "span": 0
+            },
+            {
+                "conditions": {
+                    "actorHp": 50,
+                    "actorId": 1,
+                    "actorValid": false,
+                    "enemyHp": 50,
+                    "enemyIndex": 0,
+                    "enemyValid": true,
+                    "switchId": 1,
+                    "switchValid": false,
+                    "turnA": 0,
+                    "turnB": 0,
+                    "turnEnding": false,
+                    "turnValid": false
+                },
+                "list": [
+                    {
+                        "code": 242,
+                        "indent": 0,
+                        "parameters": [
+                            2
+                        ]
+                    },
+                    {
+                        "code": 101,
+                        "indent": 0,
+                        "parameters": [
+                            "SF_People2",
+                            7,
+                            0,
+                            2
+                        ]
+                    },
+                    {
+                        "code": 401,
+                        "indent": 0,
+                        "parameters": [
+                            "\\n<Bandit Leader>\\lspi[50]Very interesting\\..\\..\\.."
+                        ]
+                    },
+                    {
+                        "code": 340,
                         "indent": 0,
                         "parameters": []
                     },
@@ -705,13 +765,13 @@
             {
                 "enemyId": 4,
                 "hidden": false,
-                "x": 334,
-                "y": 436
+                "x": 193,
+                "y": 421
             },
             {
                 "enemyId": 5,
                 "hidden": false,
-                "x": 549,
+                "x": 450,
                 "y": 436
             },
             {
@@ -755,8 +815,8 @@
             {
                 "enemyId": 3,
                 "hidden": false,
-                "x": 228,
-                "y": 394
+                "x": 528,
+                "y": 444
             }
         ],
         "name": "Bandit Tutorial",

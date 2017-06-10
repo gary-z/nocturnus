@@ -7,7 +7,7 @@
  */
 
 var Imported = Imported || {};
-Imported['VE - Basic Module'] = '1.22';
+Imported['VE - Basic Module'] = '1.23';
 
 var VictorEngine = VictorEngine || {};
 VictorEngine.BasicModule = VictorEngine.BasicModule || {};
@@ -28,7 +28,7 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
 
 /*:
  * ==============================================================================
- * @plugindesc v1.22 - Plugin with base code required for all Victor Engine plugins.
+ * @plugindesc v1.23 - Plugin with base code required for all Victor Engine plugins.
  * @author Victor Sant
  *
  * @param == Trait Names ==
@@ -151,6 +151,7 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
  *  v 1.21 - 2016.05.31 > Improved method stack for dynamic motions.
  *                      > Added functions for compatibility with Battle Motions.
  *  v 1.22 - 2016.06.26 > Added functions for escape command.
+ *  v 1.23 - 2017.05.25 > Added functions for damage formula.
  * ===============================================================================
  */
 
@@ -282,11 +283,11 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
         }, "");
     };
 
-    VictorEngine.getAllElements = function(subject, item) {
-        if (item.damage.elementId < 0) {
+    VictorEngine.getAllElements = function(subject, action) {
+        if (action.item().damage.elementId < 0) {
             return subject.attackElements();
         } else {
-            return [item.damage.elementId];
+            return [action.item().damage.elementId];
         }
     };
 
@@ -304,6 +305,10 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
             };
             return r.concat(result);
         }, []);
+    };
+
+    VictorEngine.getDamageFormula = function(action) {
+		return action.item().damage.formula;
     };
 
     VictorEngine.getNumberValue = function(match, type, base) {
@@ -326,8 +331,8 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
 
     VictorEngine.getNumberValues = function(match, type) {
         var regex = new RegExp(type + '[ ]*:[ ]*((?:[+-.\\d]+[ ]*,?[ ]*)+)', 'gi');
-        var value = regex.exec(match)
-        var result = value ? value[1].match(/\d+/gi) : []
+        var value = regex.exec(match);
+        var result = value ? value[1].match(/\d+/gi) : [];
         return result.map(function(id) {
             return Number(id)
         });
@@ -335,8 +340,8 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
 
     VictorEngine.getStringValues = function(match, type) {
         var regex = new RegExp(type + '[ ]*:[ ]*((?:[\\w ]+[ ]*,?[ ]*)+)', 'gi');
-        var value = regex.exec(match)
-        var result = value ? value[1].match(/\d+/gi) : []
+        var value = regex.exec(match);
+        var result = value ? value[1].match(/\d+/gi) : [];
         return result.map(function(id) {
             return value[1].trim()
         });

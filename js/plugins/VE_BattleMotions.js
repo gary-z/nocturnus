@@ -7,7 +7,7 @@
  */
 
 var Imported = Imported || {};
-Imported['VE - Battle Motions'] = '1.03';
+Imported['VE - Battle Motions'] = '1.04';
 
 var VictorEngine = VictorEngine || {};
 VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
@@ -19,9 +19,10 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         VictorEngine.BattleMotions.loadDatabase.call(this);
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Basic Module', '1.21');
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Battler Graphic Setup');
-        PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Active Time Battle');
+		PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Active Time Battle');
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Retaliation Damage');
-        PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Skip Battle Log');
+        PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Cooperation Skills');
+		PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Skip Battle Log');
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - FollowUp Skills');
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Charge Actions');
         PluginManager.requiredPlugin.call(PluginManager, 'VE - Battle Motions', 'VE - Damage Popup');
@@ -36,11 +37,11 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
             msg += ' Go to http:// victorenginescripts.wordpress.com/ to download the plugin.';
             throw new Error(msg);
         } else if (Imported.YEP_BattleEngineCore) {
-            var msg = 'The plugin ' + name + " can't be used together with the";
+            var msg = 'The plugin ' + name + " does not work together with the";
             msg += ' plugin YEP Battle Engine Core.';
             throw new Error(msg);
         } else {
-            VictorEngine.BattleMotions.requiredPlugin.call(this, name, required, version)
+            VictorEngine.BattleMotions.requiredPlugin.call(this, name, required, version);
         };
     };
 
@@ -48,7 +49,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
 
 /*:
  * ==============================================================================
- * @plugindesc v1.03 - Setup motion sequences for actions.
+ * @plugindesc v1.04 - Setup motion sequences for actions.
  * @author Victor Sant
  *
  * @param Static Battler Move
@@ -126,14 +127,14 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  *
  * ==============================================================================
  *                 IMPORTANT!  IMPORTANT!  IMPORTANT!  IMPORTANT    
- *  If you change the sequence 'Execute' with the notetag <action sequence: execute>, 
- *  the action sequence 'Effect' will be not called automatically. You must add
- *  the motion 'action: all targets, effect' or call the motion 'effect' for the
- *  targets (for example, 'effect: all targets, 100%' on the action 'Execute'
- *  notetag (more details on the motions bellow). If you don't add the motion to
- *  call the effects on the 'Execute' action sequence, the action damage, states
- *  and buffs will be applied at the end of the execute, but no animation will 
- *  be displayed on the target.
+ *  If you change the sequence 'Execute' with the <action sequence: execute>
+ *  notetag, the action sequence 'Effect' will be not called automatically. You
+ *  must add the motion 'action: all targets, effect' or call the motion 'effect'
+ *  for the targets (for example, 'effect: all targets, 100%' on the action 
+ *  'Execute' notetag (more details on the motions bellow). If you don't add the
+ *  motion to call the effects on the 'Execute' action sequence, the action
+ *  damage, states and buffs will be applied at the end of the execute, but no
+ *  animation will be displayed on the target.
  * ==============================================================================
  *
  * ==============================================================================
@@ -605,13 +606,13 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  *  bgs: fade out, [duration]
  *  bgs: stop
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *  - This motion will control the BGS reproduction. The [type] will define
- *    what command will be given for the BGS. The value 'play' will allows you
- *    to play the BGS with filename equal the value [name]. The [volume], 
- *    [pitch] and [pan] will control the BGS reproduction. The values [fade in]
- *    and [fade out] will add a fade effect to the BGS being played, the fade
- *    will take a time in frames equal the value [duration]. The value 'stop'
- *    will make the BGS stops immediately.
+ *  This motion will control the BGS reproduction. The [type] will define
+ *  what command will be given for the BGS. The value 'play' will allows you
+ *  to play the BGS with filename equal the value [name]. The [volume], 
+ *  [pitch] and [pan] will control the BGS reproduction. The values [fade in]
+ *  and [fade out] will add a fade effect to the BGS being played, the fade
+ *  will take a time in frames equal the value [duration]. The value 'stop'
+ *  will make the BGS stops immediately.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  *  Ex.: bgs: play, Drips
  *       bgs: play, Clock, 70, 100, 0
@@ -745,12 +746,25 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  * ==============================================================================
  *
  * ==============================================================================
+ *  Element
+ * ------------------------------------------------------------------------------
+ *  element: X [, X...]
+ *  element: clear
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  This motion change the elements for the damage of the current action. The
+ *  value 'clear' will return the original 'elements for the current action.
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Ex.: element: 1
+ *       element: 2, 3, 4
+ *       element: clear
+ * ==============================================================================
+ *
+ * ==============================================================================
  *  Eval
  * ------------------------------------------------------------------------------
- * 
  *  eval: [code]
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *  - This motion will process a script code.
+ *  This motion will process a script code.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  *  Ex.: eval: $gameVariables.setValue(5, 10)
  *       eval: user.learnSkill(15)
@@ -846,6 +860,23 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  *    it's original height. This motion can be either the 
  *    'fall: [subjects], [height], [duration]' motion, or the motion
  *    'float: [subjects], [height], [duration]' with negative [height].
+ * ==============================================================================
+ *
+ * ==============================================================================
+ *  Formula
+ * ------------------------------------------------------------------------------
+ *  formula: [code]
+ *  formula: clear
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  This motion change the damage formula for the action. The value 'clear'
+ *  will return the clear for the current action.
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Ex.: formula: a.atk * 4 - b.def * 2
+ *       formula: 50 + a.mat * 3 - b.mdf * 2
+ *       formula: 50 + a.mat * 3 - b.mdf * 2
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  NOTES:
+ *  - The code works the same way as the damage formulas set on the database.
  * ==============================================================================
  *
  * ==============================================================================
@@ -1790,6 +1821,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  *     VE - Battler Graphic Setup
  *     VE - Active Time Battle
  *     VE - Retaliation Damage
+ *     VE - Cooperation Skills
  *     VE - Skip Battle Log
  *     VE - FollowUp Skills
  *     VE - Charge Actions
@@ -1808,6 +1840,9 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
  *                      > Fixed issue with equip icon display.
  *  v 1.03 - 2016.08.29 > Fixed issue with counter attacks.
  *                      > Fixed issue with events after evented battles.
+ *  v 1.04 - 2017.05.28 > Added element and formula motions for action sequences.
+ *                      > Fixed issue with performVictory for game troop.
+ *                      > Compatibility with Cooperation Skills
  * ==============================================================================
  */
 
@@ -1832,29 +1867,48 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
     VictorEngine.loadNotetagsValues = function(data, index) {
         VictorEngine.BattleMotions.loadNotetagsValues.call(this, data, index);
         if (this.objectSelection(index, ['actor', 'class', 'skill', 'item', 'weapon', 'enemy'])) {
-            VictorEngine.BattleMotions.loadNotes1(data);
+            VictorEngine.BattleMotions.loadNotes(data);
         }
     };
-    VictorEngine.BattleMotions.loadNotes1 = function(data) {
+	
+    VictorEngine.BattleMotions.getAllElements = VictorEngine.getAllElements;
+    VictorEngine.getAllElements = function(subject, action) {
+		if (action.customActionElements()) {
+			return action.customActionElements();
+		} else {
+			return VictorEngine.BattleMotions.getAllElements.call(this, subject, action);
+		}
+    };
+	
+    VictorEngine.BattleMotions.getDamageFormula = VictorEngine.getDamageFormula;
+    VictorEngine.getDamageFormula = function(action) {
+		if (action.customActionFormula()) {
+			return action.customActionFormula();
+		} else {
+			return VictorEngine.BattleMotions.getDamageFormula.call(this, action);
+		}
+    };
+	
+    VictorEngine.BattleMotions.loadNotes = function(data) {
         data.battleMotions = data.battleMotions || {};
-        this.processNotes1(data);
+        this.processNotes(data);
     };
 
-    VictorEngine.BattleMotions.processNotes1 = function(data) {
+    VictorEngine.BattleMotions.processNotes = function(data) {
         var match;
         var part1 = 'action sequence';
         var regex = VictorEngine.getNotesValues(part1 + '[ ]*:[ ]*([\\w ]+\\w)', part1);
         while (match = regex.exec(data.note)) {
-            this.processValues1(data, match);
+            this.processValues(data, match);
         };
     };
 
-    VictorEngine.BattleMotions.processValues1 = function(data, match) {
+    VictorEngine.BattleMotions.processValues = function(data, match) {
         var type = match[1].toLowerCase().trim();
         var value = match[2].trim();
         data.battleMotions[type] = value ? value : 'wait: subject, 1;';
     };
-
+	
     //=============================================================================
     // BattleManager
     //=============================================================================
@@ -2081,6 +2135,27 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
     // Game_Action
     //=============================================================================
 
+    /* Overwritten function */
+	Game_Action.prototype.evalDamageFormula = function(target) {
+		try {
+			var item = this.item();
+			var a = this.subject();
+			var b = target;
+			var v = $gameVariables._data;
+			var formula = VictorEngine.getDamageFormula(this);
+			var sign = ([3, 4].contains(item.damage.type) ? -1 : 1);
+			return (Math.max(eval(formula), 0) * sign) || 0;
+		} catch (e) {
+			return 0;
+		}
+	};
+	
+    /* Overwritten function */
+    Game_Action.prototype.calcElementRate = function(target) {
+        elements = VictorEngine.getAllElements(this.subject(), this);
+        return this.elementsMaxRate(target, elements);
+    };
+
     VictorEngine.BattleMotions.makeTargets = Game_Action.prototype.makeTargets;
     Game_Action.prototype.makeTargets = function() {
         if (this._counterActionTargets) {
@@ -2105,7 +2180,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
             return VictorEngine.BattleMotions.itemCnt.call(this, target);
         };
     };
-
+	
     Game_Action.prototype.isStepForward = function() {
         return this.isForFriend() || this.isForUser() || this.isMagical() || this.isRanged();
     };
@@ -2146,6 +2221,32 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
 
     Game_Action.prototype.setCounterActionTargets = function(targets) {
         this._counterActionTargets = targets.clone();
+    };
+	
+    Game_Action.prototype.setActionElements = function(elements) {
+        this._customActionElements = elements.map(function(id) {
+			return Number(id);
+		});
+    };
+	
+    Game_Action.prototype.clearActionElements = function() {
+        this._customActionElements = null 
+    };
+
+    Game_Action.prototype.setActionFormula = function(formula) {
+        this._customActionFormula = formula;
+    };
+	
+    Game_Action.prototype.clearActionFormula = function() {
+        this._customActionFormula = null 
+    };
+	
+    Game_Action.prototype.customActionElements = function() {
+        return this._customActionElements;
+    };
+	
+    Game_Action.prototype.customActionFormula = function() {
+        return this._customActionFormula;
     };
 
     //=============================================================================
@@ -2877,12 +2978,6 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         return this.enemy().battleMotions[name];
     };
 
-    Game_Enemy.prototype.performVictory = function() {
-        this.members().forEach(function(enemy) {
-            enemy.performVictory();
-        });
-    };
-
     //=============================================================================
     // Game_Enemy
     //=============================================================================
@@ -2896,6 +2991,16 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
     Game_Party.prototype.performEscapeFail = function() {
         this.members().forEach(function(actor) {
             actor.performEscapeFail();
+        });
+    };
+
+    //=============================================================================
+    // Game_Troop
+    //=============================================================================
+
+    Game_Troop.prototype.performVictory = function() {
+        this.members().forEach(function(enemy) {
+            enemy.performVictory();
         });
     };
 
@@ -4009,7 +4114,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         this.setupCurrentAction(subject, action, targets);
         var item = action.item();
         var index = VictorEngine.battlerIndex(subject);
-        var current = this._currentAction[index];
+        var current = this._currentAction;
         this.push('performActionStart', subject, current.action);
         this.displayAction(subject, item);
         this.push('performAction', subject, current.action, current.targets);
@@ -4037,7 +4142,6 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         this._conditionMet = [];
         this._skipUntilElse = [];
 		this._actionTargets = [];
-        this._currentAction = [];
 		this._stackWaitSubjects = [];
     };
 
@@ -4074,7 +4178,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
     Window_BattleLog.prototype.performActionStart = function(subject, action) {
         VictorEngine.BattleMotions.performActionStart.call(this, subject, action);
         var index = VictorEngine.battlerIndex(subject);
-        var current = this._currentAction[index];
+        var current = this._currentAction;
         this.insert(index, 'performMotion', 'movement', subject, action, current.targets);
         this.insert(index, 'performMotion', 'prepare', subject, action, current.targets);
     };
@@ -4083,7 +4187,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
     Window_BattleLog.prototype.performActionEnd = function(subject) {
         VictorEngine.BattleMotions.performActionEnd.call(this, subject);
         var index = VictorEngine.battlerIndex(subject);
-        var current = this._currentAction[index];
+        var current = this._currentAction;
         this.insert(index, 'performMotion', 'clear', subject, current.action, current.targets);
         this.insert(index, 'performMotion', 'return', subject, current.action, current.targets);
         this.insert(index, 'performMotion', 'finish', subject, current.action, current.targets);
@@ -4124,19 +4228,18 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         var motion = subject.updateActionMontion();
         if (motion) {
             var index = VictorEngine.battlerIndex(subject);
-            var current = this._currentAction[index];
+            var current = this._currentAction;
             var action = current ? current.action : null;
             this.performMotion(motion.name, subject, action, [], null, motion.push);
         }
     };
 
     Window_BattleLog.prototype.setupCurrentAction = function(subject, action, targets) {
-        var index = VictorEngine.battlerIndex(subject);
         var unique = this.uniqueTargets(targets);
         var targets = unique.map(function(object) {
-            return object.target
+            return object.target;
         });
-        this._currentAction[index] = {
+        this._currentAction = {
             action: action,
             targets: targets,
             unique: unique
@@ -4502,7 +4605,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
 
     Window_BattleLog.prototype.processMotionClearAction = function(motion, index, user, action, targets, target) {
         user.endBattleMotion();
-        this._currentAction[index] = null;
+        this._currentAction = null;
         this._actionTargets[index] = null;
     };
 
@@ -4574,7 +4677,7 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
         } else {
             var value = 1;
         }
-        var current = this._currentAction[index];
+        var current = this._currentAction;
         var subjects = this.getMotionSubjects(list[0], user, targets, target, index);
         for (var i = 0; i < subjects.length; i++) {
             if (current) {
@@ -4587,6 +4690,29 @@ VictorEngine.BattleMotions = VictorEngine.BattleMotions || {};
                 }
             }
         };
+    };
+
+    Window_BattleLog.prototype.processMotionElement = function(motion, index, user, action, targets, target) {
+        var list = motion.split(',');
+		if (this._currentAction && this._currentAction.action) {
+			var action = this._currentAction.action;
+			if (list[0].toLowerCase().trim() === 'clear') {
+				action.clearActionElements();
+			} else {
+				action.setActionElements(list);
+			}
+		}
+    };
+
+    Window_BattleLog.prototype.processMotionFormula = function(motion, index, user, action, targets, target) {
+		if (this._currentAction && this._currentAction.action) {
+			var action = this._currentAction.action;
+			if (motion.trim().toLowerCase().trim() === 'clear') {
+				action.clearActionFormula();
+			} else {
+				action.setActionFormula(motion);
+			}
+		}
     };
 
     Window_BattleLog.prototype.processMotionWait = function(motion, index, user, action, targets, target) {

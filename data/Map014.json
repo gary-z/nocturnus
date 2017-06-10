@@ -8452,7 +8452,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknownFeeling a bit out of your element,\\. boy?\\|\\^"
+                                "\\unknown\\lspi[50]Feeling a bit out of your element,\\. boy?\\|\\^"
                             ]
                         },
                         {
@@ -8764,7 +8764,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknownHa\\.ha\\.ha!\\.\\.\\. You have spunk,\\.\\. I'll give you that.\\|\\^"
+                                "\\unknown\\lspi[50]Ha\\.ha\\.ha!\\.\\.\\. You have spunk,\\.\\. I'll give you that.\\|\\^"
                             ]
                         },
                         {
@@ -8872,7 +8872,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknownAh\\. ah\\. ah\\..\\..\\.. Too slow.\\|\\^"
+                                "\\unknown\\lspi[50]Ah\\. ah\\. ah\\..\\..\\.. Too slow.\\|\\^"
                             ]
                         },
                         {
@@ -9865,7 +9865,59 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "SmartPath 5 18 29"
+                                "SmartPath 5 cancel"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 6 cancel"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 7 cancel"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 8 cancel"
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": true,
+                                    "skippable": true,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -9984,10 +10036,34 @@
                             ]
                         },
                         {
-                            "code": 356,
+                            "code": 205,
                             "indent": 0,
                             "parameters": [
-                                "SmartPath 6 17 29"
+                                6,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": true,
+                                    "skippable": true,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -10100,10 +10176,34 @@
                             ]
                         },
                         {
-                            "code": 356,
+                            "code": 205,
                             "indent": 0,
                             "parameters": [
-                                "SmartPath 7 19 29"
+                                7,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": true,
+                                    "skippable": true,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -10171,17 +10271,41 @@
                             ]
                         },
                         {
-                            "code": 356,
-                            "indent": 0,
-                            "parameters": [
-                                "SmartPath 8 18 29"
-                            ]
-                        },
-                        {
                             "code": 242,
                             "indent": 0,
                             "parameters": [
                                 2
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                8,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": true,
+                                    "skippable": true,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -10343,8 +10467,8 @@
                             "code": 101,
                             "indent": 1,
                             "parameters": [
-                                "MainChar",
-                                7,
+                                "LyonFaceset",
+                                0,
                                 0,
                                 2
                             ]
@@ -10353,18 +10477,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\lspi[70]\\n<Ringleader>Wow, you won. Here is a Bandit Scythe. Now die.\\| THERE SHOULD BE A CUTSCENE HERE!"
-                            ]
-                        },
-                        {
-                            "code": 127,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                0,
-                                0,
-                                1,
-                                false
+                                "\\lyonSomething's not right here\\..\\..\\..\\."
                             ]
                         },
                         {
@@ -10381,8 +10494,8 @@
                             "code": 101,
                             "indent": 1,
                             "parameters": [
-                                "MainChar",
-                                7,
+                                "LyonFaceset",
+                                0,
                                 0,
                                 2
                             ]
@@ -10391,7 +10504,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\lspi[70]\\n<Ringleader>Wow, you lost. Now die.\\| THERE SHOULD BE A CUTSCENE HERE!"
+                                "\\lyonHow could I\\..\\..\\..\\."
                             ]
                         },
                         {
@@ -10405,45 +10518,690 @@
                             "parameters": []
                         },
                         {
-                            "code": 129,
+                            "code": 101,
                             "indent": 0,
                             "parameters": [
-                                1,
-                                1,
-                                false
+                                "SF_People2",
+                                7,
+                                0,
+                                2
                             ]
                         },
                         {
-                            "code": 129,
+                            "code": 401,
                             "indent": 0,
                             "parameters": [
-                                19,
-                                0,
-                                false
+                                "\\n<Bandit Leader>\\lspi[50]I see you've noticed."
                             ]
+                        },
+                        {
+                            "code": 241,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Theme5",
+                                    "pan": 0,
+                                    "pitch": 100,
+                                    "volume": 90
+                                }
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]... noticed that you are nothing but an insect beneath my boot."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonHe's\\..\\..\\.. not even broken a sweat.\\| How could\\.-\\.-\\^"
+                            ]
+                        },
+                        {
+                            "code": 224,
+                            "indent": 0,
+                            "parameters": [
+                                [
+                                    170,
+                                    0,
+                                    0,
+                                    204
+                                ],
+                                1,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 32,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 30,
+                                            "indent": null,
+                                            "parameters": [
+                                                5
+                                            ]
+                                        },
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                6
+                                            ]
+                                        },
+                                        {
+                                            "code": 13,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 13,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 13,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 13,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": true,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 32,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 30,
+                                    "indent": null,
+                                    "parameters": [
+                                        5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        6
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 13,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 13,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 13,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 13,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Earth2",
+                                    "pan": 0,
+                                    "pitch": 100,
+                                    "volume": 90
+                                }
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonGyah!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]I must say\\., this has been fun."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]I have not seen one with such an interesting combat style before."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]A shame you had no chance to develop these skills of yours.\\. Perhaps you would have been a worthy opponent."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonAm I\\..\\..\\.. to fail again?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]Sorry?\\. You are going to have to speak up."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI swore on the names of my parents I would not let this town fall\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]Aw.\\.\\. Well, isn't that sweet?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI'm\\..\\..\\.. sorry\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 242,
+                            "indent": 0,
+                            "parameters": [
+                                2
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]Oh well.\\.\\.\\. Someone needs to clean up this mess\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                3,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": 0,
+                                            "parameters": [
+                                                1
+                                            ]
+                                        },
+                                        {
+                                            "code": 4,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 4,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 4,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 4,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": true,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": 0,
+                                    "parameters": [
+                                        1
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 4,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 4,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 4,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 4,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Darkness3",
+                                    "pan": 0,
+                                    "pitch": 80,
+                                    "volume": 55
+                                }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]Huh?"
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Darkness3",
+                                    "pan": 0,
+                                    "pitch": 80,
+                                    "volume": 55
+                                }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "SF_People2",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\n<Bandit Leader>\\lspi[50]His hair is\\..\\..\\..  Wait\\..\\..\\.. Could he be?"
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Monster10",
+                                    "pan": 0,
+                                    "pitch": 100,
+                                    "volume": 90
+                                }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Save game?"
+                            ]
+                        },
+                        {
+                            "code": 102,
+                            "indent": 0,
+                            "parameters": [
+                                [
+                                    "Yes",
+                                    "No"
+                                ],
+                                1,
+                                0,
+                                1,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "code": 352,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "No"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 404,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
                         },
                         {
                             "code": 201,
                             "indent": 0,
                             "parameters": [
                                 0,
-                                17,
-                                28,
-                                4,
+                                15,
+                                19,
+                                15,
                                 0,
                                 0
-                            ]
-                        },
-                        {
-                            "code": 132,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Pierce your Enemy!",
-                                    "pan": 0,
-                                    "pitch": 100,
-                                    "volume": 90
-                                }
                             ]
                         },
                         {
@@ -11081,7 +11839,7 @@
                         "skippable": false,
                         "wait": false
                     },
-                    "moveSpeed": 6,
+                    "moveSpeed": 3,
                     "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": true,
@@ -11164,7 +11922,7 @@
                         "skippable": false,
                         "wait": false
                     },
-                    "moveSpeed": 5,
+                    "moveSpeed": 6,
                     "moveType": 0,
                     "priorityType": 1,
                     "stepAnime": true,

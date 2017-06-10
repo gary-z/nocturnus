@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 14,
+    "editMapId": 15,
     "elements": [
         "",
         "Physical",
@@ -327,9 +327,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 5,
-    "startX": 8,
-    "startY": 6,
+    "startMapId": 15,
+    "startX": 17,
+    "startY": 15,
     "switches": [
         "",
         "End Autorun1",
@@ -544,13 +544,13 @@
         {
             "actorId": 1,
             "equips": [
-                2,
-                45,
                 1,
-                99,
+                0,
+                0,
+                0,
                 0
             ],
-            "level": 3
+            "level": 1
         },
         {
             "actorId": 0,
@@ -586,7 +586,7 @@
             "level": 1
         }
     ],
-    "testTroopId": 5,
+    "testTroopId": 1,
     "title1Name": "Tower2",
     "title2Name": "Medieval",
     "titleBgm": {
@@ -698,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 96926786,
+    "versionId": 10467848,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
