@@ -8,10 +8,11 @@ Imported.YEP_ExtraParamFormula = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.XParam = Yanfly.XParam || {};
+Yanfly.XParam.version = 1.03;
 
 //=============================================================================
  /*:
- * @plugindesc v1.02 Control the formulas of the extra parameters for
+ * @plugindesc v1.03a Control the formulas of the extra parameters for
  * HIT, EVA, CRI, CEV, MEV, MRF, CNT, HRG, MRG, and TRG.
  * @author Yanfly Engine Plugins
  *
@@ -56,12 +57,12 @@ Yanfly.XParam = Yanfly.XParam || {};
  * @default (base + plus) * rate + flat
  *
  * @param MRG Formula
- * @desc The formula used to determine HRG: MP% Regen
+ * @desc The formula used to determine MRG: MP% Regen
  * This is a formula.
  * @default (base + plus) * rate + flat
  *
  * @param TRG Formula
- * @desc The formula used to determine HRG: TP% Regen
+ * @desc The formula used to determine TRG: Target Rate
  * This is a formula.
  * @default (base + plus) * rate + flat
  *
@@ -358,6 +359,10 @@ Yanfly.XParam = Yanfly.XParam || {};
  * Changelog
  * ============================================================================
  *
+ * Version 1.03a:
+ * - Lunatic Mode fail safe added.
+ * - Documentation update to fix typos.
+ *
  * Version 1.02:
  * - Fixed an issue with the battler.setXParam functions that made them take 
  * the wrong value due caching issues.
@@ -514,7 +519,13 @@ Game_BattlerBase.prototype.xparam = function(id) {
     var subject = this;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    this._xparam[id] = eval(Yanfly.Param.XParamFormula[id]);
+    var code = Yanfly.Param.XParamFormula[id];
+    try {
+      this._xparam[id] = eval(code);
+    } catch (e) {
+      this._xparam[id] = 0;
+      Yanfly.Util.displayError(e, code, 'EXTRA PARAM FORMULA ERROR');
+    }
     return this._xparam[id];
 };
 
@@ -811,6 +822,23 @@ Game_Enemy.prototype.xparamFlat = function(id) {
     var value = Game_Battler.prototype.xparamFlat.call(this, id);
     value += this.enemy().flatXParams[id];
     return value;
+};
+
+//=============================================================================
+// Utilities
+//=============================================================================
+
+Yanfly.Util = Yanfly.Util || {};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

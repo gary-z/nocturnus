@@ -8,10 +8,11 @@ Imported.YEP_SelfSwVar = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.SSV = Yanfly.SSV || {};
+Yanfly.SSV.version = 1.02;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 Self Switches and Self Variables functionality
+ * @plugindesc v1.02a Self Switches and Self Variables functionality
  * without the need for plugin commands or script calls.
  * @author Yanfly Engine Plugins
  *
@@ -69,6 +70,12 @@ Yanfly.SSV = Yanfly.SSV || {};
  *     - Change Enemy HP
  *     - Change Enemy MP
  *     - Change Enemy TP
+ *     - Transfer Player
+ *     - Set Vehicle Location
+ *     - Set Event Location
+ *     - Show Picture
+ *     - Move Picture
+ *     - Get Location Info
  *
  * Note that not all plugins that use variables will be necessarily compatible
  * with the custom made Self Switches and Self Variables. Of the YEP library,
@@ -112,12 +119,12 @@ Yanfly.SSV = Yanfly.SSV || {};
  *
  * Script Call:
  *
- *   this.getSelfSwitchValue(mapId, eventId, switchId)
+ *   this.setSelfSwitchValue(mapId, eventId, switchId)
  *   - Replace mapId with the map ID the event exists on. Replace eventId with
  *   the ID of the event. And replace the switchId with the ID of the switch.
  *   This will get the true/false value of that event's self switch.
  *
- *   this.getSelfVariableValue(mapId, eventId, varId)
+ *   this.setSelfVariableValue(mapId, eventId, varId)
  *   - Replace mapId with the map ID the event exists on. Replace eventId with
  *   the ID of the event. And replace the varId with the ID of the variable.
  *   This will get the value of that event's self variable.
@@ -128,10 +135,29 @@ Yanfly.SSV = Yanfly.SSV || {};
  *   the ID of the event. And replace the switchId with the ID of the switch.
  *   This will set that self switch to true or false.
  *
- *   this.getSelfVariableValue(mapId, eventId, varId, value)
+ *   this.setSelfVariableValue(mapId, eventId, varId, value)
  *   - Replace mapId with the map ID the event exists on. Replace eventId with
  *   the ID of the event. And replace the varId with the ID of the variable.
  *   This will set that self variable to the value inserted.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.02a:
+ * - Lunatic Mode fail safes added.
+ * - Documentation updated for the script calls. Previously used incorrect
+ * function names. Function names should now be fixed.
+ *
+ * Version 1.01:
+ * - Fixed a conflict that made self variables not work properly with the Input
+ * Number event, select item event while a parallel process has a variable
+ * being changed in the background.
+ * - Added Self-Variable support for Transfer Player, Set Vehicle Location, Set
+ * Event Location, Show Picture, Move Picture, and Get Location Info events.
+ *
+ * Version 1.00:
+ * - Finished Plugin!
  */
 //=============================================================================
 
@@ -163,6 +189,20 @@ Game_Temp.prototype.setSelfSwVarEvent = function(mapId, eventId) {
 
 Game_Temp.prototype.clearSelfSwVarEvent = function() {
   this._selfSwVarEvent = undefined;
+};
+
+Game_Temp.prototype.getSelfSwVarEvBrdge = function() {
+  return this._selfSwVarEvBridge;
+};
+
+Game_Temp.prototype.setSelfSwVarEvBridge = function(mapId, eventId) {
+  this.setSelfSwVarEvent(mapId, eventId);
+  this._selfSwVarEvBridge = [mapId, eventId];
+};
+
+Game_Temp.prototype.clearSelfSwVarEvBridge = function() {
+  this._selfSwVarEvent = this._selfSwVarEvBridge;
+  this._selfSwVarEvBridge = undefined;
 };
 
 Game_Temp.prototype.getSelfSwVarEventOneTimeClear = function() {
@@ -361,6 +401,60 @@ Game_Interpreter.prototype.command122 = function() {
   return true;
 };
 
+// Transfer Player
+Yanfly.SSV.Game_Interpreter_command201 = Game_Interpreter.prototype.command201;
+Game_Interpreter.prototype.command201 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command201.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return false;
+};
+
+// Set Vehicle Location
+Yanfly.SSV.Game_Interpreter_command202 = Game_Interpreter.prototype.command202;
+Game_Interpreter.prototype.command202 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command202.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return true;
+};
+
+// Set Event Location
+Yanfly.SSV.Game_Interpreter_command203 = Game_Interpreter.prototype.command203;
+Game_Interpreter.prototype.command203 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command203.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return true;
+};
+
+// Show Picture
+Yanfly.SSV.Game_Interpreter_command231 = Game_Interpreter.prototype.command231;
+Game_Interpreter.prototype.command231 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command231.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return true;
+};
+
+// Move Picture
+Yanfly.SSV.Game_Interpreter_command232 = Game_Interpreter.prototype.command232;
+Game_Interpreter.prototype.command232 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command232.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return true;
+};
+
+// Get Location Info
+Yanfly.SSV.Game_Interpreter_command285 = Game_Interpreter.prototype.command285;
+Game_Interpreter.prototype.command285 = function() {
+  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  Yanfly.SSV.Game_Interpreter_command285.call(this);
+  $gameTemp.clearSelfSwVarEvent();
+  return true;
+};
+
 Yanfly.SSV.Game_Interpreter_operateValue =
   Game_Interpreter.prototype.operateValue;
 Game_Interpreter.prototype.operateValue = function(op1, type, op2) {
@@ -373,14 +467,14 @@ Game_Interpreter.prototype.operateValue = function(op1, type, op2) {
 Yanfly.SSV.Game_Interpreter_setupItemChoice =
   Game_Interpreter.prototype.setupItemChoice;
 Game_Interpreter.prototype.setupItemChoice = function(params) {
-  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  $gameTemp.setSelfSwVarEvBridge(this._mapId, this._eventId);
   Yanfly.SSV.Game_Interpreter_setupItemChoice.call(this, params);
 };
 
 Yanfly.SSV.Game_Interpreter_setupNumInput =
   Game_Interpreter.prototype.setupNumInput;
 Game_Interpreter.prototype.setupNumInput = function(params) {
-  $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+  $gameTemp.setSelfSwVarEvBridge(this._mapId, this._eventId);
   Yanfly.SSV.Game_Interpreter_setupNumInput.call(this, params);
 };
 
@@ -391,7 +485,7 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
   // Compatibility Update
   if (command === 'MapSelectSkill') {
     $gameTemp.setSelfSwVarEventOneTimeClear(true);
-    $gameTemp.setSelfSwVarEvent(this._mapId, this._eventId);
+    $gameTemp.setSelfSwVarEvBridge(this._mapId, this._eventId);
   // SelfSwitch
   } else if (command === 'SelfSwitch') {
     var line = this.argsToString(args);
@@ -430,7 +524,12 @@ Game_Interpreter.prototype.adjustSelfSwitch = function(line) {
   if (!DataManager.isSelfSwitch(switchId)) return;
   var key = [mapId, eventId, 'SELF SWITCH ' + switchId];
   var value = $gameSelfSwitches.value(key);
-  value = eval(code);
+  try {
+    value = eval(code);
+  } catch (e) {
+    value = 0;
+    Yanfly.Util.displayError(e, code, 'ADJUST SELF SWITCH SCRIPT ERROR');
+  }
   $gameSelfSwitches.setValue(key, value);
 };
 
@@ -452,7 +551,12 @@ Game_Interpreter.prototype.adjustSelfVariable = function(line) {
   if (!DataManager.isSelfVariable(varId)) return;
   var key = [mapId, eventId, 'SELF VARIABLE ' + varId];
   var value = $gameSelfSwitches.value(key);
-  value = eval(code);
+  try {
+    value = eval(code);
+  } catch (e) {
+    value = 0;
+    Yanfly.Util.displayError(e, code, 'ADJUST SELF VARIABLE SCRIPT ERROR');
+  }
   $gameSelfSwitches.setValue(key, value);
 };
 
@@ -496,6 +600,7 @@ Window_Message.prototype.startMessage = function() {
 Yanfly.SSV.Window_NumberInput_processOk =
   Window_NumberInput.prototype.processOk;
 Window_NumberInput.prototype.processOk = function() {
+  $gameTemp.clearSelfSwVarEvBridge();
   Yanfly.SSV.Window_NumberInput_processOk.call(this);
   $gameTemp.clearSelfSwVarEvent();
 };
@@ -506,8 +611,26 @@ Window_NumberInput.prototype.processOk = function() {
 
 Yanfly.SSV.Window_EventItem_onOk = Window_EventItem.prototype.onOk;
 Window_EventItem.prototype.onOk = function() {
+  $gameTemp.clearSelfSwVarEvBridge();
   Yanfly.SSV.Window_EventItem_onOk.call(this);
   $gameTemp.clearSelfSwVarEvent();
+};
+
+//=============================================================================
+// Utilities
+//=============================================================================
+
+Yanfly.Util = Yanfly.Util || {};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

@@ -1,0 +1,22 @@
+<action sequence: movement>
+</action sequence>
+<action sequence: execute>
+  motion: user, magics
+  move: user, to target, 5, front
+  jump: user, 50, movement
+  wait: user, move
+  motion: user, attack
+  animation: all targets, action
+  effect: target, 100%
+</action sequence>
+<action sequence: return>
+  motion: user, evade, once
+  move: user, backward, 10, 250
+  jump: user, 40, movement
+  wait: user, jump
+  direction: user, home
+  motion: user, walk, true 
+  move: user, to home, 15 
+  wait: user, move
+  direction: user, targets
+</action sequence>

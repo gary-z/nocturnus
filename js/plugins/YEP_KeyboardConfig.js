@@ -877,7 +877,7 @@ Window_KeyAction.prototype.initialize = function() {
 	this.deactivate();
 };
 
-Window_Command.prototype.windowWidth = function() {
+Window_KeyAction.prototype.windowWidth = function() {
     return Graphics.boxWidth / 2;
 };
 

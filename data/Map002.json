@@ -1,8 +1,8 @@
 {
     "autoplayBgm": true,
     "autoplayBgs": true,
-    "battleback1Name": "",
-    "battleback2Name": "",
+    "battleback1Name": "Meadow",
+    "battleback2Name": "Sky",
     "bgm": {
         "name": "",
         "pan": 0,
@@ -5206,51 +5206,6 @@
                             ]
                         },
                         {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 39,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 37,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 39,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 37,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
                             "code": 203,
                             "indent": 0,
                             "parameters": [
@@ -5701,7 +5656,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\msgevent[17]\\lspi[120]Those people are way too co-ordinated to be ordinary bandits."
+                                "\\unknown\\lspi[120]Those people are way too co-ordinated to be ordinary bandits."
                             ]
                         },
                         {
@@ -5718,7 +5673,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17]I'm not sure I can stand up to them alone.\\..\\.."
+                                "\\unknown\\lspi[120]I'm not sure I can stand up to them alone.\\..\\.."
                             ]
                         },
                         {
@@ -5787,7 +5742,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\msgevent[17]\\lspi[120]This nauseating feeling.\\..\\..\\. Wait, I've felt this before."
+                                "\\unknown\\lspi[120]This nauseating feeling.\\..\\..\\. Wait, I've felt this before."
                             ]
                         },
                         {
@@ -5804,7 +5759,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17]It's the same as that day ten years ago!"
+                                "\\unknown\\lspi[120]It's the same as ten years ago!"
                             ]
                         },
                         {
@@ -5821,7 +5776,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17]No.\\..\\..\\. Why does it have to be now!? Mom,\\. dad,\\. please.\\..\\.."
+                                "\\unknown\\lspi[120]No.\\..\\..\\. Why does it have to be now!? Mom,\\. dad,\\. please.\\..\\.."
                             ]
                         },
                         {
@@ -5838,7 +5793,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\msgevent[18]What's wrong,\\. girl?"
+                                "\\unknownWhat's wrong,\\. girl?"
                             ]
                         },
                         {
@@ -5886,7 +5841,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17]Who's there?"
+                                "\\unknown\\lspi[120]Who's there?"
                             ]
                         },
                         {
@@ -6102,7 +6057,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]You got a pretty face,\\. the kind that can easily sell for thousands."
+                                "\\n<Greedy Bandit>You got a pretty face,\\. the kind that can easily sell for thousands."
                             ]
                         },
                         {
@@ -6119,7 +6074,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]Now hold still, you'll depreciate if you get hurt."
+                                "\\n<Greedy Bandit>Now hold still, you'll depreciate if you get hurt."
                             ]
                         },
                         {
@@ -6136,7 +6091,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17](Oh no,\\. I can't shake that feeling earlier.\\.\\. There's no way I can deal with him right now.)"
+                                "\\unknown\\lspi[120](Oh no,\\. I can't shake that feeling.\\.\\. There's no way I can deal with him right now. I can't\\..\\..\\.. focus.)"
                             ]
                         },
                         {
@@ -6153,7 +6108,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\lspi[120]\\msgevent[17]S-\\.stay back!\\.\\^"
+                                "\\unknown\\lspi[120]S-\\.stay back!\\.\\^"
                             ]
                         },
                         {
@@ -6308,7 +6263,7 @@
                             "indent": 0,
                             "parameters": [
                                 "",
-                                0,
+                                3,
                                 0,
                                 2
                             ]
@@ -6317,7 +6272,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\Lyon\\unknown\\msgevent[19]A slave trading bandit huh?\\.\\. Is looting not enough for you people?"
+                                "\\Lyon\\unknownA slave trading bandit,\\. huh?\\.\\. Is looting not enough for you people?"
                             ]
                         },
                         {
@@ -6363,6 +6318,18 @@
                                             "indent": null
                                         },
                                         {
+                                            "code": 44,
+                                            "indent": null,
+                                            "parameters": [
+                                                {
+                                                    "name": "Wind1",
+                                                    "pan": 0,
+                                                    "pitch": 150,
+                                                    "volume": 25
+                                                }
+                                            ]
+                                        },
+                                        {
                                             "code": 14,
                                             "indent": null,
                                             "parameters": [
@@ -6395,6 +6362,24 @@
                             "indent": 0,
                             "parameters": [
                                 {
+                                    "code": 44,
+                                    "indent": null,
+                                    "parameters": [
+                                        {
+                                            "name": "Wind1",
+                                            "pan": 0,
+                                            "pitch": 150,
+                                            "volume": 25
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
                                     "code": 14,
                                     "indent": null,
                                     "parameters": [
@@ -6418,7 +6403,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]What can I say?\\.\\. Times are tough and the money's good."
+                                "\\n<Greedy Bandit>What can I say?\\.\\. Times are tough and the money's good."
                             ]
                         },
                         {
@@ -6435,7 +6420,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]There's no demand for meddling brats,\\. so I'll leave you to my friends."
+                                "\\n<Greedy Bandit>There's no demand for meddling brats,\\. so I'll leave you to my friends."
                             ]
                         },
                         {
@@ -6448,6 +6433,18 @@
                                         {
                                             "code": 40,
                                             "indent": null
+                                        },
+                                        {
+                                            "code": 44,
+                                            "indent": 0,
+                                            "parameters": [
+                                                {
+                                                    "name": "Wind1",
+                                                    "pan": 0,
+                                                    "pitch": 150,
+                                                    "volume": 25
+                                                }
+                                            ]
                                         },
                                         {
                                             "code": 14,
@@ -6478,6 +6475,24 @@
                                 {
                                     "code": 40,
                                     "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 44,
+                                    "indent": 0,
+                                    "parameters": [
+                                        {
+                                            "name": "Wind1",
+                                            "pan": 0,
+                                            "pitch": 150,
+                                            "volume": 25
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -6519,7 +6534,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Simple Bandit>\\msgevent[20]You called, Guy?"
+                                "\\n<Simple Bandit>You called?"
                             ]
                         },
                         {
@@ -6532,6 +6547,18 @@
                                         {
                                             "code": 40,
                                             "indent": null
+                                        },
+                                        {
+                                            "code": 44,
+                                            "indent": 0,
+                                            "parameters": [
+                                                {
+                                                    "name": "Wind1",
+                                                    "pan": 0,
+                                                    "pitch": 150,
+                                                    "volume": 25
+                                                }
+                                            ]
                                         },
                                         {
                                             "code": 14,
@@ -6562,6 +6589,24 @@
                                 {
                                     "code": 40,
                                     "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 44,
+                                    "indent": 0,
+                                    "parameters": [
+                                        {
+                                            "name": "Wind1",
+                                            "pan": 0,
+                                            "pitch": 150,
+                                            "volume": 25
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -6634,7 +6679,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Preaching Bandit>\\msgevent[21]Hey kid,\\. the world ain't all sunshine and rainbows OK?"
+                                "\\n<Preaching Bandit>Hey kid,\\. the world ain't all sunshine and rainbows OK?"
                             ]
                         },
                         {
@@ -6651,7 +6696,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Preaching Bandit>\\msgevent[21]Take your morals and ideals with you,\\. TO THE GRAVE!"
+                                "\\n<Preaching Bandit>Take your morals and ideals with you\\| to the afterlife!"
                             ]
                         },
                         {
@@ -6669,35 +6714,31 @@
                                             ]
                                         },
                                         {
-                                            "code": 3,
+                                            "code": 44,
+                                            "indent": null,
+                                            "parameters": [
+                                                {
+                                                    "name": "Run",
+                                                    "pan": 0,
+                                                    "pitch": 80,
+                                                    "volume": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "code": 8,
                                             "indent": null
                                         },
                                         {
-                                            "code": 3,
+                                            "code": 8,
                                             "indent": null
                                         },
                                         {
-                                            "code": 3,
+                                            "code": 8,
                                             "indent": null
                                         },
                                         {
-                                            "code": 3,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 4,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 4,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 4,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 4,
+                                            "code": 8,
                                             "indent": null
                                         },
                                         {
@@ -6732,7 +6773,25 @@
                             "indent": 0,
                             "parameters": [
                                 {
-                                    "code": 3,
+                                    "code": 44,
+                                    "indent": null,
+                                    "parameters": [
+                                        {
+                                            "name": "Run",
+                                            "pan": 0,
+                                            "pitch": 80,
+                                            "volume": 20
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 8,
                                     "indent": null
                                 }
                             ]
@@ -6742,7 +6801,7 @@
                             "indent": 0,
                             "parameters": [
                                 {
-                                    "code": 3,
+                                    "code": 8,
                                     "indent": null
                                 }
                             ]
@@ -6752,7 +6811,7 @@
                             "indent": 0,
                             "parameters": [
                                 {
-                                    "code": 3,
+                                    "code": 8,
                                     "indent": null
                                 }
                             ]
@@ -6762,47 +6821,7 @@
                             "indent": 0,
                             "parameters": [
                                 {
-                                    "code": 3,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 4,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 4,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 4,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 4,
+                                    "code": 8,
                                     "indent": null
                                 }
                             ]
@@ -6813,6 +6832,37 @@
                             "parameters": [
                                 {
                                     "code": 16,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                18,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 18,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": false
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 18,
                                     "indent": null
                                 }
                             ]
@@ -7064,7 +7114,7 @@
                             "indent": 0,
                             "parameters": [
                                 "LyonFaceset",
-                                0,
+                                5,
                                 0,
                                 2
                             ]
@@ -7073,7 +7123,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\lyon\\unknown\\msgevent[19]So slow.\\.\\. What's wrong old man?"
+                                "\\lyon\\unknownSo slow.\\.\\. What's wrong, geezer?"
                             ]
                         },
                         {
@@ -7090,7 +7140,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Simple Bandit>\\msgevent[20]What did you call me!?"
+                                "\\n<Simple Bandit>What did you call me!?"
                             ]
                         },
                         {
@@ -7265,7 +7315,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]Buddy!\\.\\. NO!"
+                                "\\n<Greedy Bandit>What?!\\.\\. That idiot!"
                             ]
                         },
                         {
@@ -7400,7 +7450,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Preaching Bandit>\\msgevent[21]Y-\\.you bring him back RIGHT NOW!"
+                                "\\n<Preaching Bandit>I'll show you how it's done!\\.\\."
                             ]
                         },
                         {
@@ -7562,6 +7612,15 @@
                             ]
                         },
                         {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                18,
+                                8,
+                                true
+                            ]
+                        },
+                        {
                             "code": 101,
                             "indent": 0,
                             "parameters": [
@@ -7575,7 +7634,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]Pal!\\.\\. Why you.\\..\\.."
+                                "\\n<Greedy Bandit>Why are my disciples such fools\\..\\..\\..?"
                             ]
                         },
                         {
@@ -7701,7 +7760,7 @@
                             "indent": 0,
                             "parameters": [
                                 "LyonFaceset",
-                                0,
+                                2,
                                 0,
                                 2
                             ]
@@ -7710,7 +7769,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\lyon\\unknown\\msgevent[19]Your friends aren't very smart."
+                                "\\lyon\\unknownYour friends weren't very smart."
                             ]
                         },
                         {
@@ -7718,7 +7777,7 @@
                             "indent": 0,
                             "parameters": [
                                 "LyonFaceset",
-                                0,
+                                5,
                                 0,
                                 2
                             ]
@@ -7727,7 +7786,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\lyon\\unknown\\msgevent[19]Let's hope you wise up and surrender."
+                                "\\lyon\\unknownLet's hope you wise up and surrender."
                             ]
                         },
                         {
@@ -7744,7 +7803,16 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Greedy Bandit>\\msgevent[18]Grrrr I'LL NEVER FORGIVE YOU!"
+                                "\\n<Greedy Bandit>Grrrr,  we'll see if you can stand up\\..\\..\\.. to this!\\|\\^"
+                            ]
+                        },
+                        {
+                            "code": 129,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                0,
+                                false
                             ]
                         },
                         {
@@ -7752,9 +7820,26 @@
                             "indent": 0,
                             "parameters": [
                                 0,
-                                7,
+                                2,
                                 false,
                                 false
+                            ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 201,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                2,
+                                16,
+                                9,
+                                2,
+                                0
                             ]
                         },
                         {
@@ -7765,6 +7850,11 @@
                                 22,
                                 0
                             ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -7818,130 +7908,69 @@
                     },
                     "list": [
                         {
-                            "code": 0,
+                            "code": 205,
                             "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 28,
-            "y": 0
-        },
-        {
-            "id": 11,
-            "name": "EV011",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
+                            "parameters": [
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 2,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 2,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 19,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
                         {
-                            "code": 0,
+                            "code": 505,
                             "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 14,
-            "y": 12
-        },
-        {
-            "id": 12,
-            "name": "Downed Bandit",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 22,
-                        "switch1Valid": true,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": true,
-                    "image": {
-                        "characterIndex": 2,
-                        "characterName": "Damage3",
-                        "direction": 6,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
+                            "parameters": [
+                                {
+                                    "code": 2,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 2,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 19,
+                                    "indent": null
+                                }
+                            ]
+                        },
                         {
                             "code": 101,
                             "indent": 0,
                             "parameters": [
-                                "",
+                                "LyonFaceset",
                                 0,
                                 0,
                                 2
@@ -7951,41 +7980,275 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "He's no longer conscious. <br>"
+                                "\\lyonAre you all right?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
                             ]
                         },
                         {
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Would it be a good idea to loot his possessions?"
+                                "\\unknown\\lspi[120]Yes, thank you!"
                             ]
                         },
                         {
-                            "code": 102,
+                            "code": 101,
                             "indent": 0,
                             "parameters": [
-                                [
-                                    "Sure, he doesn't need it.",
-                                    "No, that wouldn't be right."
-                                ],
-                                1,
+                                "LyonFaceset",
+                                2,
                                 0,
-                                1,
-                                0
+                                2
                             ]
                         },
                         {
-                            "code": 402,
+                            "code": 401,
                             "indent": 0,
                             "parameters": [
+                                "\\lyonGood.\\| Now,\\. why were you off on your own this late at night?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
                                 0,
-                                "Sure, he doesn't need it."
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\lspi[120]I\\..\\..\\.. ran away from Gerth.\\|  There was an attack.\\| "
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonWhat?!\\| An attack?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\lspi[120]Yes\\..\\..\\.. Bandits,\\.\\. I think."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonDamn!\\| I need to go help!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\lspi[120]Really?\\| Would you be able to save them? \\|I wanted to stay and fight\\..\\..\\.. but-\\.\\.\\."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                3,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonYou stay safe!\\| I will come back for you once I deal with these damned bandits!"
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI promise."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\lspi[120]All right.\\|  But,\\.\\.\\. may I ask for your name before you go?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyon\\..\\..\\.. Lyon."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\lspi[120]Thank you, Lyon.\\| I might not be able to fight right now, but, please take these."
                             ]
                         },
                         {
                             "code": 250,
-                            "indent": 1,
+                            "indent": 0,
                             "parameters": [
                                 {
                                     "name": "Item1",
@@ -7996,253 +8259,237 @@
                             ]
                         },
                         {
+                            "code": 126,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                0,
+                                0,
+                                5
+                            ]
+                        },
+                        {
                             "code": 101,
-                            "indent": 1,
+                            "indent": 0,
                             "parameters": [
                                 "",
                                 0,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Received 5x Healing Fragments."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                3,
                                 0,
                                 2
                             ]
                         },
                         {
                             "code": 401,
-                            "indent": 1,
+                            "indent": 0,
                             "parameters": [
-                                "You managed to find 25 Coins on his person!"
+                                "\\lyon\\..\\..\\.. Thank you."
                             ]
                         },
                         {
-                            "code": 125,
-                            "indent": 1,
+                            "code": 205,
+                            "indent": 0,
                             "parameters": [
-                                0,
-                                0,
-                                25
-                            ]
-                        },
-                        {
-                            "code": 250,
-                            "indent": 1,
-                            "parameters": [
+                                -1,
                                 {
-                                    "name": "Coin",
-                                    "pan": 0,
-                                    "pitch": 100,
-                                    "volume": 90
+                                    "list": [
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": false
                                 }
                             ]
                         },
                         {
-                            "code": 123,
-                            "indent": 1,
+                            "code": 505,
+                            "indent": 0,
                             "parameters": [
-                                "A",
-                                0
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 402,
+                            "code": 505,
                             "indent": 0,
                             "parameters": [
-                                1,
-                                "No, that wouldn't be right."
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
                         },
                         {
-                            "code": 404,
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                15
+                            ]
+                        },
+                        {
+                            "code": 221,
                             "indent": 0,
                             "parameters": []
                         },
                         {
-                            "code": 0,
+                            "code": 230,
                             "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 1,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                },
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": true,
-                        "switch1Id": 22,
-                        "switch1Valid": true,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": true,
-                    "image": {
-                        "characterIndex": 2,
-                        "characterName": "Damage3",
-                        "direction": 6,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
+                            "parameters": [
+                                60
+                            ]
+                        },
                         {
                             "code": 101,
                             "indent": 0,
                             "parameters": [
                                 "",
                                 0,
-                                0,
-                                2
+                                2,
+                                1
                             ]
                         },
                         {
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "He's no longer conscious nor useful."
+                                "Lyon, upon hearing the terrible news, hurried to Gerth.<br>"
                             ]
                         },
                         {
-                            "code": 0,
+                            "code": 401,
                             "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 1,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 14,
-            "y": 10
-        },
-        {
-            "id": 13,
-            "name": "EV013",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "Actor1",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
+                            "parameters": [
+                                "When he saw the once bustling farming town burning on<br>"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "the horizon with dark smoke bellowing, his temper flared."
+                            ]
+                        },
                         {
                             "code": 201,
                             "indent": 0,
                             "parameters": [
                                 0,
-                                48,
-                                5,
-                                3,
+                                7,
+                                12,
+                                1,
                                 0,
                                 0
                             ]
                         },
                         {
-                            "code": 117,
+                            "code": 230,
                             "indent": 0,
                             "parameters": [
-                                4
+                                6
                             ]
                         },
                         {
-                            "code": 236,
+                            "code": 222,
                             "indent": 0,
-                            "parameters": [
-                                "storm",
-                                9,
-                                1,
-                                true
-                            ]
-                        },
-                        {
-                            "code": 223,
-                            "indent": 0,
-                            "parameters": [
-                                [
-                                    -68,
-                                    -68,
-                                    -68,
-                                    0
-                                ],
-                                60,
-                                true
-                            ]
-                        },
-                        {
-                            "code": 129,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                1,
-                                false
-                            ]
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -8264,16 +8511,19 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 3,
                     "walkAnime": true
                 }
             ],
-            "x": 16,
-            "y": 15
+            "x": 28,
+            "y": 0
         },
+        null,
+        null,
+        null,
         {
             "id": 14,
             "name": "EV014",
@@ -8509,6 +8759,57 @@
                     "through": false,
                     "trigger": 0,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 22,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 14,
@@ -8565,6 +8866,57 @@
                     "moveSpeed": 4,
                     "moveType": 0,
                     "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 22,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
                     "trigger": 0,
@@ -8629,6 +8981,57 @@
                     "through": false,
                     "trigger": 0,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 22,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 16,
@@ -8689,6 +9092,57 @@
                     "through": false,
                     "trigger": 0,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 22,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 17,
@@ -8707,7 +9161,7 @@
                         "itemValid": false,
                         "selfSwitchCh": "A",
                         "selfSwitchValid": false,
-                        "switch1Id": 1,
+                        "switch1Id": 22,
                         "switch1Valid": false,
                         "switch2Id": 1,
                         "switch2Valid": false,
@@ -8749,6 +9203,57 @@
                     "through": false,
                     "trigger": 0,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 22,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 18,
@@ -8764,7 +9269,7 @@
     "parallaxSx": 0,
     "parallaxSy": 0,
     "scrollType": 0,
-    "specifyBattleback": false,
+    "specifyBattleback": true,
     "tilesetId": 2,
     "width": 29
 }

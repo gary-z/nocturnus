@@ -1,0 +1,11 @@
+<action sequence: return>
+  motion: user, evade, once
+  move: user, backward, 6, 250
+  jump: user, 40, movement
+  wait: user, jump
+  direction: user, home
+  motion: user, walk, true 
+  move: user, to home, 6 
+  wait: user, move
+  direction: user, targets
+</action sequence>

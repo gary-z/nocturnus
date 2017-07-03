@@ -8,10 +8,11 @@ Imported.YEP_X_StateCategories = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.StC = Yanfly.StC || {};
+Yanfly.StC.version = 1.05;
 
 //=============================================================================
  /*:
- * @plugindesc v1.02 (Requires YEP_BuffsStatesCore.js) Sets up categories
+ * @plugindesc v1.05 (Requires YEP_BuffsStatesCore.js) Sets up categories
  * for your states to make control over them easier.
  * @author Yanfly Engine Plugins
  *
@@ -120,6 +121,17 @@ Yanfly.StC = Yanfly.StC || {};
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.05:
+ * - Lunatic Mode fail safes added.
+ *
+ * Version 1.04:
+ * - Compatibility update with Selection Control to not game over the player
+ * while there are still members alive.
+ *
+ * Version 1.03:
+ * - States with <Category: Bypass Death Removal> can now be added onto already
+ * dead battlers.
  *
  * Version 1.02:
  * - When using the JavaScript functions, the categories will now automatically
@@ -274,6 +286,17 @@ Game_Battler.prototype.refresh = function() {
     Yanfly.StC.Game_Battler_refresh.call(this);
 };
 
+Yanfly.StC.Game_Battler_isStateAddable = Game_Battler.prototype.isStateAddable;
+Game_Battler.prototype.isStateAddable = function(stateId) {
+  var state = $dataStates[stateId];
+  if (state && state.category.contains('BYPASS DEATH REMOVAL')) {
+    return (!this.isStateResist(stateId) &&
+           !this._result.isStateRemoved(stateId) &&
+           !this.isStateRestrict(stateId));
+  }
+  return Yanfly.StC.Game_Battler_isStateAddable.call(this, stateId);
+};
+
 Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
     var categories = obj.removeCategory;
     for (var category in categories) {
@@ -299,7 +322,11 @@ Game_Battler.prototype.removeStateCategoryEval = function(value, obj, c, user) {
     var target = this;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(formula);
+    try {
+      eval(formula);
+    } catch (e) {
+      Yanfly.Util.displayError(e, formula, 'REMOVE STATE CATEGORY ERROR');
+    }
     return value;
 };
 
@@ -376,16 +403,22 @@ Game_Battler.prototype.isGroupDefeatAffected = function() {
 
 Yanfly.StC.Game_Unit_isAllDead = Game_Unit.prototype.isAllDead;
 Game_Unit.prototype.isAllDead = function() {
-    var length = this.aliveMembers().length;
-    var count = 0;
-    for (var i = 0; i < length; ++i) {
-      var member = this.aliveMembers()[i];
-      if (member && member.isGroupDefeatAffected()) {
-        count += 1;
-      }
+  $gameTemp._checkAllAliveMembers = true;
+  var length = this.aliveMembers().length;
+  var count = 0;
+  for (var i = 0; i < length; ++i) {
+    var member = this.aliveMembers()[i];
+    if (member && member.isGroupDefeatAffected()) {
+      count += 1;
     }
-    if (count >= length) return true;
-    return Yanfly.StC.Game_Unit_isAllDead.call(this);
+  }
+  if (count >= length) {
+    $gameTemp._checkAllAliveMembers = undefined;
+    return true;
+  }
+  var value = Yanfly.StC.Game_Unit_isAllDead.call(this);
+  $gameTemp._checkAllAliveMembers = undefined;
+  return value;
 };
 
 //=============================================================================
@@ -403,6 +436,23 @@ Game_Action.prototype.applyItemUserEffect = function(target) {
 
 Game_Action.prototype.applyStateCategoryRemovalEffect = function(target) {
   target.removeStateCategoryEffect(this.item(), this.subject());
+};
+
+//=============================================================================
+// Utilities
+//=============================================================================
+
+Yanfly.Util = Yanfly.Util || {};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

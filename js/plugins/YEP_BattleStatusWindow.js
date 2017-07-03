@@ -8,10 +8,11 @@ Imported.YEP_BattleStatusWindow = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.BSW = Yanfly.BSW || {};
+Yanfly.BSW.version = 1.08;
 
 //=============================================================================
  /*:
- * @plugindesc v1.04 A simple battle status window that shows the
+ * @plugindesc v1.08 A simple battle status window that shows the
  * faces of your party members in horizontal format.
  * @author Yanfly Engine Plugins
  *
@@ -46,6 +47,11 @@ Yanfly.BSW = Yanfly.BSW || {};
  * @desc Adjust column amount to party size?
  * NO - false     YES - true
  * @default false
+ *
+ * @param State Icons Row
+ * @desc Which row do you wish to display the state icons?
+ * Default: 1
+ * @default 1
  *
  * @param ---Actor Switching---
  * @default
@@ -107,6 +113,20 @@ Yanfly.BSW = Yanfly.BSW || {};
  * Changelog
  * ============================================================================
  *
+ * Version 1.08:
+ * - Added 'State Icons Row' plugin parameter. This plugin parameter allows you
+ * to adjust what 'row' you want the state icons to appear in.
+ *
+ * Version 1.07:
+ * - Optimization update.
+ *
+ * Version 1.06:
+ * - Fixed a bug that prevented animations from using flashes on the actor
+ * sprite if they were visible from front view.
+ *
+ * Version 1.05:
+ * - Optimized face drawing effect to work more efficiently.
+ *
  * Version 1.04:
  * - Added 'Allow Turn Skip' plugin parameter to let you decide if you can let
  * the player skip turns for tick-based battle systems.
@@ -144,7 +164,9 @@ Yanfly.Param.BSWNameFontSize = Number(Yanfly.Parameters['Name Font Size']);
 Yanfly.Param.BSWParamFontSize = Number(Yanfly.Parameters['Param Font Size']);
 Yanfly.Param.BSWParamYBuffer = Number(Yanfly.Parameters['Param Y Buffer']);
 Yanfly.Param.BSWCurrentMax = String(Yanfly.Parameters['Param Current Max']);
+Yanfly.Param.BSWCurrentMax = eval(Yanfly.Param.BSWCurrentMax);
 Yanfly.Param.BSWAdjustCol = eval(String(Yanfly.Parameters['Adjust Columns']));
+Yanfly.Param.BSWStateIconRow = Number(Yanfly.Parameters['State Icons Row']);
 
 Yanfly.Param.BSWLfRt = eval(String(Yanfly.Parameters['Left / Right']));
 Yanfly.Param.BSWPageUpDn = eval(String(Yanfly.Parameters['PageUp / PageDown']));
@@ -249,7 +271,11 @@ Yanfly.BSW.Sprite_Actor_createMainSprite =
 Sprite_Actor.prototype.createMainSprite = function() {
     Yanfly.BSW.Sprite_Actor_createMainSprite.call(this);
     if ($gameSystem.isSideView()) return;
-    this._effectTarget = this;
+    if (Yanfly.Param.BSWShowSprite) {
+      this._effectTarget = this._mainSprite || this;
+    } else {
+      this._effectTarget = this;
+    }
 };
 
 Yanfly.BSW.Sprite_Actor_setActorHome = Sprite_Actor.prototype.setActorHome;
@@ -263,7 +289,7 @@ Sprite_Actor.prototype.setActorHome = function(index) {
 
 Sprite_Actor.prototype.setActorHomeFrontView = function(index) {
     if (Imported.YEP_BattleEngineCore) {
-      var statusHeight = eval(Yanfly.Param.BECCommandRows);
+      var statusHeight = Yanfly.Param.BECCommandRows;
     } else {
       var statusHeight = 4;
     }
@@ -390,7 +416,7 @@ Window_ActorCommand.prototype.processCancel = function() {
 
 Window_BattleStatus.prototype.createContents = function() {
     this.createFaceContents();
-    this._currentMax = eval(Yanfly.Param.BSWCurrentMax);
+    this._currentMax = Yanfly.Param.BSWCurrentMax;
     Window_Selectable.prototype.createContents.call(this);
 };
 
@@ -409,12 +435,12 @@ Window_BattleStatus.prototype.drawAllItems = function() {
 };
 
 Window_BattleStatus.prototype.drawAllFaces = function() {
-    this._faceContents.bitmap.clear();
     for (var i = 0; i < $gameParty.battleMembers().length; ++i) {
       var member = $gameParty.battleMembers()[i];
       var bitmap = ImageManager.loadFace(member.faceName());
       if (bitmap.width <= 0) return setTimeout(this.drawAllFaces.bind(this), 5);
     }
+    this._faceContents.bitmap.clear();
     for (var i = 0; i < this.maxItems(); ++i) {
       this.drawStatusFace(i);
     }
@@ -450,6 +476,7 @@ Window_BattleStatus.prototype.drawItem = function(index) {
     var actor = $gameParty.battleMembers()[index];
     this.drawBasicArea(this.basicAreaRect(index), actor);
     this.drawGaugeArea(this.gaugeAreaRect(index), actor);
+    this.drawStateArea(this.basicAreaRect(index), actor);
 };
 
 Window_BattleStatus.prototype.drawBasicArea = function(rect, actor) {
@@ -463,8 +490,6 @@ Window_BattleStatus.prototype.drawBasicArea = function(rect, actor) {
     this.resetFontSettings();
     this.contents.fontSize = Yanfly.Param.BSWNameFontSize;
     this.drawActorName(actor, rect.x + iw + 4, rect.y, rect.width);
-    var wy = rect.y + this.lineHeight();
-    this.drawActorIcons(actor, rect.x + 2, wy, rect.width);
 };
 
 Window_BattleStatus.prototype.basicAreaRect = function(index) {
@@ -488,6 +513,13 @@ Window_BattleStatus.prototype.drawGaugeArea = function(rect, actor) {
       this.drawActorTp(actor, rect.x + ww, wy, ww);
     }
     this._enableYBuffer = false;
+};
+
+Window_BattleStatus.prototype.drawStateArea = function(rect, actor) {
+  var row = Yanfly.Param.BSWStateIconRow;
+  if (row === undefined) row = 1;
+  var wy = rect.y + (this.lineHeight() * row);
+  this.drawActorIcons(actor, rect.x + 2, wy, rect.width);
 };
 
 Window_BattleStatus.prototype.getGaugesDrawn = function(actor) {

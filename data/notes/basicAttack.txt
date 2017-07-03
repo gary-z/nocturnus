@@ -2,7 +2,7 @@
 </action sequence>
 <action sequence: execute>
   motion: user, walk
-  move: user, to target, 12, front
+  move: user, to target, 6, front
   wait: user, move
   motion: user,attack
   animation: all targets, action
@@ -10,12 +10,12 @@
 </action sequence>
 <action sequence: return>
   motion: user, evade, once
-  move: user, backward, 10, 250
+  move: user, backward, 6, 250
   jump: user, 40, movement
   wait: user, jump
   direction: user, home
   motion: user, walk, true 
-  move: user, to home, 15 
+  move: user, to home, 6 
   wait: user, move
   direction: user, targets
 </action sequence>

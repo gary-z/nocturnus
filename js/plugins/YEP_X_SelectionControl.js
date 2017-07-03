@@ -8,10 +8,11 @@ Imported.YEP_X_SelectionControl = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Sel = Yanfly.Sel || {};
+Yanfly.Sel.version = 1.11;
 
 //=============================================================================
  /*:
- * @plugindesc v1.05 (Requires YEP_BattleEngineCore & YEP_TargetCore.js)
+ * @plugindesc v1.11 (Requires YEP_BattleEngineCore & YEP_TargetCore.js)
  * Control what targets can and can't be selected for actions.
  * @author Yanfly Engine Plugins
  *
@@ -34,8 +35,18 @@ Yanfly.Sel = Yanfly.Sel || {};
  * @default true
  *
  * @param Physical Front Row
- * @desc For YEP_RowFormation, set physical single-target skills
+ * @desc Req. YEP_RowFormation, set physical single-target skills
  * to target only the front row? NO - false     YES - true
+ * @default false
+ *
+ * @param Physical Weapon Range
+ * @desc Req. YEP_RowFormation & if the above is false, set physical
+ * single-target skills to be weapon ranged? true/false
+ * @default true
+ *
+ * @param Default Weapon Range
+ * @desc Req. YEP_RowFormation, the default range for weapons.
+ * MELEE - false     RANGED - true
  * @default false
  *
  * @param ---Text Display---
@@ -48,6 +59,54 @@ Yanfly.Sel = Yanfly.Sel || {};
  * @param All Allies
  * @desc Selection text for all allies.
  * @default All Allies
+ *
+ * @param ---Visual All Window Select---
+ * @default
+ *
+ * @param Enable Visual All
+ * @desc Enables a window the player can click to toggle between
+ * select all for allies/enemies. YES - true   NO - false
+ * @default true
+ *
+ * @param Visual Enemy X
+ * @desc X coordinate of the All Enemies window.
+ * This is a formula.
+ * @default 0
+ *
+ * @param Visual Enemy Y
+ * @desc Y coordinate of the All Enemies window.
+ * This is a formula.
+ * @default this.fittingHeight(2)
+ *
+ * @param Visual Enemy Width
+ * @desc Width of the All Enemies window.
+ * This is a formula.
+ * @default 240
+ *
+ * @param Visual Enemy Height
+ * @desc Width of the All Enemies window.
+ * This is a formula.
+ * @default this.fittingHeight(1)
+ *
+  * @param Visual Ally X
+ * @desc X coordinate of the All Allies window.
+ * This is a formula.
+ * @default Graphics.boxWidth - 240
+ *
+ * @param Visual Ally Y
+ * @desc Y coordinate of the All Allies window.
+ * This is a formula.
+ * @default this.fittingHeight(2)
+ *
+ * @param Visual Ally Width
+ * @desc Width of the All Allies window.
+ * This is a formula.
+ * @default 240
+ *
+ * @param Visual Ally Height
+ * @desc Width of the All Allies window.
+ * This is a formula.
+ * @default this.fittingHeight(1)
  *
  * @help
  * ============================================================================
@@ -63,6 +122,9 @@ Yanfly.Sel = Yanfly.Sel || {};
  * change from single target to multiple targets. This extension plugin for the
  * Target Core will allow you to break free of that restriction for better
  * selection control of targets as well as insert customized conditions.
+ *
+ * If you are using the YEP_X_BattleSysCTB plugin, place this plugin under that
+ * plugin in the plugin list for the best compatibility.
  *
  * ============================================================================
  * Notetags - General
@@ -100,6 +162,13 @@ Yanfly.Sel = Yanfly.Sel || {};
  *   scope to single target.
  *   *Note: Enemy AI will NOT make use of the ability to toggle between actors
  *   or enemies for skill selection.
+ *
+ *   <Weapon Range>
+ *   <Weapon Ranged>
+ *   Requires YEP_RowFormation.js. This will make the selection of targets vary
+ *   based on the battler's weapon range. If the weapon is 'melee', then it
+ *   will target the front row only. If the weapon is 'ranged', then it can
+ *   target any row the battler wants.
  *
  * *Note: If you use any <Select Condition> effects, all selection options
  * provided by default with the plugin parameters will be reset under the
@@ -154,6 +223,21 @@ Yanfly.Sel = Yanfly.Sel || {};
  *   user itself. If you have multiple elements in your database with the same
  *   name, then priority will be given to the element with the highest ID.
  *
+ * Weapon and Enemy Notetags:
+ *
+ *   <Melee>
+ *   This will designate the weapon/enemy as being melee and will affect any
+ *   skill or item selection range that uses the 'Weapon Range' condition.
+ *   Weapons/Enemies of this nature will target only the front row for those
+ *   selection conditions.
+ *
+ *   <Range>
+ *   <Ranged>
+ *   This will designate the weapon/enemy as being ranged and will affect any
+ *   skill or item selection range that uses the 'Weapon Range' condition.
+ *   Weapons/Enemies of this nature will be able to target any row for those
+ *   selection conditions.
+ *
  * ============================================================================
  * Notetags - Select Conditions
  * ============================================================================
@@ -203,6 +287,14 @@ Yanfly.Sel = Yanfly.Sel || {};
  * front that has living members. If row 1's enemies are all dead, but row 2
  * has living members, then row 2 will be considered the front row. This will
  * conflict with the other 'Row Only' select conditions.
+ *
+ * ---
+ *
+ * Weapon Range
+ * - Requires YEP_RowFormation.js. This will make the selection of targets vary
+ * based on the battler's weapon range. If the weapon is 'melee', then it will
+ * target the front row only. If the weapon is 'ranged', then it can target any
+ * row the battler wants.
  *
  * ---
  *
@@ -290,6 +382,40 @@ Yanfly.Sel = Yanfly.Sel || {};
  * Changelog
  * ============================================================================
  *
+ * Version 1.11:
+ * - Optimization update. Lag that occurred during menu scrolling in the middle
+ * of battle is now reduced/removed.
+ *
+ * Version 1.10:
+ * - Lunatic Mode fail safes added.
+ *
+ * Version 1.09:
+ * - Fixed an exploit with skills that gain TP across Disperse Damage.
+ *
+ * Version 1.08:
+ * - New Feature: Clicking upon the Party Status Window to select actors works.
+ * This requires Battle Engine Core v1.38 or else it will not work.
+ * - New Feature: Visual Enemy and Visual Ally select for touch input.
+ * This requires Battle Engine Core v1.38 or else it will not work.
+ *
+ * Verison 1.07a:
+ * - Fixed a bug that caused the all dead check to not check the actors that
+ * were unselectable.
+ * - Compatibility update with Battle System CTB to prevent taunt effects and
+ * unselectable from making the CTB Turn Order bug out.
+ *
+ * Version 1.06a:
+ * - Added 'Physical Weapon Range' and 'Default Weapon Range' parameters. These
+ * parameters are used for the new Select Condition: 'Weapon Range', which will
+ * determine the range of a skill based on the weapon's range (melee or ranged)
+ * and allow which enemies the battler can select.
+ * - Added <Weapon Ranged> for Skills and Items. This will make the skill/item
+ * be range dependent on the weapon equipped (or if the enemy is ranged).
+ * - <Melee> and <Ranged> notetags added for weapons and enemies. This will
+ * give weapons and enemies melee or ranged attributes.
+ * - Changed sorting algorithm to better fit actors based on their visual
+ * position on the screen.
+ *
  * Version 1.05:
  * - Compatibility update with Damage Core to fix Damage Dispersion if damage
  * caps are being used.
@@ -331,12 +457,31 @@ Yanfly.Param.SelectActorEnemy = String(Yanfly.Parameters['Actor or Enemy']);
 Yanfly.Param.SelectActorEnemy = eval(Yanfly.Param.SelectActorEnemy);
 Yanfly.Param.SelectMelee = String(Yanfly.Parameters['Physical Front Row']);
 Yanfly.Param.SelectMelee = eval(Yanfly.Param.SelectMelee);
+Yanfly.Param.SelectWpn = String(Yanfly.Parameters['Physical Weapon Range']);
+Yanfly.Param.SelectWpn = eval(Yanfly.Param.SelectWpn);
+Yanfly.Param.SelectWpnRng = String(Yanfly.Parameters['Default Weapon Range']);
+Yanfly.Param.SelectWpnRng = eval(Yanfly.Param.SelectWpnRng);
 
 Yanfly.Param.SelectAllFoes = String(Yanfly.Parameters['All Enemies']);
 Yanfly.Param.SelectAllAllies = String(Yanfly.Parameters['All Allies']);
 
 Yanfly.Param.BECEnemySelect = true;
 Yanfly.Param.BECActorSelect = true;
+
+Yanfly.Param.SelectVisualAll = String(Yanfly.Parameters['Enable Visual All']);
+Yanfly.Param.SelectVisualAll = eval(Yanfly.Param.SelectVisualAll);
+Yanfly.Param.SelectVisualEnemy = {
+  x: String(Yanfly.Parameters['Visual Enemy X']),
+  y: String(Yanfly.Parameters['Visual Enemy Y']),
+  width: String(Yanfly.Parameters['Visual Enemy Width']),
+  height: String(Yanfly.Parameters['Visual Enemy Height'])
+}
+Yanfly.Param.SelectVisualAlly = {
+  x: String(Yanfly.Parameters['Visual Ally X']),
+  y: String(Yanfly.Parameters['Visual Ally Y']),
+  width: String(Yanfly.Parameters['Visual Ally Width']),
+  height: String(Yanfly.Parameters['Visual Ally Height'])
+}
 
 //=============================================================================
 // DataManager
@@ -359,6 +504,8 @@ DataManager.isDatabaseLoaded = function() {
     this.processSelectNotetags2($dataWeapons);
     this.processSelectNotetags2($dataArmors);
     this.processSelectNotetags2($dataStates);
+    this.processSelectNotetags3($dataWeapons);
+    this.processSelectNotetags3($dataEnemies);
     Yanfly._loaded_YEP_X_SelectionControl = true;
   }
   
@@ -455,6 +602,9 @@ DataManager.processSelectNotetags1 = function(group, isSkill) {
         obj.selectConditions.push('ACTOR OR ENEMY SELECT');
         obj.scope = 7;
         changed = true;
+      } else if (line.match(/<(?:WEAPON RANGE|WEAPON RANGED)>/i)) {
+        obj.selectConditions.push('WEAPON RANGE');
+        changed = true;
       }
     }
 
@@ -466,6 +616,8 @@ DataManager.processSelectNotetags1 = function(group, isSkill) {
       } else if (isSkill && obj.hitType === Game_Action.HITTYPE_PHYSICAL) {
         if (Yanfly.Param.SelectMelee && [1].contains(obj.scope)) {
           obj.selectConditions.push('FRONT ROW ONLY');
+        } else if (Yanfly.Param.SelectWpn && [1].contains(obj.scope)) {
+          obj.selectConditions.push('WEAPON RANGE');
         }
       }
       if (Yanfly.Param.SelectActorEnemy) {
@@ -490,7 +642,7 @@ DataManager.removeAoeEffects = function(obj) {
   }
 };
 
-DataManager.processSelectNotetags2 = function(group, isSkill) {
+DataManager.processSelectNotetags2 = function(group) {
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -502,6 +654,24 @@ DataManager.processSelectNotetags2 = function(group, isSkill) {
       if (line.match(/<CANNOT SELECT:[ ](.*)>/i)) {
         var text = String(RegExp.$1).trim();
         obj.cannotSelect.push(text);
+      }
+    }
+  }
+};
+
+DataManager.processSelectNotetags3 = function(group) {
+  for (var n = 1; n < group.length; n++) {
+    var obj = group[n];
+    var notedata = obj.note.split(/[\r\n]+/);
+
+    obj.weaponRanged = Yanfly.Param.SelectWpnRng;
+
+    for (var i = 0; i < notedata.length; i++) {
+      var line = notedata[i];
+      if (line.match(/<MELEE>/i)) {
+        obj.weaponRanged = false;
+      } else if (line.match(/<(?:RANGE|RANGED)>/i)) {
+        obj.weaponRanged = true;
       }
     }
   }
@@ -519,9 +689,69 @@ BattleManager.makeActionTargets = function(string) {
     return targets;
 };
 
+if (Imported.YEP_X_BattleSysCTB) {
+
+Yanfly.Sel.BattleManager_ctbTurnOrder = BattleManager.ctbTurnOrder;
+BattleManager.ctbTurnOrder = function() {
+  $gameTemp._checkAllAliveMembers = true;
+  var battlers = Yanfly.Sel.BattleManager_ctbTurnOrder.call(this);
+  $gameTemp._checkAllAliveMembers = undefined;
+  return battlers;
+};
+
+}; // Imported.YEP_X_BattleSysCTB
+
+//=============================================================================
+// Game_Temp
+//=============================================================================
+
+Game_Temp.prototype.clearSelectionControlCache = function() {
+  this._selectionControlItemCache = undefined;
+  this._selectionControlSkillCache = undefined;
+};
+
+Game_Temp.prototype.isSelectionControlCached = function(item) {
+  var id = item;
+  if (DataManager.isItem) {
+    if (this._selectionControlItemCache === undefined) return false;
+    return this._selectionControlItemCache[id] !== undefined;
+  } else {
+    if (this._selectionControlSkillCache === undefined) return false;
+    return this._selectionControlSkillCache[id] !== undefined;
+  }
+};
+
+Game_Temp.prototype.getSelectionControlCache = function(item) {
+  var id = item;
+  if (DataManager.isItem) {
+    this._selectionControlItemCache = this._selectionControlItemCache || {};
+    return this._selectionControlItemCache[id];
+  } else {
+    this._selectionControlSkillCache = this._selectionControlSkillCache || {};
+    return this._selectionControlSkillCache[id];
+  }
+};
+
+Game_Temp.prototype.setSelectionControlCache = function(item, value) {
+  var id = item;
+  if (DataManager.isItem) {
+    this._selectionControlItemCache = this._selectionControlItemCache || {};
+    this._selectionControlItemCache[id] = value;
+  } else {
+    this._selectionControlSkillCache = this._selectionControlSkillCache || {};
+    this._selectionControlSkillCache[id] = value;
+  }
+};
+
 //=============================================================================
 // Game_BattlerBase
 //=============================================================================
+
+Yanfly.Sel.Game_BattlerBase_refresh = Game_BattlerBase.prototype.refresh;
+Game_BattlerBase.prototype.refresh = function() {
+  $gameTemp.clearSelectionControlCache();
+  Yanfly.Sel.Game_BattlerBase_refresh.call(this);
+};
 
 Yanfly.Sel.Game_BattlerBase_canUse = Game_BattlerBase.prototype.canUse;
 Game_BattlerBase.prototype.canUse = function(item) {
@@ -532,6 +762,9 @@ Game_BattlerBase.prototype.canUse = function(item) {
 };
 
 Game_BattlerBase.prototype.hasValidTargets = function(item) {
+    if ($gameTemp.isSelectionControlCached(item)) {
+      return $gameTemp.getSelectionControlCache(item);
+    }
     var action = new Game_Action(this);
     action.setItemObject(item);
     var targets = []
@@ -543,6 +776,7 @@ Game_BattlerBase.prototype.hasValidTargets = function(item) {
     } else if (action.isForFriend()) {
       targets = targets.concat(this.friendsUnit().members());
     } else {
+      $gameTemp.setSelectionControlCache(item, true);
       return true;
     }
     var length = targets.length;
@@ -550,9 +784,11 @@ Game_BattlerBase.prototype.hasValidTargets = function(item) {
       var target = targets[i];
       if (!target) continue;
       if (action.checkAllSelectionConditions(this, target)) {
+        $gameTemp.setSelectionControlCache(item, true);
         return true;
       }
     }
+    $gameTemp.setSelectionControlCache(item, false);
     return false;
 };
 
@@ -668,21 +904,46 @@ Game_Battler.prototype.checkActionSelectable = function(line, action) {
     return true;
 };
 
+Game_Battler.prototype.isWeaponRanged = function() {
+  return false;
+};
+
+Yanfly.Sel.Game_Battler_gainSilentTp = Game_Battler.prototype.gainSilentTp;
+Game_Battler.prototype.gainSilentTp = function(value) {
+    if ($gameTemp._selectedDmgMod !== undefined) {
+      value = Math.floor(value * $gameTemp._selectedDmgMod);
+    }
+    Yanfly.Sel.Game_Battler_gainSilentTp.call(this, value);
+};
+
 //=============================================================================
 // Game_Actor
 //=============================================================================
 
 Game_Actor.prototype.isSelectable = function(action) {
-    if (!Game_Battler.prototype.isSelectable.call(this, action)) return false;
-    var length = this.equips().length;
-    for (var i = 0; i < length; ++i) {
-      var obj = this.equips()[i];
-      if (!obj) continue;
-      if (!this.isSelectableObj(obj, action)) return false;
+  if (!Game_Battler.prototype.isSelectable.call(this, action)) return false;
+  var length = this.equips().length;
+  for (var i = 0; i < length; ++i) {
+    var obj = this.equips()[i];
+    if (!obj) continue;
+    if (!this.isSelectableObj(obj, action)) return false;
+  }
+  if (!this.isSelectableObj(this.actor(), action)) return false;
+  if (!this.isSelectableObj(this.currentClass(), action)) return false;
+  return true;
+};
+
+Game_Actor.prototype.isWeaponRanged = function() {
+  var weapons = this.weapons();
+  for (var i = 0; i < weapons.length; ++i) {
+    var weapon = weapons[i];
+    if (!weapon) continue;
+    if (weapon.weaponRanged === undefined && weapon.baseItemId) {
+      weapon.weaponRanged = DataManager.getBaseItem(weapon).weaponRanged;
     }
-    if (!this.isSelectableObj(this.actor(), action)) return false;
-    if (!this.isSelectableObj(this.currentClass(), action)) return false;
-    return true;
+    if (weapon.weaponRanged) return true;
+  }
+  return false;
 };
 
 //=============================================================================
@@ -690,9 +951,13 @@ Game_Actor.prototype.isSelectable = function(action) {
 //=============================================================================
 
 Game_Enemy.prototype.isSelectable = function(action) {
-    if (!Game_Battler.prototype.isSelectable.call(this, action)) return false;
-    if (!this.isSelectableObj(this.enemy(), action)) return false;
-    return true;
+  if (!Game_Battler.prototype.isSelectable.call(this, action)) return false;
+  if (!this.isSelectableObj(this.enemy(), action)) return false;
+  return true;
+};
+
+Game_Enemy.prototype.isWeaponRanged = function() {
+  return this.enemy().weaponRanged;
 };
 
 //=============================================================================
@@ -702,6 +967,7 @@ Game_Enemy.prototype.isSelectable = function(action) {
 Yanfly.Sel.Game_Unit_aliveMembers = Game_Unit.prototype.aliveMembers;
 Game_Unit.prototype.aliveMembers = function() {
   var members = Yanfly.Sel.Game_Unit_aliveMembers.call(this);
+  if ($gameTemp._checkAllAliveMembers) return members;
   if ($gameTemp._selectionFilterInProgress) return members;
   if ($gameTemp._selectionFilter) return this.filterSelection(members);
   return members;
@@ -714,6 +980,18 @@ Game_Unit.prototype.deadMembers = function() {
   if ($gameTemp._selectionFilter) return this.filterSelection(members);
   return members;
 };
+
+if (!Imported.YEP_X_StateCategories) {
+
+Yanfly.Sel.Game_Unit_isAllDead = Game_Unit.prototype.isAllDead;
+Game_Unit.prototype.isAllDead = function() {
+  $gameTemp._checkAllAliveMembers = true;
+  var value = Yanfly.Sel.Game_Unit_isAllDead.call(this);
+  $gameTemp._checkAllAliveMembers = undefined;
+  return value;
+};
+
+}; // Imported.YEP_X_StateCategories
 
 Game_Unit.prototype.filterSelection = function(members) {
   $gameTemp._selectionFilterInProgress = true;
@@ -735,6 +1013,7 @@ Game_Unit.prototype.filterSelection = function(members) {
 
 Game_Unit.prototype.filterTauntMembers = function(user, action, targets) {
   if (!Imported.YEP_Taunt) return targets;
+  if (!action.isForOne()) return targets;
   if (action.item().bypassTaunt) return targets;
   if (user.opponentsUnit() !== this) return targets;
   $gameTemp._tauntAction = action;
@@ -816,6 +1095,10 @@ Game_Action.prototype.isForEnemyOrActor = function() {
 
 Game_Action.prototype.isForActorOrEnemy = function() {
     return this.matchSelectConditions(/ACTOR OR ENEMY SELECT/i);
+};
+
+Game_Action.prototype.isWeaponRanged = function() {
+    return this.matchSelectConditions(/WEAPON RANGE/i);
 };
 
 Game_Action.prototype.isNotForUser = function() {
@@ -910,6 +1193,14 @@ Game_Action.prototype.makeTargets = function() {
     }
 };
 
+Yanfly.Sel.Game_Action_applyItemUserEffect =
+  Game_Action.prototype.applyItemUserEffect;
+Game_Action.prototype.applyItemUserEffect = function(target) {
+    $gameTemp._selectedDmgMod = this._selectedDmgMod || 1;
+    Yanfly.Sel.Game_Action_applyItemUserEffect.call(this, target);
+    $gameTemp._selectedDmgMod = undefined;
+};
+
 Game_Action.prototype.fallbackFilter = function() {
     this._targetIndex = -1;
     return this.makeTargets();
@@ -961,6 +1252,10 @@ Game_Action.prototype.meetSelectionCondition = function(line, user, target) {
     // Not User
     if (line.match(/NOT USER/i)) {
       return this.subject() !== target;
+    }
+    // Weapon Range - Requires YEP_RowFormation.js
+    if (line.match(/WEAPON RANGE/i)) {
+      return this.selectConditionWeaponRange(target);
     }
     // Back Row Only - Requires YEP_RowFormation.js
     if (line.match(/BACK ROW ONLY/i)) {
@@ -1014,8 +1309,22 @@ Game_Action.prototype.meetSelectionConditionEval = function(user, target) {
     var b = target;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(this.item().selectConditionEval);
+    var code = this.item().selectConditionEval;
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'SELECTION CONDITION EVAL');
+    }
     return condition;
+};
+
+Game_Action.prototype.selectConditionWeaponRange = function(target) {
+    if (!Imported.YEP_RowFormation) return true;
+    if (this.subject().isWeaponRanged()) {
+      return true;
+    } else {
+      return this.selectConditionFrontRow(target);
+    }
 };
 
 Game_Action.prototype.selectConditionBackRow = function(target) {
@@ -1102,7 +1411,12 @@ Game_Action.prototype.selectConditionParam = function(user, target, param, code)
     var b = target;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    return eval(code);
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'SELECTION PARAM CONDITION ERROR');
+      return false;
+    }
 };
 
 Game_Action.prototype.selectConditionNotState = function(target, text) {
@@ -1188,14 +1502,17 @@ Window_BattleEnemy.prototype.allowedTargets = function() {
 
 Window_BattleEnemy.prototype.sortTargets = function() {
     this._enemies.sort(function(a, b) {
+      /*
       if (a.isActor() && b.isActor()) {
         return a.index() - b.index();
       }
+      */
       if (a.spritePosX() === b.spritePosX()) {
         return a.spritePosY() - b.spritePosY();
       }
       return a.spritePosX() - b.spritePosX();
     });
+    if (this.action()) this.addExtraSelectTargets();
 };
 
 Yanfly.Sel.Window_BattleEnemy_autoSelect =
@@ -1261,13 +1578,6 @@ Window_BattleEnemy.prototype.furthestRight = function() {
 Window_BattleEnemy.prototype.isOkEnabled = function() {
     if (this._selectDead) return this.enemy().isDead();
     return Window_Selectable.prototype.isOkEnabled.call(this);
-};
-
-Yanfly.Sel.Window_BattleEnemy_sortTargets = 
-  Window_BattleEnemy.prototype.sortTargets;
-Window_BattleEnemy.prototype.sortTargets = function() {
-    Yanfly.Sel.Window_BattleEnemy_sortTargets.call(this);
-    if (this.action()) this.addExtraSelectTargets();
 };
 
 Window_BattleEnemy.prototype.addExtraSelectTargets = function() {
@@ -1369,11 +1679,155 @@ Window_BattleEnemy.prototype.enemyIndex = function() {
 };
 
 //=============================================================================
+// Window_BattleStatus
+//=============================================================================
+
+Window_BattleStatus.prototype.setEnemySelectionWindow = function(win) {
+  this._enemySelectWindow = win;
+};
+
+Yanfly.Sel.Window_BattleStatus_update = Window_BattleStatus.prototype.update;
+Window_BattleStatus.prototype.update = function() {
+  Yanfly.Sel.Window_BattleStatus_update.call(this);
+  this.processInactiveSelectTouch();
+};
+
+Window_BattleStatus.prototype.processInactiveSelectTouch = function() {
+  if (!this._enemySelectWindow) return;
+  if (!this._enemySelectWindow.active) return;
+  if (TouchInput.isTriggered() && this.isTouchedInsideFrame()) {
+    this.onInactiveSelectTouch();
+  }
+};
+
+Window_BattleStatus.prototype.onInactiveSelectTouch = function() {
+  var lastIndex = this.index();
+  var x = this.canvasToLocalX(TouchInput.x);
+  var y = this.canvasToLocalY(TouchInput.y);
+  var hitIndex = this.hitTest(x, y);
+  if (hitIndex >= 0) {
+    var actor = $gameParty.battleMembers()[hitIndex];
+    var win = this._enemySelectWindow;
+    if (actor && win) {
+      var winIndex = win._enemies.indexOf(actor);
+      if (winIndex >= 0) {
+        if (winIndex !== win.index()) {
+          win.select(winIndex);
+          SoundManager.playCursor();
+        } else {
+          win.processOk();
+        }
+      }
+    }
+  }
+};
+
+//=============================================================================
+// Window_VisualSelectAll
+//=============================================================================
+
+function Window_VisualSelectAll() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_VisualSelectAll.prototype = Object.create(Window_Base.prototype);
+Window_VisualSelectAll.prototype.constructor = Window_VisualSelectAll;
+
+Window_VisualSelectAll.prototype.initialize = function(actor) {
+  this._isActorSelect = actor;
+  if (this._isActorSelect) {
+    this._text = Yanfly.Param.SelectAllAllies;
+    var settings = Yanfly.Param.SelectVisualAlly;
+  } else {
+    this._text = Yanfly.Param.SelectAllFoes;
+    var settings = Yanfly.Param.SelectVisualEnemy;
+  }
+  var width = eval(settings.width);
+  var height = eval(settings.height);
+  var x = eval(settings.x);
+  var y = eval(settings.y);
+  Window_Base.prototype.initialize.call(this, x, y, width, height);
+  this.hide();
+  this.refresh();
+};
+
+Window_VisualSelectAll.prototype.refresh = function() {
+  this.contents.clear();
+  this.drawText(this._text, 0, 0, this.contents.width, 'center');
+};
+
+Window_VisualSelectAll.prototype.setEnemySelectionWindow = function(win) {
+  this._enemySelectWindow = win;
+};
+
+Window_VisualSelectAll.prototype.update = function() {
+  Window_Base.prototype.update.call(this);
+  this.updateVisible();
+  this.processMouseOver();
+  this.processTouch();
+};
+
+Window_VisualSelectAll.prototype.updateVisible = function() {
+  if (!this._enemySelectWindow) return this.visible = false;
+  if (!this._enemySelectWindow.active) return this.visible = false;
+  if (this._isActorSelect) {
+    var index = this._enemySelectWindow._enemies.indexOf('ALL ALLIES');
+  } else {
+    var index = this._enemySelectWindow._enemies.indexOf('ALL ENEMIES');
+  }
+  this.visible = index >= 0;
+};
+
+Window_VisualSelectAll.prototype.processMouseOver = function() {
+  if (!this.visible) return $gameTemp._disableMouseOverSelect = false;;
+  var x = this.canvasToLocalX(TouchInput._mouseOverX);
+  var y = this.canvasToLocalY(TouchInput._mouseOverY);
+  var inside = x >= 0 && y >= 0 && x < this.width && y < this.height;
+  if (inside) {
+    if (this._isActorSelect) {
+      var index = this._enemySelectWindow._enemies.indexOf('ALL ALLIES');
+    } else {
+      var index = this._enemySelectWindow._enemies.indexOf('ALL ENEMIES');
+    }
+    if (index !== this._enemySelectWindow.index()) SoundManager.playCursor();
+    this._enemySelectWindow.select(index);
+    $gameTemp._disableMouseOverSelect = true;
+  } else {
+    $gameTemp._disableMouseOverSelect = false;
+  }
+};
+
+Window_VisualSelectAll.prototype.processTouch = function() {
+  if (!this.visible) return;
+  if (!TouchInput.isTriggered()) return;
+  var x = this.canvasToLocalX(TouchInput._mouseOverX);
+  var y = this.canvasToLocalY(TouchInput._mouseOverY);
+  var inside = x >= 0 && y >= 0 && x < this.width && y < this.height;
+  if (inside) {
+    this._enemySelectWindow.processOk();
+  }
+};
+
+//=============================================================================
 // Scene_Battle
 //=============================================================================
 
 Scene_Battle.prototype.selectActorSelection = function() {
-    this.selectEnemySelection();
+  this.selectEnemySelection();
+};
+
+Yanfly.Sel.Scene_Battle_createEnemyWindow =
+  Scene_Battle.prototype.createEnemyWindow;
+Scene_Battle.prototype.createEnemyWindow = function() {
+  Yanfly.Sel.Scene_Battle_createEnemyWindow.call(this);
+  this._statusWindow.setEnemySelectionWindow(this._enemyWindow);
+  if (!Yanfly.Param.SelectVisualAll) return;
+  this._visualSelectAllyWindow = new Window_VisualSelectAll(true);
+  this._visualSelectAllyWindow.setEnemySelectionWindow(this._enemyWindow);
+  this.addChild(this._visualSelectAllyWindow);
+  this._visualSelectEnemyWindow = new Window_VisualSelectAll(false);
+  this._visualSelectEnemyWindow.setEnemySelectionWindow(this._enemyWindow);
+  this.addChild(this._visualSelectEnemyWindow);
 };
 
 //=============================================================================
@@ -1390,6 +1844,17 @@ Yanfly.Util.getCommonElements = function(array1, array2) {
       if (array2.contains(element)) elements.push(element);
     }
     return elements;
+};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

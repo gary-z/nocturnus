@@ -8,10 +8,11 @@ Imported.YEP_X_AnimatedSVEnemies = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.SVE = Yanfly.SVE || {};
+Yanfly.SVE.version = 1.17;
 
 //=============================================================================
  /*:
- * @plugindesc v1.12 (Requires YEP_BattleEngineCore.js) This plugin lets
+ * @plugindesc v1.17 (Requires YEP_BattleEngineCore.js) This plugin lets
  * you use Animated Sideview Actors for enemies!
  * @author Yanfly Engine Plugins
  *
@@ -121,6 +122,11 @@ Yanfly.SVE = Yanfly.SVE || {};
  * @desc The default minimum floating height for enemies.
  * Lower - Closer to Ground     Larger - Higher Up
  * @default 50
+ *
+ * @param Floating Death
+ * @desc Allow enemies to remain floating while dead?
+ * NO - false     YES - true
+ * @default true
  *
  * @param ---Motions---
  * @default
@@ -523,6 +529,12 @@ Yanfly.SVE = Yanfly.SVE || {};
  *   <Floating Height: x>
  *   Sets the minimum float height for the enemy to x.
  *
+ *   <Floating Death>
+ *   <No Floating Death>
+ *   Decide whether or not this particular enemy will float while dead or
+ *   instead, drop to the ground instantly and will bypass the 'Floating Death'
+ *   plugin parameter for the particular enemy.
+ *
  *   <Scale Sprite: x%>
  *   This allows you to scale the sprite larger or smaller by x% of the
  *   original sprite size. If you wish to only scale either the width or the
@@ -713,6 +725,26 @@ Yanfly.SVE = Yanfly.SVE || {};
  * Changelog
  * ============================================================================
  *
+ * Verison 1.17:
+ * - Visual graphic update to sync attack animations properly with how actor
+ * animations are now handled in the more updated RPG Maker MV versions.
+ *
+ * Version 1.16:
+ * - Added 'Floating Death' plugin parameter.
+ * - Optimization update.
+ *
+ * Version 1.15:
+ * - Updated for RPG Maker MV version 1.3.2.
+ *
+ * Version 1.14:
+ * - Pixi4 update to fix bug that caused state icons to fly off the screen.
+ * - Fixed a compatibility issue with YEP_X_VisualStateFX regarding state
+ * sprites being disabled and causing crashes.
+ *
+ * Version 1.13:
+ * - Compatibility update with YEP_X_VisualStateFX to disable State Overlays on
+ * enemies properly.
+ *
  * Version 1.12:
  * - Fixed a bug that caused the <Sideview Show State Overlay> and 
  * <Sideview Hide State Overlay> notetags to not work.
@@ -770,6 +802,8 @@ Yanfly.SVE = Yanfly.SVE || {};
 
 if (Imported.YEP_BattleEngineCore) {
 
+if (Yanfly.BEC.version && Yanfly.BEC.version >= 1.42) {
+
 //=============================================================================
 // Parameter Variables
 //=============================================================================
@@ -797,6 +831,8 @@ Yanfly.Param.SVELinkBreathing = eval(Yanfly.Parameters['HP Link Breathing']);
 Yanfly.Param.SVEFloatSpeed = Number(Yanfly.Parameters['Floating Speed']);
 Yanfly.Param.SVEFloatRate = Number(Yanfly.Parameters['Floating Rate']);
 Yanfly.Param.SVEFloatHeight = Number(Yanfly.Parameters['Floating Height']);
+Yanfly.Param.SVEFloatDeath = String(Yanfly.Parameters['Floating Death']);
+Yanfly.Param.SVEFloatDeath = eval(Yanfly.Param.SVEFloatDeath);
 
 Yanfly.Param.SVEShowShadow = eval(String(Yanfly.Parameters['Show Shadow']));
 Yanfly.Param.SVEShadowScaleX = String(Yanfly.Parameters['Shadow Scale X']);
@@ -879,6 +915,7 @@ DataManager.processSVENotetags1 = function(group) {
     obj.sideviewFloatSpeed = Yanfly.Param.SVEFloatSpeed;
     obj.sideviewFloatRate = Yanfly.Param.SVEFloatRate;
     obj.sideviewFloatHeight = Yanfly.Param.SVEFloatHeight;
+    obj.sideviewFloatDeath = Yanfly.Param.SVEFloatDeath;
     obj.sideviewStateOverlay = Yanfly.Param.SVEOverlay;
 
     for (var i = 0; i < notedata.length; i++) {
@@ -956,6 +993,10 @@ DataManager.processSVENotetags1 = function(group) {
         obj.sideviewFloatRate = rate;
       } else if (line.match(/<(?:FLOATING HEIGHT):[ ](\d+)>/i)) {
         obj.sideviewFloatHeight = parseInt(RegExp.$1);
+      } else if (line.match(/<(?:FLOATING DEATH|FLOAT DEATH)>/i)) {
+        obj.sideviewFloatDeath = true;
+      } else if (line.match(/<(?:NO FLOATING DEATH|NO FLOAT DEATH)>/i)) {
+        obj.sideviewFloatDeath = false;
       } else if (line.match(/<SIDEVIEW SHOW STATE OVERLAY>/i)) {
         obj.sideviewStateOverlay = true;
       } else if (line.match(/<SIDEVIEW HIDE STATE OVERLAY>/i)) {
@@ -1027,7 +1068,7 @@ DataManager.processSVENotetags2 = function(group) {
 if (Yanfly.Param.SVESmoothing) {
 
 ImageManager.loadSvActor = function(filename, hue) {
-    return this.loadBitmap('img/sv_enemies/', filename, hue, true);
+    return this.loadBitmap('img/sv_actors/', filename, hue, true);
 };
 
 ImageManager.loadSystemSmooth = function(filename, hue) {
@@ -1300,7 +1341,7 @@ Game_Enemy.prototype.linkBreathing = function() {
 };
 
 Game_Enemy.prototype.isFloating = function() {
-    if (this.isDead()) return false;
+    if (this.isDead() && !this.enemy().sideviewFloatDeath) return false;
     return this.enemy().sideviewFloating;
 };
 
@@ -1409,6 +1450,9 @@ Sprite_Enemy.prototype.createWeaponSprite = function() {
 };
 
 Sprite_Enemy.prototype.createStateSprite = function() {
+    if (Imported.YEP_X_VisualStateFX) {
+      if (!Yanfly.Param.VSFXEnemyOver) return;
+    }
     Sprite_Actor.prototype.createStateSprite.call(this);
 };
 
@@ -1431,7 +1475,7 @@ Sprite_Enemy.prototype.setSVBattler = function(battler) {
     this._adjustMainBitmapSettings = false;
     this._actor = this._enemy;
     this._svBattlerEnabled = true;
-    this._stateSprite.setup(battler);
+    if (this._stateSprite) this._stateSprite.setup(battler);
 };
 
 Yanfly.SVE.Sprite_Enemy_update = Sprite_Enemy.prototype.update;
@@ -1454,6 +1498,7 @@ Sprite_Enemy.prototype.updateStateSprite = function() {
 };
 
 Sprite_Enemy.prototype.updateSVStateSprite = function() {
+    if (!this._stateSprite) return;
     this._stateSprite.visible = this._enemy.enemy().sideviewStateOverlay;
     return;
     var height = this._enemy.spriteHeight() * -1;
@@ -1564,6 +1609,12 @@ Sprite_Enemy.prototype.adjustAnchor = function() {
 Sprite_Enemy.prototype.updateScale = function() {
     this.scale.x = this._enemy.spriteScaleX();
     this.scale.y = this._enemy.spriteScaleY();
+    if (this._stateIconSprite) {
+      var safe = 1 / 100000;
+      var sprite = this._stateIconSprite;
+      sprite.scale.x = 1 / Math.max(safe, Math.abs(this.scale.x));
+      sprite.scale.y = 1 / Math.max(safe, Math.abs(this.scale.y));
+    }
 };
 
 Yanfly.SVE.Sprite_Enemy_updateFrame = Sprite_Enemy.prototype.updateFrame;
@@ -1587,7 +1638,7 @@ Sprite_Enemy.prototype.updateSVFrame = function() {
     if (this._effectType === 'bossCollapse') {
       cdh = ch - this._effectDuration;
     }
-    this.setFrame(cx * cw, cy * ch, cw, ch);
+    // this.setFrame(cx * cw, cy * ch, cw, ch);
     this._mainSprite.setFrame(cx * cw, cy * ch, cw, ch - cdh);
     this.adjustMainBitmapSettings(bitmap);
     this.adjustSVShadowSettings();
@@ -1656,6 +1707,8 @@ Sprite_Enemy.prototype.updateMotionCount = function() {
         this._pattern = (this._pattern + 1) % 4;
       } else if (this._pattern < 2) {
         this._pattern++;
+      } else if (this._pattern >= 2) {
+        this.startMotion(this._enemy.idleMotion());
       } else {
         this.refreshMotion();
       }
@@ -1762,16 +1815,11 @@ Sprite_Enemy.prototype.updateInstantCollapse = function() {
     Yanfly.SVE.Sprite_Enemy_updateInstantCollapse.call(this);
 };
 
-//=============================================================================
-// Sprite_StateIcon
-//=============================================================================
-
-Yanfly.SVE.Sprite_StateIcon_updateMirror =
-    Sprite_StateIcon.prototype.updateMirror;
-Sprite_StateIcon.prototype.updateMirror = function() {
-    this.scale.x = 1 / Math.max(1 / 10000, Math.abs(this.parent.scale.x));
-    this.scale.y = 1 / Math.max(1 / 10000, Math.abs(this.parent.scale.y));
-    Yanfly.SVE.Sprite_StateIcon_updateMirror.call(this);
+Sprite_Enemy.prototype.forceMotion = function(motionType) {
+    var newMotion = Sprite_Actor.MOTIONS[motionType];
+    this._motion = newMotion;
+    this._motionCount = 0;
+    this._pattern = 0;
 };
 
 //=============================================================================
@@ -1788,4 +1836,15 @@ Yanfly.Util.getRandomElement = function(array) {
 //=============================================================================
 // End of File
 //=============================================================================
-};
+} else { // Yanfly.BEC.version
+
+var text = '================================================================\n';
+text += 'YEP_X_AnimatedSVEnemies requires YEP_BattleEngineCore to be at the ';
+text += 'latest version to run properly.\n\nPlease go to www.yanfly.moe and ';
+text += 'update to the latest version for the YEP_BattleEngineCore plugin.\n';
+text += '================================================================\n';
+console.log(text);
+require('nw.gui').Window.get().showDevTools();
+
+} // Yanfly.BEC.version
+}; // YEP_BattleEngineCore

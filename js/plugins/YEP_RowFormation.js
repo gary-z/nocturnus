@@ -8,10 +8,11 @@ Imported.YEP_RowFormation = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Row = Yanfly.Row || {};
+Yanfly.Row.version = 1.14;
 
 //=============================================================================
  /*:
- * @plugindesc v1.09a Places party members into row formations to give
+ * @plugindesc v1.14 Places party members into row formations to give
  * them distinct advantages based on row location.
  * @author Yanfly Engine Plugins
  *
@@ -476,8 +477,12 @@ Yanfly.Row = Yanfly.Row || {};
  *
  * Actor and Enemy Notetags:
  *   <Default Row: x>
+ *   <Default Row: x, x, x>
  *   This is the default row assigned to the battler by default. This will
- *   override the default parameter settings.
+ *   override the default parameter settings. If multiple x values are assigned
+ *   then the battler can start in any of those rows. If multiple rows are
+ *   included, then at the start of the game (for actors) or start of battle
+ *   (for enemies), the battler will start in a random row included.
  *
  * Actor, Class, Enemy, Weapon, Armor, and State Notetags:
  *   <Row Lock>
@@ -693,20 +698,43 @@ Yanfly.Row = Yanfly.Row || {};
  *   This will set the enemy member in slotId to move to row x. If you want to
  *   move the 3rd enemy member to the 2nd row, the plugin command would look
  *   like: SetEnemyRow 3 2
- *   * Note: If you use this plugin command during turn 0, the enemies will not
- *   move and automatically assume the position they are in will be the row
- *   they'll be in. On the other hand, using this plugin on anything after turn
- *   0 will move the enemy visually to a different position on the screen.
+ *   * Note: If you use this plugin command during turn 0 and the parameter
+ *   'Adjust Relative' is set to false, the enemies will not move and
+ *   automatically assume the position they are in will be the row they'll be
+ *   in. On the other hand, using this plugin on anything after turn 0 will
+ *   move the enemy visually to a different position on the screen. If the
+ *   parameter 'Adjust Relative' is true, the enemies will move.
  *
  * ============================================================================
  * Changelog
  * ============================================================================
  *
- * Version 1.09a:
+ * Version 1.14:
+ * - Game now refreshes all battlers upon reentry into the battle after
+ * entering and leaving the Row formation menu mid-battle.
+ *
+ * Version 1.13:
+ * - Bug fixed where setting an actor's home position didn't mark their
+ * original index value.
+ *
+ * Version 1.12:
+ * - Lunatic Mode fail safes added.
+ *
+ * Version 1.11:
+ * - Updated the conditional passives for rows to occur more frequently.
+ *
+ * Version 1.10:
+ * - Updated <Default Row: x> notetag to also include <Default Row: x, x, x> so
+ * that actors or enemies can start in any of those default rows. If multiple
+ * rows are included, then at the start of the game (for actors) or start of
+ * battle (for enemies), the battler will start in a random row included.
+ *
+ * Version 1.09b:
  * - Updated Lunatic Mode to have an innate 'user' variable.
  * - Added 'Auto Add Menu' to plugin parameters. This way, users don't have to
  * make conflict with it if manually positioning the command with the Main Menu
  * Manager plugin.
+ * - Documentation update for 'SetEnemyRow slotId x' plugin command.
  *
  * Version 1.08:
  * - Updated for RPG Maker MV version 1.1.0.
@@ -845,14 +873,14 @@ DataManager.processRowNotetags1 = function(group) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
 
-    obj.defaultRow = Yanfly.Param.RowDefault;
-    obj.defaultRow = obj.defaultRow.clamp(1, Yanfly.Param.RowMaximum);
+    obj.defaultRow = [Yanfly.Param.RowDefault];
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
-      if (line.match(/<(?:DEFAULT ROW):[ ](\d+)>/i)) {
-        obj.defaultRow = parseInt(RegExp.$1);
-        obj.defaultRow = obj.defaultRow.clamp(1, Yanfly.Param.RowMaximum);
+      if (line.match(/<(?:DEFAULT ROW):[ ]*(\d+(?:\s*,\s*\d+)*)>/i)) {
+        obj.defaultRow = [];
+        var array = JSON.parse('[' + RegExp.$1.match(/\d+/g) + ']');
+        obj.defaultRow = obj.defaultRow.concat(array);
       }
     }
   }
@@ -973,6 +1001,26 @@ BattleManager.isRowRefreshRequested = function() {
 };
 
 //=============================================================================
+// Game_Temp
+//=============================================================================
+
+Game_Temp.prototype.hasStoredBattleSpriteset = function() {
+  return this._battleSpriteset;
+};
+
+Game_Temp.prototype.storeBattleSpriteset = function() {
+  this._battleSpriteset = SceneManager._scene._spriteset;
+};
+
+Game_Temp.prototype.restoreBattleSpriteset = function() {
+  if (this._battleSpriteset) {
+    SceneManager._scene._spriteset = this._battleSpriteset;
+    SceneManager._scene.addChild(SceneManager._scene._spriteset);
+    this._battleSpriteset = undefined;
+  }
+};
+
+//=============================================================================
 // Game_System
 //=============================================================================
 
@@ -1056,6 +1104,7 @@ Yanfly.Row.Game_BattlerBase_refresh = Game_BattlerBase.prototype.refresh;
 Game_BattlerBase.prototype.refresh = function() {
     this._isRowLocked = undefined;
     this._requestRowStatesRefresh = true;
+    this._rowStatesRaw = undefined;
     Yanfly.Row.Game_BattlerBase_refresh.call(this);
 };
 
@@ -1130,7 +1179,12 @@ Game_BattlerBase.prototype.rowStateConditionEval = function(state) {
     var subject = this;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(state.rowConditionEval);
+    var code = state.rowConditionEval;
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'ROW STATE CONDITION EVAL ERROR');
+    }
     this._checkingRowStateCondition = 0;
     return condition;
 };
@@ -1173,11 +1227,12 @@ Game_BattlerBase.prototype.isRowStateRefreshRequested = function() {
 
 Game_Battler.prototype.initRowFormation = function() {
     if (this.isActor()) {
-      return this._row = this.actor().defaultRow;
+      var rows = this.actor().defaultRow;
     } else if (this.isEnemy()) {
-      return this._row = this.enemy().defaultRow;
+      var rows = this.enemy().defaultRow;
     }
-    this._row = 1;
+    this._row = rows[Math.floor(Math.random() * rows.length)];;
+    this._row = this._row.clamp(1, Yanfly.Param.RowMaximum);
     this._rowStatesRaw = undefined;
 };
 
@@ -1248,7 +1303,11 @@ Game_Battler.prototype.targetRowEval = function(code, user, item) {
     var currentRow = this._row;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(code);
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'TARGET ROW EVAL ERROR');
+    }
     if (currentRow !== row) this.setRow(row);
     var changed = currentRow !== this._row;
     if ($gameParty.inBattle() && changed) BattleManager.requestRefreshRows();
@@ -1266,7 +1325,11 @@ Game_Battler.prototype.userRowEval = function(code, target, item) {
     var currentRow = this._row;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(code);
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'USER ROW EVAL ERROR');
+    }
     if (currentRow !== row) this.setRow(row);
     var changed = currentRow !== this._row;
     if ($gameParty.inBattle() && changed) BattleManager.requestRefreshRows();
@@ -1394,7 +1457,8 @@ Game_Unit.prototype.rowMembers = function(rowId) {
     var length = this.members().length;
     for (var i = 0; i < length; ++i) {
       var member = this.members()[i];
-      if (member && member.row() === rowId) group.push(member);
+      if (!member) continue;
+      if (member.row() === rowId) group.push(member);
     }
     return group;
 };
@@ -1404,7 +1468,8 @@ Game_Unit.prototype.rowAliveMembers = function(rowId) {
     var length = this.aliveMembers().length;
     for (var i = 0; i < length; ++i) {
       var member = this.aliveMembers()[i];
-      if (member && member.row() === rowId) group.push(member);
+      if (!member) continue;
+      if (member.row() === rowId) group.push(member);
     }
     return group;
 };
@@ -1414,7 +1479,8 @@ Game_Unit.prototype.rowDeadMembers = function(rowId) {
     var length = this.deadMembers().length;
     for (var i = 0; i < length; ++i) {
       var member = this.deadMembers()[i];
-      if (member && member.row() === rowId) group.push(member);
+      if (!member) continue;
+      if (member.row() === rowId) group.push(member);
     }
     return group;
 };
@@ -1547,7 +1613,7 @@ Sprite_Battler.prototype.setHome = function(x, y) {
 Yanfly.Row.Sprite_Actor_setActorHome = Sprite_Actor.prototype.setActorHome;
 Sprite_Actor.prototype.setActorHome = function(index) {
     if (!$gameSystem.isSideView()) {
-      return Yanfly.Row.Sprite_Actor_setActorHome.call(this);
+      return Yanfly.Row.Sprite_Actor_setActorHome.call(this, index);
     }
     this.alterActorHome(index);
     this.setHome(this._homeX, this._homeY);
@@ -1565,18 +1631,54 @@ Sprite_Actor.prototype.alterActorHome = function(index) {
     var rowMembers = $gameParty.rowMembers(rowId);
     var rowIndex = this._actor.rowIndex();
     if (Imported.YEP_BattleEngineCore) {
-      var statusHeight = eval(Yanfly.Param.BECCommandRows);
+      var statusHeight = Yanfly.Param.BECCommandRows;
     } else {
       var statusHeight = 4;
     }
     statusHeight *= Window_Base.prototype.lineHeight.call(this);
     statusHeight += Window_Base.prototype.standardPadding.call(this) * 2;
-    var maxRowX = eval(Yanfly.Param.RowMaxRowX);
-    var maxRowY = eval(Yanfly.Param.RowMaxRowY);
-    var minRowY = eval(Yanfly.Param.RowMinRowY);
-    var centerY = eval(Yanfly.Param.RowCenterY);
-    var homeX = eval(Yanfly.Row.HomeX[rowId]);
-    var homeY = eval(Yanfly.Row.HomeY[rowId]);
+    var code = Yanfly.Param.RowMaxRowX;
+    try {
+      var maxRowX = eval(code);
+    } catch (e) {
+      var maxRowX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW X ERROR');
+    }
+    var code = Yanfly.Param.RowMaxRowY;
+    try {
+      var maxRowY = eval(code);
+    } catch (e) {
+      var maxRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowMinRowY;
+    try {
+      var minRowY = eval(code);
+    } catch (e) {
+      var minRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MIN ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowCenterY;
+    try {
+      var centerY = eval(code);
+    } catch (e) {
+      var centerY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION CENTER Y ERROR');
+    }
+    var code = Yanfly.Row.HomeX[rowId];
+    try {
+      var homeX = eval(code);
+    } catch (e) {
+      var homeX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ACTOR HOME X ERROR');
+    }
+    var code = Yanfly.Row.HomeY[rowId];
+    try {
+      var homeY = eval(code);
+    } catch (e) {
+      var homeY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ACTOR HOME Y ERROR');
+    }
     this._homeX = homeX;
     this._homeY = homeY;
 };
@@ -1645,20 +1747,56 @@ Sprite_Enemy.prototype.setRowHomePosition = function() {
     var rowMembers = $gameTroop.rowMembers(rowId);
     var rowIndex = this._enemy.rowIndex();
     if (Imported.YEP_BattleEngineCore) {
-      var statusHeight = eval(Yanfly.Param.BECCommandRows);
+      var statusHeight = Yanfly.Param.BECCommandRows;
     } else {
       var statusHeight = 4;
     }
     statusHeight *= Window_Base.prototype.lineHeight.call(this);
     statusHeight += Window_Base.prototype.standardPadding.call(this) * 2;
-    var maxRowX = eval(Yanfly.Param.RowMaxRowX);
-    var maxRowY = eval(Yanfly.Param.RowMaxRowY);
-    var minRowY = eval(Yanfly.Param.RowMinRowY);
-    var centerY = eval(Yanfly.Param.RowCenterY);
+    var code = Yanfly.Param.RowMaxRowX;
+    try {
+      var maxRowX = eval(code);
+    } catch (e) {
+      var maxRowX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW X ERROR');
+    }
+    var code = Yanfly.Param.RowMaxRowY;
+    try {
+      var maxRowY = eval(code);
+    } catch (e) {
+      var maxRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowMinRowY;
+    try {
+      var minRowY = eval(code);
+    } catch (e) {
+      var minRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MIN ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowCenterY;
+    try {
+      var centerY = eval(code);
+    } catch (e) {
+      var centerY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION CENTER Y ERROR');
+    }
     var screenX = this._enemy.screenX();
     var screenY = this._enemy.screenY();
-    var homeX = eval(Yanfly.Param.RowEnemyX);
-    var homeY = eval(Yanfly.Param.RowEnemyY);
+    var code = Yanfly.Param.RowEnemyX;
+    try {
+      var homeX = eval(code);
+    } catch (e) {
+      var homeX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ENEMY HOME X ERROR');
+    }
+    var code = Yanfly.Param.RowEnemyY
+    try {
+      var homeY = eval(code);
+    } catch (e) {
+      var homeY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ENEMY HOME Y ERROR');
+    }
     this._enemy._screenX += this._homeX - homeX;
     this._enemy._screenY += this._homeY - homeY;
 };
@@ -1686,20 +1824,56 @@ Sprite_Enemy.prototype.alterEnemyHome = function(index) {
     var rowMembers = $gameTroop.rowMembers(rowId);
     var rowIndex = this._enemy.rowIndex();
     if (Imported.YEP_BattleEngineCore) {
-      var statusHeight = eval(Yanfly.Param.BECCommandRows);
+      var statusHeight = Yanfly.Param.BECCommandRows;
     } else {
       var statusHeight = 4;
     }
     statusHeight *= Window_Base.prototype.lineHeight.call(this);
     statusHeight += Window_Base.prototype.standardPadding.call(this) * 2;
-    var maxRowX = eval(Yanfly.Param.RowMaxRowX);
-    var maxRowY = eval(Yanfly.Param.RowMaxRowY);
-    var minRowY = eval(Yanfly.Param.RowMinRowY);
-    var centerY = eval(Yanfly.Param.RowCenterY);
+    var code = Yanfly.Param.RowMaxRowX;
+    try {
+      var maxRowX = eval(code);
+    } catch (e) {
+      var maxRowX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW X ERROR');
+    }
+    var code = Yanfly.Param.RowMaxRowY;
+    try {
+      var maxRowY = eval(code);
+    } catch (e) {
+      var maxRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MAX ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowMinRowY;
+    try {
+      var minRowY = eval(code);
+    } catch (e) {
+      var minRowY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION MIN ROW Y ERROR');
+    }
+    var code = Yanfly.Param.RowCenterY;
+    try {
+      var centerY = eval(code);
+    } catch (e) {
+      var centerY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION CENTER Y ERROR');
+    }
     var screenX = this._enemy.screenX();
     var screenY = this._enemy.screenY();
-    var homeX = eval(Yanfly.Param.RowEnemyX);
-    var homeY = eval(Yanfly.Param.RowEnemyY);
+    var code = Yanfly.Param.RowEnemyX;
+    try {
+      var homeX = eval(code);
+    } catch (e) {
+      var homeX = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ENEMY HOME X ERROR');
+    }
+    var code = Yanfly.Param.RowEnemyY
+    try {
+      var homeY = eval(code);
+    } catch (e) {
+      var homeY = 0;
+      Yanfly.Util.displayError(e, code, 'ROW FORMATION ENEMY HOME Y ERROR');
+    }
     this._homeX = homeX;
     this._homeY = homeY;
 };
@@ -1889,12 +2063,24 @@ Window_RowFormation.prototype.drawActorRowPosition = function(actor, index) {
     var img = this.getImage(actor);
     var rect = this.rowRect(index, actor.row());
     if (Yanfly.Param.RowMapSprite) {
-      var buffer = eval(Yanfly.Param.RowFrontBufferY);
+      var code = Yanfly.Param.RowFrontBufferY;
+      try {
+        var buffer = eval(code);
+      } catch (e) {
+        var buffer = 0;
+        Yanfly.Util.displayError(e, code, 'FRONT ROW Y BUFFER FORMULA ERROR');
+      }
       var wx = Math.floor(rect.x + rect.width / 2);
       var wy = Math.floor(rect.y + rect.height - buffer);
       this.drawActorCharacter(actor, wx, wy);
     } else {
-      var buffer = eval(Yanfly.Param.RowSideBufferY);
+      var code = Yanfly.Param.RowSideBufferY;
+      try {
+        var buffer = eval(code);
+      } catch (e) {
+        var buffer = 0;
+        Yanfly.Util.displayError(e, code, 'SIDE ROW Y BUFFER FORMULA ERROR');
+      }
       var wx = Math.floor(rect.x + rect.width / 2);
       var wy = Math.floor(rect.y + rect.height - buffer);
       this.drawSvActor(actor, wx, wy)
@@ -2071,6 +2257,17 @@ BattleManager.startBattle = function() {
     }
     $gameTemp._rowBattle = false;
     this._bypassMoveToStartLocation = false;
+    //this._spriteset.refreshRowPositions();
+    BattleManager.refreshAllBattlers();
+};
+
+BattleManager.refreshAllBattlers = function() {
+  var members = $gameParty.members().concat($gameTroop.members());
+  var length = members.length;
+  for (var i = 0; i < length; ++i) {
+    var member = members[i];
+    if (member) member.refresh();
+  }
 };
 
 Yanfly.Row.BattleManager_playBattleBgm = BattleManager.playBattleBgm;
@@ -2191,6 +2388,16 @@ Scene_Battle.prototype.createPartyCommandWindow = function() {
     win.setHandler('row', this.partyCommandRow.bind(this));
 };
 
+Yanfly.Row.Scene_Battle_createSpriteset =
+    Scene_Battle.prototype.createSpriteset;
+Scene_Battle.prototype.createSpriteset = function() {
+  if ($gameTemp.hasStoredBattleSpriteset()) {
+    $gameTemp.restoreBattleSpriteset();
+  } else {
+    Yanfly.Row.Scene_Battle_createSpriteset.call(this);
+  }
+};
+
 Scene_Battle.prototype.partyCommandRow = function() {
     BattleManager._bypassMoveToStartLocation = true;
     $gameParty.loadActorImages();
@@ -2199,6 +2406,7 @@ Scene_Battle.prototype.partyCommandRow = function() {
     $gameSystem.setBattleRowCooldown();
     Yanfly.Row.SavedBattleBgm = AudioManager.saveBgm();
     Yanfly.Row.SavedBattleBgs = AudioManager.saveBgs();
+    $gameTemp.storeBattleSpriteset();
     SceneManager.push(Scene_Row);
     BattleManager._phase = 'input';
     $gameTemp._rowBattle = true;
@@ -2218,8 +2426,21 @@ Scene_Battle.prototype.prepareBackground = function() {
 // Utilities
 //=============================================================================
 
+Yanfly.Util = Yanfly.Util || {};
+
 Yanfly.Util.onlyUnique = function(value, index, self) {
     return self.indexOf(value) === index;
+};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

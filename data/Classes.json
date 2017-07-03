@@ -26,183 +26,13 @@
             },
             {
                 "level": 1,
-                "note": "Imbue - Frost",
-                "skillId": 8
-            },
-            {
-                "level": 1,
-                "note": "Imbue - Removal",
-                "skillId": 11
-            },
-            {
-                "level": 1,
-                "note": "ST - Frost",
+                "note": "",
                 "skillId": 18
             },
             {
-                "level": 2,
-                "note": "AoE - Tech",
-                "skillId": 59
-            },
-            {
-                "level": 2,
-                "note": "ST - Flame",
-                "skillId": 20
-            },
-            {
                 "level": 3,
-                "note": "ST - Tech",
-                "skillId": 46
-            },
-            {
-                "level": 4,
-                "note": "Self - Tech",
+                "note": "",
                 "skillId": 52
-            },
-            {
-                "level": 5,
-                "note": "ST - Tech",
-                "skillId": 50
-            },
-            {
-                "level": 6,
-                "note": "Imbue - Wind",
-                "skillId": 9
-            },
-            {
-                "level": 6,
-                "note": "ST - Wind",
-                "skillId": 22
-            },
-            {
-                "level": 7,
-                "note": "",
-                "skillId": 56
-            },
-            {
-                "level": 7,
-                "note": "",
-                "skillId": 57
-            },
-            {
-                "level": 8,
-                "note": "",
-                "skillId": 53
-            },
-            {
-                "level": 9,
-                "note": "",
-                "skillId": 10
-            },
-            {
-                "level": 9,
-                "note": "",
-                "skillId": 24
-            },
-            {
-                "level": 10,
-                "note": "",
-                "skillId": 36
-            },
-            {
-                "level": 11,
-                "note": "",
-                "skillId": 44
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 19
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 21
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 23
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 25
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 26
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 27
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 28
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 29
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 30
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 31
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 32
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 33
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 35
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 37
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 47
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 49
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 51
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 54
-            },
-            {
-                "level": 20,
-                "note": "",
-                "skillId": 58
             }
         ],
         "name": "Spellscythe",
@@ -2016,13 +1846,13 @@
             },
             {
                 "code": 41,
-                "dataId": 3,
-                "value": 0
+                "dataId": 2,
+                "value": 1
             },
             {
                 "code": 41,
-                "dataId": 2,
-                "value": 1
+                "dataId": 3,
+                "value": 0
             },
             {
                 "code": 51,

@@ -8,10 +8,11 @@ Imported.YEP_PartySystem = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Party = Yanfly.Party || {};
+Yanfly.Party.version = 1.12;
 
 //=============================================================================
  /*:
- * @plugindesc v1.08 Replaces the default 'Formation' command with a new
+ * @plugindesc v1.12 Replaces the default 'Formation' command with a new
  * menu for players to easily change party formations.
  * @author Yanfly Engine Plugins
  *
@@ -100,15 +101,15 @@ Yanfly.Party = Yanfly.Party || {};
  * @param ---List---
  * @default
  *
- * @param Remove Text
- * @desc The text used to display the "Remove" command in the party
- * member list.
- * @default Remove
- *
  * @param Remove Icon
  * @desc The icon used to display next to the "Remove" command in the
  * party member list.
  * @default 16
+ *
+ * @param Show Sprite
+ * @desc Show the actor sprite on the list?
+ * YES - true     NO - false
+ * @default true
  *
  * @param Sprite Y Buffer
  * @desc This is the amount to adjust the actor graphic by.
@@ -215,6 +216,25 @@ Yanfly.Party = Yanfly.Party || {};
  * Changelog
  * ============================================================================
  *
+ * Version 1.12:
+ * - Functions updated to maintain compatibility.
+ *
+ * Version 1.11:
+ * - 'Show Sprite' plugin parameter added for those who would wish to show/hide
+ * the sprites in the list on the left side of the menu.
+ * - Change for 'Remove Icon' plugin parameter: if the icon ID used here is 0,
+ * an icon will not be drawn at all and the text will be realigned to the left.
+ * - Game now refreshes all battlers upon reentry into the battle after
+ * entering and leaving the Party change menu mid-battle.
+ *
+ * Version 1.10:
+ * - Optimization update.
+ *
+ * Version 1.09:
+ * - Fixed a bug that caused party members to not index themselves properly in
+ * battle. When in battle, actor index will now refer to the index of their
+ * battle member positions.
+ *
  * Version 1.08:
  * - Added 'EXP Distribution' parameter into the plugin parameters. Enabling
  * this will cause the EXP distributed to party members to be divided based on
@@ -266,27 +286,40 @@ Yanfly.Icon = Yanfly.Icon || {};
 
 Yanfly.Param.MaxBattleMembers = Number(Yanfly.Parameters['Max Battle Members']);
 Yanfly.Param.PartyShowBattle = String(Yanfly.Parameters['Show Battle Command']);
+Yanfly.Param.PartyShowBattle = eval(Yanfly.Param.PartyShowBattle);
 Yanfly.Param.PartyEnBattle = String(Yanfly.Parameters['Enable Battle Command']);
+Yanfly.Param.PartyEnBattle = eval(Yanfly.Param.PartyEnBattle);
 Yanfly.Param.PartyCooldown = Number(Yanfly.Parameters['Battle Cooldown']);
 Yanfly.Param.PartyMaxFollower = Number(Yanfly.Parameters['Maximum Followers']);
 Yanfly.Param.ParamExpDis = eval(String(Yanfly.Parameters['EXP Distribution']));
 
 Yanfly.Param.PartyHelpWindow = String(Yanfly.Parameters['Help Window']);
-Yanfly.Param.PartyLockFirst = String(Yanfly.Parameters['Lock First Actor']);
+Yanfly.Param.PartyHelpWindow = eval(Yanfly.Param.PartyHelpWindow);
 Yanfly.Param.PartyTextAlign = String(Yanfly.Parameters['Text Alignment']);
 Yanfly.Param.PartyCommand1 = String(Yanfly.Parameters['Change Command']);
 Yanfly.Param.PartyCommand2 = String(Yanfly.Parameters['Remove Command']);
 Yanfly.Param.PartyCommand3 = String(Yanfly.Parameters['Revert Command']);
 Yanfly.Param.PartyCommand4 = String(Yanfly.Parameters['Finish Command']);
+
 Yanfly.Param.PartyEmptyText = String(Yanfly.Parameters['Empty Text']);
 Yanfly.Param.PartyShowFace = String(Yanfly.Parameters['Actor Face']);
+Yanfly.Param.PartyShowFace = eval(Yanfly.Param.PartyShowFace);
 Yanfly.Param.PartyShowCharacter = String(Yanfly.Parameters['Actor Sprite']);
-Yanfly.Icon.PartyLocked = Number(Yanfly.Parameters['Locked Icon']);
-Yanfly.Icon.PartyRequired = Number(Yanfly.Parameters['Required Icon']);
+Yanfly.Param.PartyShowCharacter = eval(Yanfly.Param.PartyShowCharacter);
+
 Yanfly.Icon.PartyRemove = Number(Yanfly.Parameters['Remove Icon']);
+Yanfly.Param.PartyShowListSprite = String(Yanfly.Parameters['Show Sprite']);
+Yanfly.Param.PartyShowListSprite = eval(Yanfly.Param.PartyShowListSprite);
 Yanfly.Param.PartySpriteBufferY = Number(Yanfly.Parameters['Sprite Y Buffer']);
 Yanfly.Param.ColorInParty = Number(Yanfly.Parameters['In Party Text Color']);
+
+Yanfly.Param.PartyLockFirst = String(Yanfly.Parameters['Lock First Actor']);
+Yanfly.Param.PartyLockFirst = eval(Yanfly.Param.PartyLockFirst);
+Yanfly.Icon.PartyLocked = Number(Yanfly.Parameters['Locked Icon']);
+Yanfly.Icon.PartyRequired = Number(Yanfly.Parameters['Required Icon']);
+
 Yanfly.Param.PartyDetailWin = String(Yanfly.Parameters['Enable Detail Window']);
+Yanfly.Param.PartyDetailWin = eval(Yanfly.Param.PartyDetailWin);
 Yanfly.Param.PartyListWidth = Number(Yanfly.Parameters['List Width']);
 Yanfly.Param.PartyDetailParam = String(Yanfly.Parameters['Actor Parameters']);
 Yanfly.Param.PartyDetailEquip = String(Yanfly.Parameters['Actor Equipment']);
@@ -307,6 +340,26 @@ BattleManager.gainExp = function() {
 }; // Yanfly.Param.ParamExpDis
 
 //=============================================================================
+// Game_Temp
+//=============================================================================
+
+Game_Temp.prototype.hasStoredBattleSpriteset = function() {
+  return this._battleSpriteset;
+};
+
+Game_Temp.prototype.storeBattleSpriteset = function() {
+  this._battleSpriteset = SceneManager._scene._spriteset;
+};
+
+Game_Temp.prototype.restoreBattleSpriteset = function() {
+  if (this._battleSpriteset) {
+    SceneManager._scene._spriteset = this._battleSpriteset;
+    SceneManager._scene.addChild(SceneManager._scene._spriteset);
+    this._battleSpriteset = undefined;
+  }
+};
+
+//=============================================================================
 // Game_System
 //=============================================================================
 
@@ -317,8 +370,8 @@ Game_System.prototype.initialize = function() {
 };
 
 Game_System.prototype.initPartySettings = function() {
-    this._showBattleFormation = eval(Yanfly.Param.PartyShowBattle);
-    this._battleFormationEnabled = eval(Yanfly.Param.PartyEnBattle);
+    this._showBattleFormation = Yanfly.Param.PartyShowBattle;
+    this._battleFormationEnabled = Yanfly.Param.PartyEnBattle;
 };
 
 Game_System.prototype.isShowBattleFormation = function() {
@@ -382,6 +435,16 @@ Game_Actor.prototype.isFormationChangeOk = function() {
     return Yanfly.Party.Game_Actor_isFormationChangeOk.call(this);
 };
 
+Yanfly.Party.Game_Actor_index = Game_Actor.prototype.index;
+Game_Actor.prototype.index = function() {
+    if ($gameParty.inBattle()) {
+      return $gameParty.battleMembers().indexOf(this);
+    } else {
+      return Yanfly.Party.Game_Actor_index.call(this);
+    }
+    return $gameParty.members().indexOf(this);
+};
+
 //=============================================================================
 // Game_Party
 //=============================================================================
@@ -436,7 +499,7 @@ Yanfly.Party.Game_Party_setupStartingMembers =
 Game_Party.prototype.setupStartingMembers = function() {
     Yanfly.Party.Game_Party_setupStartingMembers.call(this);
     this.initializeBattleMembers();
-    if (eval(Yanfly.Param.PartyLockFirst)) this.lockActor(this._actors[0]);
+    if (Yanfly.Param.PartyLockFirst) this.lockActor(this._actors[0]);
 };
 
 Game_Party.prototype.toInitializeBattleMembers = function() {
@@ -449,7 +512,7 @@ Yanfly.Party.Game_Party_setupBattleTestMembers =
     Game_Party.prototype.setupBattleTestMembers;
 Game_Party.prototype.setupBattleTestMembers = function() {
     Yanfly.Party.Game_Party_setupBattleTestMembers.call(this);
-    if (eval(Yanfly.Param.PartyLockFirst)) this.lockActor(this._actors[0]);
+    if (Yanfly.Param.PartyLockFirst) this.lockActor(this._actors[0]);
     for (var i = 0; i < $dataActors.length; ++i) {
       var actor = $dataActors[i];
       if (!actor) continue;
@@ -636,7 +699,7 @@ Game_Interpreter.prototype.requireActor = function(args, value) {
 // Window_PartyMenuCommand
 //=============================================================================
 
-Window_PartyMenuCommand = function() {
+function Window_PartyMenuCommand() {
     this.initialize.apply(this, arguments);
 }
 
@@ -717,7 +780,7 @@ Window_PartyMenuCommand.prototype.refuseCancel = function(actorId) {
 // Window_PartySelect
 //=============================================================================
 
-Window_PartySelect = function() {
+function Window_PartySelect() {
     this.initialize.apply(this, arguments);
 }
 
@@ -788,10 +851,10 @@ Window_PartySelect.prototype.drawEmpty = function(rect) {
 };
 
 Window_PartySelect.prototype.drawActor = function(rect, actor) {
-    if (eval(Yanfly.Param.PartyShowFace)) {
+    if (Yanfly.Param.PartyShowFace) {
       this.drawActorFace(actor, rect.x, rect.y, rect.width, rect.height);
     }
-    if (eval(Yanfly.Param.PartyShowCharacter)) {
+    if (Yanfly.Param.PartyShowCharacter) {
       var ry = rect.height * 19/20;
       this.drawActorCharacter(actor, rect.x + rect.width / 2, ry);
     }
@@ -900,7 +963,7 @@ Window_PartySelect.prototype.item = function() {
 // Window_PartyList
 //=============================================================================
 
-Window_PartyList = function() {
+function Window_PartyList() {
     this.initialize.apply(this, arguments);
 }
 
@@ -909,7 +972,7 @@ Window_PartyList.prototype.constructor = Window_PartyList;
 
 Window_PartyList.prototype.initialize = function(partyWindow) {;
     var wy = partyWindow.y + partyWindow.height;
-    this._detailedWindow = eval(Yanfly.Param.PartyDetailWin);
+    this._detailedWindow = Yanfly.Param.PartyDetailWin;
     var ww = this.windowWidth();
     var wh = Graphics.boxHeight - wy;
     Window_Selectable.prototype.initialize.call(this, 0, wy, ww, wh);
@@ -979,6 +1042,7 @@ Window_PartyList.prototype.drawItem = function(index) {
 
 Window_PartyList.prototype.drawRemove = function(rect) {
     var ibw = Window_Base._iconWidth + 4;
+    if (Yanfly.Icon.PartyRemove <= 0) ibw = this.textPadding();
     rect.width -= this.textPadding();
     this.drawIcon(Yanfly.Icon.PartyRemove, rect.x + 2, rect.y + 2);
     this.drawText(Yanfly.Param.PartyCommand2, rect.x + ibw, rect.y,
@@ -994,10 +1058,13 @@ Window_PartyList.prototype.drawActor = function(actor, rect) {
 Window_PartyList.prototype.drawBasic = function(actor, rect) {
     var wx = Window_Base._iconWidth / 2 + this.textPadding() / 2;
     var wy = rect.y + rect.height + Yanfly.Param.PartySpriteBufferY
-    this.drawActorCharacter(actor, wx, wy);
+    if (Yanfly.Param.PartyShowListSprite) {
+      this.drawActorCharacter(actor, wx, wy);
+    }
     this.changeTextColor(this.listColor(actor));
     this.changePaintOpacity(this.actorIsEnabled(actor));
     var ibw = Window_Base._iconWidth + 4;
+    if (!Yanfly.Param.PartyShowListSprite) ibw = this.textPadding();
     this.drawText(actor.name(), rect.x + ibw, rect.y, rect.width - ibw);
     this.changePaintOpacity(true);
     this.drawRestrictions(actor, rect);
@@ -1318,6 +1385,16 @@ BattleManager.startBattle = function() {
     }
     $gameTemp._partyBattle = false;
     this._bypassMoveToStartLocation = false;
+    BattleManager.refreshAllBattlers();
+};
+
+BattleManager.refreshAllBattlers = function() {
+  var members = $gameParty.members().concat($gameTroop.members());
+  var length = members.length;
+  for (var i = 0; i < length; ++i) {
+    var member = members[i];
+    if (member) member.refresh();
+  }
 };
 
 Yanfly.Party.BattleManager_playBattleBgm = BattleManager.playBattleBgm;
@@ -1430,6 +1507,16 @@ Scene_Battle.prototype.createDisplayObjects = function() {
     $gameParty.loadActorImages();
 };
 
+Yanfly.Party.Scene_Battle_createSpriteset =
+    Scene_Battle.prototype.createSpriteset;
+Scene_Battle.prototype.createSpriteset = function() {
+  if ($gameTemp.hasStoredBattleSpriteset()) {
+    $gameTemp.restoreBattleSpriteset();
+  } else {
+    Yanfly.Party.Scene_Battle_createSpriteset.call(this);
+  }
+};
+
 Yanfly.Party.Scene_Battle_createPartyCommandWindow =
     Scene_Battle.prototype.createPartyCommandWindow;
 Scene_Battle.prototype.createPartyCommandWindow = function() {
@@ -1446,6 +1533,7 @@ Scene_Battle.prototype.partyCommandFormation = function() {
     $gameSystem.setBattleFormationCooldown();
     Yanfly.Party.SavedBattleBgm = AudioManager.saveBgm();
     Yanfly.Party.SavedBattleBgs = AudioManager.saveBgs();
+    $gameTemp.storeBattleSpriteset();
     SceneManager.push(Scene_Party);
     BattleManager._phase = 'input';
     $gameTemp._partyBattle = true;
@@ -1474,7 +1562,7 @@ Scene_Menu.prototype.commandFormation = function() {
 // Scene_Party
 //=============================================================================
 
-Scene_Party = function() {
+function Scene_Party() {
     this.initialize.apply(this, arguments);
 }
 
@@ -1488,7 +1576,7 @@ Scene_Party.prototype.initialize = function() {
 
 Scene_Party.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
-    if (eval(Yanfly.Param.PartyHelpWindow)) this.createHelpWindow();
+    if (Yanfly.Param.PartyHelpWindow) this.createHelpWindow();
     this.createCommandWindow();
     this.createPartyWindow();
     this.createListWindow();
@@ -1524,7 +1612,7 @@ Scene_Party.prototype.createListWindow = function() {
 };
 
 Scene_Party.prototype.createDetailWindow = function() {
-    if (!eval(Yanfly.Param.PartyDetailWin)) return;
+    if (!Yanfly.Param.PartyDetailWin) return;
     var wx = this._listWindow.width;
     var wy = this._listWindow.y;
     var ww = Graphics.boxWidth - wx;

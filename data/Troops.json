@@ -80,8 +80,8 @@
             {
                 "enemyId": 3,
                 "hidden": false,
-                "x": 135,
-                "y": 334
+                "x": 345,
+                "y": 340
             }
         ],
         "name": "Bandit",
@@ -212,8 +212,8 @@
             {
                 "enemyId": 4,
                 "hidden": false,
-                "x": 294,
-                "y": 403
+                "x": 366,
+                "y": 307
             }
         ],
         "name": "Bandit Leader*",
@@ -252,14 +252,14 @@
                         ]
                     },
                     {
-                        "code": 241,
+                        "code": 132,
                         "indent": 0,
                         "parameters": [
                             {
                                 "name": "Sinister",
                                 "pan": 0,
                                 "pitch": 100,
-                                "volume": 90
+                                "volume": 80
                             }
                         ]
                     },

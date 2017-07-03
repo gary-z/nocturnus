@@ -5725,7 +5725,7 @@
                         "variableValid": false,
                         "variableValue": 0
                     },
-                    "directionFix": false,
+                    "directionFix": true,
                     "image": {
                         "characterIndex": 3,
                         "characterName": "Evil",
@@ -5748,24 +5748,54 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Looting Bandit>\\msgevent[4]Gotta be SOMETHING useful in here!"
+                                "\\n<Looting Bandit>Gotta be SOMETHING useful in here!"
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 230,
                             "indent": 0,
                             "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
+                                60
                             ]
                         },
                         {
-                            "code": 401,
+                            "code": 213,
                             "indent": 0,
                             "parameters": [
-                                "\\lyonAnything in particular I can help you with?"
+                                0,
+                                1,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 25,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 25,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -5782,7 +5812,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Doubtful Bandit>\\msgevent[4]Huh?!\\| Who are you?!\\| Wait\\..\\..\\..\\. I forgot.\\|  I don't care."
+                                "\\n<Doubtful Bandit>Huh?!\\| Who are you?!\\| Wait\\..\\..\\..\\. I forgot.\\|  I don't care."
                             ]
                         },
                         {
@@ -5838,7 +5868,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\n<Typical Bandit>\\msgevent[18]Damn you\\..\\..\\..\\.\\. you\\..\\..\\.. kid!"
+                                "\\n<Typical Bandit>Damn you\\..\\..\\..\\.\\. you\\..\\..\\.. kid!"
                             ]
                         },
                         {
@@ -5926,7 +5956,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\n<Thankful Bandit>\\msgevent[4]Yes!\\.\\. Go away,\\. please!\\| I want to find something useful!"
+                                "\\n<Thankful Bandit>Yes!\\.\\. Go away,\\. please!\\| I want to find something useful!"
                             ]
                         },
                         {
@@ -6034,7 +6064,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\n<Sighing Bandit>\\msgevent[4]Not again..."
+                                "\\n<Sighing Bandit>Not again..."
                             ]
                         },
                         {
@@ -6090,7 +6120,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\n<Typical Bandit>\\msgevent[4]Damn you\\..\\..\\..\\.\\. you\\..\\..\\.. kid!"
+                                "\\n<Typical Bandit>Damn you\\..\\..\\..\\.\\. you\\..\\..\\.. kid!"
                             ]
                         },
                         {
@@ -6178,7 +6208,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\n<Thankful Bandit>\\msgevent[4]Yes!\\.\\. Go away,\\. please!\\| I want to find something useful!"
+                                "\\n<Thankful Bandit>Yes!\\.\\. Go away,\\. please!\\| I want to find something useful!"
                             ]
                         },
                         {

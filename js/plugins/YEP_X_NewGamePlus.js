@@ -8,10 +8,11 @@ Imported.YEP_X_NewGamePlus = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.NGP = Yanfly.NGP || {};
+Yanfly.NGP.version = 1.01;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 (Requires YEP_SaveCore.js) Allow your players to have
+ * @plugindesc v1.01 (Requires YEP_SaveCore.js) Allow your players to have
  * a New Game+ mode that allows carrying over save data.
  * @author Yanfly Engine Plugins
  *
@@ -160,6 +161,13 @@ Yanfly.NGP = Yanfly.NGP || {};
  *   DisableNewGamePlus
  *   - This will disable the New Game+ option for saves made after this plugin
  *   command has run. The "Load" option will appear instead of "New Game+".
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.01:
+ * - Bug fixed where the DisableNewGamePlus plugin command didn't work.
  */
 //=============================================================================
 
@@ -456,7 +464,7 @@ Game_System.prototype.isNewGamePlusEnabled = function() {
 
 Game_System.prototype.setNewGamePlusEnabled = function(value) {
   if (this._newGamePlusEnabled === undefined) this.initNewGamePlusSettings();
-  this._newGamePlusEnabled = true;
+  this._newGamePlusEnabled = value;
 };
 
 Game_System.prototype.getNewGamePlusLoops = function() {
@@ -476,7 +484,7 @@ Game_System.prototype.isNewGamePlusLoaded = function() {
 
 Game_System.prototype.setNewGamePlusLoaded = function(value) {
   if (this._newGamePlusLoaded === undefined) this.initNewGamePlusSettings();
-  this._newGamePlusLoaded = true;
+  this._newGamePlusLoaded = value;
 };
 
 //=============================================================================

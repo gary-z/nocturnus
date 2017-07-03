@@ -8,10 +8,11 @@ Imported.YEP_StatusMenuCore = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Status = Yanfly.Status || {};
+Yanfly.Status.version = 1.02;
 
 //=============================================================================
  /*:
- * @plugindesc v1.01a Changes the Status menu for your characters into
+ * @plugindesc v1.02 Changes the Status menu for your characters into
  * a hub that displays more character information.
  * @author Yanfly Engine Plugins
  *
@@ -1232,6 +1233,7 @@ Scene_Status.prototype.create = function() {
 Scene_Status.prototype.refreshActor = function() {
 		var actor = this.actor();
 		this._statusWindow.setActor(actor);
+    this._commandWindow.setActor(actor);
 		this._helpWindow.setText(actor.profile());
 		this._infoWindow.setActor(actor);
 };

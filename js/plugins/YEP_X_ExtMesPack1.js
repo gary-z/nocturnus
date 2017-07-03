@@ -8,10 +8,11 @@ Imported.YEP_X_ExtMesPack1 = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.EMP1 = Yanfly.EMP1 || {};
+Yanfly.EMP1.version = 1.10;
 
 //=============================================================================
  /*:
- * @plugindesc v1.08 (Requires YEP_MessageCore.js) Letter Sounds, NameBox
+ * @plugindesc v1.10a (Requires YEP_MessageCore.js) Letter Sounds, NameBox
  * Background Types, Choice Control, and more!
  * @author Yanfly Engine Plugins
  *
@@ -66,7 +67,7 @@ Yanfly.EMP1 = Yanfly.EMP1 || {};
  * @default center
  *
  * @param Default Y
- * @desc When using the Message Position X mods, anchor X to
+ * @desc When using the Message Position Y mods, anchor Y to
  * top     center     bottom
  * @default bottom
  *
@@ -537,7 +538,7 @@ Yanfly.EMP1 = Yanfly.EMP1 || {};
  *
  *   MessagePositionXAuto
  *   - Sets the Message Window's X Position to be automatically fitted and not
- *   set relative to its vertical anchor point.
+ *   set relative to its horizontal anchor point.
  *
  *   MessagePositionYAuto
  *   - Sets the Message Window's Y Position to be automatically fitted and not
@@ -548,7 +549,7 @@ Yanfly.EMP1 = Yanfly.EMP1 || {};
  *   you are using specified coordinates.
  *
  *   MessageAnchorY bottom
- *   - Sets the Message Window's y anchor to 'left', 'center', or 'right' if
+ *   - Sets the Message Window's y anchor to 'top', 'center', or 'bottom' if
  *   you are using specified coordinates.
  *
  *   MessagePositionReset
@@ -587,6 +588,14 @@ Yanfly.EMP1 = Yanfly.EMP1 || {};
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.10a:
+ * - Fixed a bug that made auto-messages to not position themselves properly on
+ * events that are using tiles for their images.
+ * - Documentation update to fix documentation errors.
+ *
+ * Version 1.09:
+ * - Fixed a bug with the pitch and pan variance doubling its value.
  *
  * Version 1.08:
  * - Fixed a bug that caused choices from 20 and onward to be hidden/disabled.
@@ -706,10 +715,10 @@ Game_System.prototype.getMessageSound = function() {
     }
     var max = this._msgSoundPitch + this._msgSoundPitchVar;
     var min = this._msgSoundPitch - this._msgSoundPitchVar;
-    obj['pitch'] += Math.floor(Math.random() * ( max - min + 1) + min);
+    obj['pitch'] = Math.floor(Math.random() * ( max - min + 1) + min);
     var max = this._msgSoundPan + this._msgSoundPanVar;
     var min = this._msgSoundPan - this._msgSoundPanVar;
-    obj['pan'] += Math.floor(Math.random() * ( max - min + 1) + min);
+    obj['pan'] = Math.floor(Math.random() * ( max - min + 1) + min);
     return obj;
 };
 
@@ -894,6 +903,7 @@ Game_System.prototype.setMessageAnchorY = function(value) {
 
 Game_CharacterBase.prototype.spriteHeight = function() {
     if (this._spriteHeight !== undefined) return this._spriteHeight;
+    if (this.tileId() > 0) return $gameMap.tileHeight();
     var bitmap = ImageManager.loadCharacter(this.characterName());
     if (!bitmap) {
       this._spriteHeight = 0;
@@ -1318,7 +1328,7 @@ Window_Message.prototype.updatePositionPlacementX = function() {
 
 Window_Message.prototype.updatePositionPlacementY = function() {
     this.y = $gameSystem.getMessagePositionY();
-    this.y -= Math.floor(this.height * $gameSystem.getMessageAnchorY())
+    this.y -= Math.floor(this.height * $gameSystem.getMessageAnchorY());
     this.y = Math.max(0, this.y);
     this.y = Math.min(this.y, Graphics.boxHeight - this.height);
 };

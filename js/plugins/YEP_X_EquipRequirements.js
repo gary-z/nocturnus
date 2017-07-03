@@ -8,10 +8,11 @@ Imported.YEP_X_EquipRequirements = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.EqReq = Yanfly.EqReq || {};
+Yanfly.EqReq.version = 1.07;
 
 //=============================================================================
  /*:
- * @plugindesc v1.05a (Requires YEP_EquipCore.js) Place requirements on
+ * @plugindesc v1.07 (Requires YEP_EquipCore.js) Place requirements on
  * pieces of equipment before actors can use them!
  * @author Yanfly Engine Plugins
  *
@@ -206,6 +207,12 @@ Yanfly.EqReq = Yanfly.EqReq || {};
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.07:
+ * - Fixed a bug that caused unique equipment to not work properly.
+ *
+ * Version 1.06:
+ * - Lunatic Mode fail safes added.
  *
  * Version 1.05a:
  * - Fixed a bug that caused unremovable items to be removed.
@@ -510,7 +517,7 @@ Game_BattlerBase.prototype.meetEquipSwitchRequirements = function(item) {
 };
 
 Game_BattlerBase.prototype.meetEquipUniqueRequirements = function(item) {
-  if (this.equips().contains(item)) return true;
+  if (!this.equips().contains(item)) return true;
   var requirements = item.equipRequirements;
   if (!requirements['unique']) return true;
   var length = this.equips().length;
@@ -535,7 +542,12 @@ Game_BattlerBase.prototype.meetEquipEvalRequirements = function(item) {
   var target = this;
   var s = $gameSwitches._data;
   var v = $gameVariables._data;
-  eval(item.customEquipReqCondition);
+  var code = item.customEquipReqCondition;
+  try {
+    eval(code);
+  } catch (e) {
+    Yanfly.Util.displayError(e, code, 'EQUIP REQUIREMENT EVAL ERROR');
+  }
   return condition;
 };
 
@@ -876,7 +888,12 @@ Window_EquipRequirement.prototype.drawCustomText = function(dy) {
     var subject = this._actor;
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
-    eval(this._item.customEquipReqText);
+    var code = this._item.customEquipReqText;
+    try {
+      eval(code);
+    } catch (e) {
+      Yanfly.Util.displayError(e, code, 'EQUIP CUSTOM TEXT ERROR');
+    }
     this.drawTextEx(text, this.textPadding(), dy);
     return dy + this.lineHeight();
 };
@@ -952,6 +969,17 @@ if (!Yanfly.Util.toGroup) {
     Yanfly.Util.toGroup = function(inVal) {
         return inVal;
     }
+};
+
+Yanfly.Util.displayError = function(e, code, message) {
+  console.log(message);
+  console.log(code || 'NON-EXISTENT');
+  console.error(e);
+  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
+    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
+      require('nw.gui').Window.get().showDevTools();
+    }
+  }
 };
 
 //=============================================================================

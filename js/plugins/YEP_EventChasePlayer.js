@@ -8,10 +8,11 @@ Imported.YEP_EventChasePlayer = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.ECP = Yanfly.ECP || {};
+Yanfly.ECP.version = 1.05;
 
 //=============================================================================
  /*:
- * @plugindesc v1.03 When a player is in the proximity of a certain event,
+ * @plugindesc v1.05 When a player is in the proximity of a certain event,
  * the event will start chasing or fleeing from the player.
  * @author Yanfly Engine Plugins
  *
@@ -98,6 +99,12 @@ Yanfly.ECP = Yanfly.ECP || {};
  * ============================================================================
  * Changelog
  * ============================================================================
+ * 
+ * Version 1.05:
+ * - Optimization update.
+ *
+ * Version 1.04:
+ * - Fixed a bug with this._seePlayer causing them to see stealthed players.
  *
  * Version 1.03:
  * - Improved pathfinding for chasing events. They will get stuck less by walls
@@ -132,6 +139,7 @@ Yanfly.Param = Yanfly.Param || {};
 
 Yanfly.Param.ECPSightLock = Number(Yanfly.Parameters['Sight Lock']);
 Yanfly.Param.ECPSeePlayer = String(Yanfly.Parameters['See Player']);
+Yanfly.Param.ECPSeePlayer = eval(Yanfly.Param.ECPSeePlayer);
 Yanfly.Param.ECPAlertTimer = Number(Yanfly.Parameters['Alert Timer']);
 Yanfly.Param.ECPAlertBalloon = Number(Yanfly.Parameters['Alert Balloon']);
 Yanfly.Param.ECPAlertSound = String(Yanfly.Parameters['Alert Sound']);
@@ -166,8 +174,8 @@ Game_Event.prototype.clearChaseSettings = function() {
   this._fleePlayer = false;
   this._fleeRange = 0;
   this._fleeSpeed = this._moveSpeed;
-  this._seePlayer = eval(Yanfly.Param.ECPSeePlayer);
-  this._sightLock = eval(Yanfly.Param.ECPSightLock);
+  this._seePlayer = Yanfly.Param.ECPSeePlayer;
+  this._sightLock = Yanfly.Param.ECPSightLock;
   this._returnAfter = Yanfly.Param.ECPReturn;
   this._returnWait = Yanfly.Param.ECPReturnWait;
   this._returnPhase = false;
@@ -222,13 +230,24 @@ Game_Event.prototype.updateChaseDistance = function() {
 };
 
 Game_Event.prototype.chaseConditions = function(dis) {
-    if (this._alertLock > 0) return true;
-    if (dis <= this._chaseRange && this.canSeePlayer()) return true;
-    if (dis <= this._chaseRange && !this._seePlayer) {
+    if (dis <= this._chaseRange && this.nonSeePlayer()) {
       this._alertLock = this._sightLock;
       return true;
     }
+    if (this._alertLock > 0) return true;
+    if (dis <= this._chaseRange && this.canSeePlayer()) return true;
     return false;
+};
+
+Game_Event.prototype.nonSeePlayer = function() {
+  if (Imported.YEP_X_EventChaseStealth) {
+    if (this.meetStealthModeConditions()) {
+      this.stealthClearChaseSettings();
+      this._stopCount = 0;
+      return false;
+    }
+  }
+  return !this._seePlayer;
 };
 
 Game_Event.prototype.startEventChase = function() {

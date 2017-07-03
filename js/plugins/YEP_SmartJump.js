@@ -11,7 +11,7 @@ Yanfly.Jump = Yanfly.Jump || {};
 
 //=============================================================================
  /*:
- * @plugindesc v1.01 Adds a plugin command that enables smart jumping
+ * @plugindesc v1.02 Adds a plugin command that enables smart jumping
  * where the player cannot jump into illegal areas.
  * @author Yanfly Engine Plugins
  *
@@ -92,6 +92,10 @@ Yanfly.Jump = Yanfly.Jump || {};
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.02:
+ * - Fixed a bug that allowed you to perform a smart jump from above a tile
+ * that requires equal regions.
  *
  * Version 1.01:
  * - Added 'Equal Regions' plugin parameter. This is a unique region area. More
@@ -233,7 +237,7 @@ Game_CharacterBase.prototype.isSmartJumpIllegalRegion = function(x, y) {
     if (x > $gameMap.width() - 1 || y > $gameMap.height() - 1) return true;
     if (this.isThrough()) return false;
     var regionId = $gameMap.regionId(x, y);
-    if (regionId > 0 && Yanfly.Param.JumpEqualRegion.contains(regionId)) {
+    if (Yanfly.Param.JumpEqualRegion.contains(regionId)) {
       if (this.regionId() === regionId) return false;
     }
     if (regionId > 0 && Yanfly.Param.JumpIllegalRegion.contains(regionId)) {
@@ -293,6 +297,10 @@ Game_CharacterBase.prototype.isSmartJumpValid = function(x, y) {
     if (this.isThrough()) return true;
     var events = $gameMap.eventsXyNt(x, y);
     var length = events.length;
+    var regionId = $gameMap.regionId(x, y);
+    if (Yanfly.Param.JumpEqualRegion.contains(regionId)) {
+      if (this.regionId() !== regionId) return false;
+    }
     for (var i = 0; i < length; ++i) {
       var ev = events[i];
       if (!ev) continue;
