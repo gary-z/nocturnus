@@ -6437,27 +6437,12 @@
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 213,
                             "indent": 0,
                             "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\unknown\\msgevent[0]\\..\\..\\.."
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 0,
-                            "parameters": [
-                                1
+                                -1,
+                                8,
+                                true
                             ]
                         },
                         {
@@ -6478,10 +6463,82 @@
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 205,
                             "indent": 0,
                             "parameters": [
-                                1
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                3
+                                            ]
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        3
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
@@ -6502,34 +6559,91 @@
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 205,
                             "indent": 0,
                             "parameters": [
-                                1
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                3
+                                            ]
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 505,
                             "indent": 0,
                             "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        3
+                                    ]
+                                }
                             ]
                         },
                         {
-                            "code": 401,
+                            "code": 505,
                             "indent": 0,
                             "parameters": [
-                                "\\unknown\\msgevent[0]\\..\\..\\.."
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 505,
                             "indent": 0,
                             "parameters": [
-                                1
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                8,
+                                true
                             ]
                         },
                         {
@@ -6550,13 +6664,6 @@
                             ]
                         },
                         {
-                            "code": 230,
-                            "indent": 0,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
                             "code": 101,
                             "indent": 0,
                             "parameters": [
@@ -6571,13 +6678,6 @@
                             "indent": 0,
                             "parameters": [
                                 "\\unknown\\msgevent[0]No more!\\| No more letting my fears get the better of me.\\| I'm going to stop those bandits from hurting anyone else!"
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 0,
-                            "parameters": [
-                                1
                             ]
                         },
                         {
@@ -6647,6 +6747,169 @@
                             "indent": 0,
                             "parameters": [
                                 "\\unknown\\msgevent[0]I need to find Lyon and ask him what happened."
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                4
+                                            ]
+                                        },
+                                        {
+                                            "code": 3,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 3,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 3,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 1,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        4
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 3,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 3,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 3,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 1,
+                                    "indent": null
+                                }
                             ]
                         },
                         {

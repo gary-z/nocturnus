@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 10
     },
-    "editMapId": 11,
+    "editMapId": 25,
     "elements": [
         "",
         "Physical",
@@ -158,7 +158,9 @@
     "optSideView": true,
     "optSlipDeath": false,
     "optTransparent": false,
-    "partyMembers": [],
+    "partyMembers": [
+        19
+    ],
     "ship": {
         "bgm": {
             "name": "Ship2",
@@ -325,9 +327,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 2,
-    "startX": 28,
-    "startY": 4,
+    "startMapId": 25,
+    "startX": 18,
+    "startY": 11,
     "switches": [
         "",
         "End Autorun1",
@@ -584,7 +586,7 @@
             "level": 1
         }
     ],
-    "testTroopId": 5,
+    "testTroopId": 7,
     "title1Name": "Tower2",
     "title2Name": "Medieval",
     "titleBgm": {
@@ -603,7 +605,7 @@
         "NextMap",
         "Damage",
         "RNGSteps",
-        "",
+        "CluesCave",
         "",
         "",
         "",
@@ -696,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 88903469,
+    "versionId": 1492355,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

@@ -216,7 +216,7 @@
                 "y": 307
             }
         ],
-        "name": "Bandit Leader*",
+        "name": "Bandit Leader",
         "pages": [
             {
                 "conditions": {
@@ -239,7 +239,7 @@
                         "indent": 0,
                         "parameters": [
                             "SF_People2",
-                            7,
+                            0,
                             0,
                             2
                         ]

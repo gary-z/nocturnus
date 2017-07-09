@@ -2910,6 +2910,110 @@
                     },
                     "list": [
                         {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownThis flame is still lit.\\| Whoever stays here has not been gone for long.\\| Could it be Lyon's?"
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                9,
+                                9,
+                                1,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 6,
+                    "moveType": 0,
+                    "priorityType": 1,
+                    "stepAnime": true,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": true,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": true,
+                    "image": {
+                        "characterIndex": 1,
+                        "characterName": "!Flame",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownWho could be staying here?"
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -2939,10 +3043,9 @@
             "x": 16,
             "y": 5
         },
-        null,
         {
-            "id": 4,
-            "name": "Cutscene Autorun",
+            "id": 3,
+            "name": "",
             "note": "",
             "pages": [
                 {
@@ -2974,7 +3077,7 @@
                             "code": 101,
                             "indent": 0,
                             "parameters": [
-                                "",
+                                "ElleFaceset",
                                 0,
                                 0,
                                 2
@@ -2984,14 +3087,1074 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "-- CUTSCENE WITH LYON, FOREST DEMON ENCOUNTER, ELLE JOINS PARTY --"
+                                "\\unknownWhat is this?\\| Seems to be some sort of memo."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownIt is dated... 11 years ago."
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                9,
+                                9,
+                                1,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": true,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown12 years ago... could it be related to...- "
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                }
+            ],
+            "x": 16,
+            "y": 2
+        },
+        {
+            "id": 4,
+            "name": "Cutscene Autorun",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 9,
+                        "variableValid": true,
+                        "variableValue": 2
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                8,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                6,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonWhoever you are,\\.\\. you've made a mistake coming here!"
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                1,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                4
+                                            ]
+                                        },
+                                        {
+                                            "code": 30,
+                                            "indent": null,
+                                            "parameters": [
+                                                5
+                                            ]
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        4
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 30,
+                                    "indent": null,
+                                    "parameters": [
+                                        5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 5 -1"
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                90
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                3
+                                            ]
+                                        },
+                                        {
+                                            "code": 30,
+                                            "indent": null,
+                                            "parameters": [
+                                                5
+                                            ]
+                                        },
+                                        {
+                                            "code": 25,
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        3
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 30,
+                                    "indent": null,
+                                    "parameters": [
+                                        5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 25,
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath -1 5"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                10,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownLyon?"
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                8,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonIt's you\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                2,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownLyon!\\| Where did you go?\\| Didn't you say you were going to come back to get me?"
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                1,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonOh\\..\\..\\.. I\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                5,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownLyon\\..\\..\\.. I just came from the village."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonGrgh.\\..\\.. I was so full of myself.\\| I thought I could stop them.\\| I made a promise and then I-\\.\\.\\."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownLyon!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                8,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonHuh?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownYou are being way too hard on yourself!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                7,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonBut I--\\|\\^"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                5,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownYou fought your hardest\\..\\..\\.. I wasn't able to help at all."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                8,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownBut, it all doesn't matter anymore!\\| What happened is in the past now!\\| Let's not waste what luck we have now!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonLuck?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                1,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownWe're both alive, aren't we?\\|"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                9,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI wish the villagers could say the same\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownAre you going to keep moping?\\| When I saw you fight those bandits I didn't expect you to be such a whiny baby!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                6,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonAre you looking for a fight?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownIf you're so sad about the dead, think about it!\\| They couldn't be saved, but what about the future victims of those bloodthirsty creeps?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                6,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyon\\..\\..\\.. Grgh\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownI know you understand!\\| Those guys are still walking around scott-free! Who knows where they'll attack next!?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                9,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonI admit you have a point\\..\\..\\.."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                8,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyon\\..\\..\\.. Um."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                9,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknown\\..\\..\\.. Right. I never even told you my name.\\| Here I am, after having stalked you to your\\..\\..\\.. wonderful home here.  Rambling on like a looney, and you have no idea what my name is!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyon\\..\\..\\.. Are you going to tell me your name?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                9,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\unknownHuh?\\.\\. Oh!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                3,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\elleMy name is Elle.\\| Pleasure to\\..\\..\\.. formally meet you."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                2,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonRight. Elle. So about the bandits that attacked...-"
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Monster2",
+                                    "pan": 0,
+                                    "pitch": 100,
+                                    "volume": 90
+                                }
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                2,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                2,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                9,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\elleHuh?\\.\\. What the heckaroni was that?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonWere you followed?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\elleBy who?!"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonShh.\\| I will investigate."
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath -1 cancel"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 5 cancel"
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                5,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 29,
+                                            "indent": null,
+                                            "parameters": [
+                                                5
+                                            ]
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 29,
+                                    "indent": null,
+                                    "parameters": [
+                                        5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                1,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "SmartPath 5 20 13"
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                90
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                9,
+                                9,
+                                0,
+                                0,
+                                11
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 213,
+                            "indent": 0,
+                            "parameters": [
+                                -1,
+                                5,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "ElleFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\elleAgain?\\| I'm not helpless!\\.\\. I'll show him."
+                            ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
                             ]
                         },
                         {
                             "code": 129,
                             "indent": 0,
                             "parameters": [
-                                6,
+                                19,
                                 1,
                                 false
                             ]
@@ -3003,6 +4166,109 @@
                                 1,
                                 0,
                                 false
+                            ]
+                        },
+                        {
+                            "code": 314,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                1,
+                                0,
+                                3,
+                                3,
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                1,
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 311,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                20,
+                                14,
+                                12,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 223,
+                            "indent": 0,
+                            "parameters": [
+                                [
+                                    -68,
+                                    -68,
+                                    0,
+                                    68
+                                ],
+                                1,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 284,
+                            "indent": 0,
+                            "parameters": [
+                                "CloudySky2",
+                                false,
+                                false,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "LyonFaceset",
+                                4,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\lyonShh.\\| I will investigate."
                             ]
                         },
                         {
@@ -3010,7 +4276,7 @@
                             "indent": 0,
                             "parameters": [
                                 0,
-                                5,
+                                7,
                                 false,
                                 false
                             ]
@@ -3129,6 +4395,117 @@
             ],
             "x": 28,
             "y": 0
+        },
+        {
+            "id": 5,
+            "name": "Lyon",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 9,
+                        "variableValid": true,
+                        "variableValue": 2
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "Main",
+                        "direction": 8,
+                        "pattern": 1,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 9,
+                        "variableValid": true,
+                        "variableValue": 10
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                }
+            ],
+            "x": 20,
+            "y": 14
         }
     ],
     "height": 16,
