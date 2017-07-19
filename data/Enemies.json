@@ -225,7 +225,7 @@
         "exp": 100,
         "gold": 0,
         "id": 4,
-        "name": "Bandit Leader*",
+        "name": "Bandit Leader",
         "note": "Boss HP\nHide HP\n<sprite motion: 'banditleader[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 5, loop: false, speed: 8\n  thrust:   index: 7, loop: false, speed: 8\n  swing:    index: 7, loop: false, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 8, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
         "params": [
             1500,
@@ -260,16 +260,9 @@
             {
                 "conditionParam1": 0,
                 "conditionParam2": 0,
-                "conditionType": 1,
-                "rating": 9,
-                "skillId": 240
-            },
-            {
-                "conditionParam1": 0,
-                "conditionParam2": 0,
                 "conditionType": 0,
                 "rating": 5,
-                "skillId": 241
+                "skillId": 1
             }
         ],
         "battlerHue": 0,
@@ -294,17 +287,17 @@
         "exp": 25,
         "gold": 0,
         "id": 5,
-        "name": "Forest Demon (Event)",
-        "note": "",
+        "name": "Forest Demon",
+        "note": "The first forest demon encounter.",
         "params": [
-            500,
+            350,
             75,
-            60,
-            75,
-            60,
+            35,
             20,
-            40,
-            25
+            10,
+            10,
+            25,
+            10
         ],
         "traits": [
             {
