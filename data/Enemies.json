@@ -1,0 +1,954 @@
+[
+    null,
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 170,
+        "battlerName": "Werewolf",
+        "dropItems": [
+            {
+                "dataId": 7,
+                "denominator": 3,
+                "kind": 1
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 50,
+        "gold": 50,
+        "id": 1,
+        "name": "Training Wolfy",
+        "note": "",
+        "params": [
+            99999,
+            0,
+            200,
+            30,
+            30,
+            30,
+            30,
+            30
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "Bandit",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 2,
+        "name": "JunkRat",
+        "note": "",
+        "params": [
+            300,
+            0,
+            35,
+            25,
+            1,
+            20,
+            25,
+            20
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "bandit[4,11,1,0,false]",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 10,
+                "kind": 1
+            },
+            {
+                "dataId": 10,
+                "denominator": 5,
+                "kind": 1
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 25,
+        "gold": 1,
+        "id": 3,
+        "name": "Bandit",
+        "note": " <ctb icon: 1>\n <sprite motion: 'bandit[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 8, loop: once, speed: 8\n  thrust:   index: 7, loop: once, speed: 8\n  swing:    index: 7, loop: once, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 7, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
+        "params": [
+            150,
+            0,
+            20,
+            5,
+            5,
+            2,
+            5,
+            5
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 251
+            },
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 239
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "banditleader[4,11,1,0,false]",
+        "dropItems": [
+            {
+                "dataId": 3,
+                "denominator": 1,
+                "kind": 2
+            },
+            {
+                "dataId": 13,
+                "denominator": 1,
+                "kind": 1
+            },
+            {
+                "dataId": 3,
+                "denominator": 1,
+                "kind": 1
+            }
+        ],
+        "exp": 100,
+        "gold": 0,
+        "id": 4,
+        "name": "Bandit Leader",
+        "note": "Boss HP\nHide HP\n<sprite motion: 'banditleader[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 5, loop: false, speed: 8\n  thrust:   index: 7, loop: false, speed: 8\n  swing:    index: 7, loop: false, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 8, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
+        "params": [
+            1500,
+            100,
+            40,
+            12,
+            10,
+            5,
+            31,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "Ghost",
+        "dropItems": [
+            {
+                "dataId": 11,
+                "denominator": 1,
+                "kind": 1
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 25,
+        "gold": 0,
+        "id": 5,
+        "name": "Forest Demon",
+        "note": "The first forest demon encounter.",
+        "params": [
+            350,
+            75,
+            35,
+            20,
+            10,
+            10,
+            25,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "Ghost",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 6,
+        "name": "Forest Demon",
+        "note": "",
+        "params": [
+            250,
+            75,
+            40,
+            15,
+            30,
+            10,
+            40,
+            25
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            },
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 237
+            }
+        ],
+        "battlerHue": 263,
+        "battlerName": "Werewolf",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 7,
+        "name": "Folf",
+        "note": "",
+        "params": [
+            250,
+            50,
+            30,
+            30,
+            30,
+            10,
+            50,
+            30
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            },
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 242
+            }
+        ],
+        "battlerHue": 91,
+        "battlerName": "Plant",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 8,
+        "name": "Power Plant",
+        "note": "",
+        "params": [
+            250,
+            100,
+            50,
+            15,
+            50,
+            30,
+            20,
+            40
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 9,
+        "name": "",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 10,
+        "name": "",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 11,
+        "name": "",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 12,
+        "name": "Miner's Geist",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 78,
+        "battlerName": "Spider",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 13,
+        "name": "Mine Spider",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 14,
+        "name": "Sneaky Rat",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 5,
+                "skillId": 1
+            }
+        ],
+        "battlerHue": 0,
+        "battlerName": "",
+        "dropItems": [
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            },
+            {
+                "dataId": 1,
+                "denominator": 1,
+                "kind": 0
+            }
+        ],
+        "exp": 0,
+        "gold": 0,
+        "id": 15,
+        "name": "Coal Power Plant",
+        "note": "",
+        "params": [
+            100,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+        ],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            }
+        ]
+    }
+]
