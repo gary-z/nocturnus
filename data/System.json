@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 10
     },
-    "editMapId": 20,
+    "editMapId": 25,
     "elements": [
         "",
         "Physical",
@@ -379,9 +379,9 @@
         "CalmFlame",
         "CaveCutsceneDone",
         "BatKilled",
-        "",
-        "",
-        "",
+        "BatSpawn",
+        "CutsceneP2",
+        "CutsceneP3",
         "",
         "",
         "",
@@ -698,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 46537675,
+    "versionId": 94418164,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
