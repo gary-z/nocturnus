@@ -47,7 +47,7 @@
         "traits": []
     },
     {
-        "battlerName": "Package1_7",
+        "battlerName": "sigmundtaken",
         "characterIndex": 2,
         "characterName": "Main",
         "classId": 3,
@@ -58,8 +58,8 @@
             92,
             0
         ],
-        "faceIndex": 6,
-        "faceName": "People3",
+        "faceIndex": 0,
+        "faceName": "sigmund",
         "id": 3,
         "initialLevel": 1,
         "maxLevel": 99,
@@ -93,9 +93,9 @@
         "traits": []
     },
     {
-        "battlerName": "",
+        "battlerName": "sylvia",
         "characterIndex": 0,
-        "characterName": "",
+        "characterName": "sylvia",
         "classId": 1,
         "equips": [
             0,
@@ -105,7 +105,7 @@
             0
         ],
         "faceIndex": 0,
-        "faceName": "",
+        "faceName": "sylvia",
         "id": 5,
         "initialLevel": 1,
         "maxLevel": 99,
