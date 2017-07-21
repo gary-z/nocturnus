@@ -5422,8 +5422,8 @@
                         "itemValid": false,
                         "selfSwitchCh": "A",
                         "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
+                        "switch1Id": 46,
+                        "switch1Valid": true,
                         "switch2Id": 1,
                         "switch2Valid": false,
                         "variableId": 1,
@@ -5468,7 +5468,8 @@
             ],
             "x": 15,
             "y": 11
-        }
+        },
+        null
     ],
     "height": 18,
     "note": "<ground>\n<par>\n<shadow>\n<light>",
