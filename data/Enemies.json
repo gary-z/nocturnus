@@ -266,7 +266,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "Ghost",
+        "battlerName": "forestDemon[4,14,1,0,false]",
         "dropItems": [
             {
                 "dataId": 11,
@@ -288,7 +288,7 @@
         "gold": 0,
         "id": 5,
         "name": "Forest Demon",
-        "note": "The first forest demon encounter.",
+        "note": "The first forest demon encounter.\n<sprite motion: 'forestDemon[4,14,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 4, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 5, loop: false, speed: 8\n  thrust:   index: 7, loop: false, speed: 8\n  swing:    index: 7, loop: false, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 8, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 13, loop: once, speed: 8\n </sprite motion>",
         "params": [
             350,
             75,
@@ -328,7 +328,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "Ghost",
+        "battlerName": "forestDemon[4,14,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,
@@ -350,7 +350,7 @@
         "gold": 0,
         "id": 6,
         "name": "Forest Demon",
-        "note": "",
+        "note": "<sprite motion: 'forestDemon[4,14,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 4, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 5, loop: false, speed: 8\n  thrust:   index: 7, loop: false, speed: 8\n  swing:    index: 7, loop: false, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 8, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 13, loop: once, speed: 8\n </sprite motion>",
         "params": [
             250,
             75,
@@ -396,8 +396,8 @@
                 "skillId": 237
             }
         ],
-        "battlerHue": 263,
-        "battlerName": "Werewolf",
+        "battlerHue": 0,
+        "battlerName": "folf[4,11,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,
@@ -419,7 +419,7 @@
         "gold": 0,
         "id": 7,
         "name": "Folf",
-        "note": "",
+        "note": "<sprite motion: 'folf[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 8, loop: once, speed: 8\n  thrust:   index: 7, loop: once, speed: 8\n  swing:    index: 7, loop: once, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 7, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
         "params": [
             250,
             50,
@@ -527,8 +527,8 @@
                 "skillId": 1
             }
         ],
-        "battlerHue": 0,
-        "battlerName": "",
+        "battlerHue": 84,
+        "battlerName": "bear[4,11,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,
@@ -549,8 +549,8 @@
         "exp": 0,
         "gold": 0,
         "id": 9,
-        "name": "",
-        "note": "",
+        "name": "Forest Bear",
+        "note": "<sprite motion: 'bear[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 8, loop: once, speed: 8\n  thrust:   index: 7, loop: once, speed: 8\n  swing:    index: 7, loop: once, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 7, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
         "params": [
             100,
             0,
@@ -714,7 +714,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "",
+        "battlerName": "minerGeist[4,11,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,
@@ -775,8 +775,8 @@
                 "skillId": 1
             }
         ],
-        "battlerHue": 78,
-        "battlerName": "Spider",
+        "battlerHue": 0,
+        "battlerName": "spider[4,11,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,
@@ -838,7 +838,7 @@
             }
         ],
         "battlerHue": 0,
-        "battlerName": "",
+        "battlerName": "sneakyRat[4,11,1,0,false]",
         "dropItems": [
             {
                 "dataId": 1,

@@ -328,7 +328,20 @@
     },
     {
         "id": 6,
-        "members": [],
+        "members": [
+            {
+                "enemyId": 7,
+                "hidden": false,
+                "x": 242,
+                "y": 297
+            },
+            {
+                "enemyId": 9,
+                "hidden": false,
+                "x": 336,
+                "y": 402
+            }
+        ],
         "name": "",
         "pages": [
             {
