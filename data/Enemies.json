@@ -386,14 +386,7 @@
                 "conditionParam2": 0,
                 "conditionType": 0,
                 "rating": 5,
-                "skillId": 1
-            },
-            {
-                "conditionParam1": 0,
-                "conditionParam2": 0,
-                "conditionType": 0,
-                "rating": 5,
-                "skillId": 237
+                "skillId": 244
             }
         ],
         "battlerHue": 0,
@@ -423,12 +416,12 @@
         "params": [
             250,
             50,
-            30,
-            30,
-            30,
+            20,
             10,
-            50,
-            30
+            30,
+            5,
+            30,
+            15
         ],
         "traits": [
             {
@@ -524,7 +517,7 @@
                 "conditionParam2": 0,
                 "conditionType": 0,
                 "rating": 5,
-                "skillId": 1
+                "skillId": 243
             }
         ],
         "battlerHue": 84,
@@ -552,10 +545,10 @@
         "name": "Forest Bear",
         "note": "<sprite motion: 'bear[4,11,1,0,false]'>\n  idle:     index: 1, loop: true, speed: 8\n  walk:     index: 5, loop: true, speed: 8\n  wait:     index: 1, loop: true, speed: 8\n  chant:    index: 1, loop: true, speed: 8\n  guard:    index: 4, loop: true, speed: 8\n  damage:   index: 2, loop: false, speed: 8, frames: 4\n  evade:    index: 8, loop: once, speed: 8\n  thrust:   index: 7, loop: once, speed: 8\n  swing:    index: 7, loop: once, speed: 8\n  missile:  index: 7, loop: false, speed: 8\n  skill:    index: 7, loop: false, speed: 8\n  spell:    index: 7, loop: false, speed: 8\n  item:     index: 7, loop: false, speed: 8\n  escape:   index: 6, loop: true, speed: 8\n  return:   index: 6, loop: true, speed: 8\n  victory:  index: 5, loop: true, speed: 8\n  dying:    index: 3, loop: true, speed: 8\n  abnormal: index: 3, loop: true, speed: 8\n  sleep:    index: 3, loop: true, speed: 8\n  dead:     index: 11, loop: once, speed: 8\n </sprite motion>",
         "params": [
-            100,
+            400,
             0,
-            10,
-            10,
+            30,
+            20,
             10,
             10,
             10,

@@ -1,8 +1,8 @@
 {
     "autoplayBgm": false,
     "autoplayBgs": false,
-    "battleback1Name": "",
-    "battleback2Name": "",
+    "battleback1Name": "Grassland",
+    "battleback2Name": "Forest",
     "bgm": {
         "name": "",
         "pan": 0,
@@ -8394,7 +8394,7 @@
     "parallaxSx": 0,
     "parallaxSy": 0,
     "scrollType": 0,
-    "specifyBattleback": false,
+    "specifyBattleback": true,
     "tilesetId": 2,
     "width": 43
 }

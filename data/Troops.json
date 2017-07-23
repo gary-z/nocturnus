@@ -332,17 +332,11 @@
             {
                 "enemyId": 7,
                 "hidden": false,
-                "x": 242,
-                "y": 297
-            },
-            {
-                "enemyId": 9,
-                "hidden": false,
-                "x": 336,
-                "y": 402
+                "x": 98,
+                "y": 369
             }
         ],
-        "name": "",
+        "name": "Folf",
         "pages": [
             {
                 "conditions": {
@@ -398,23 +392,6 @@
                     "turnValid": true
                 },
                 "list": [
-                    {
-                        "code": 101,
-                        "indent": 0,
-                        "parameters": [
-                            "LyonFaceset",
-                            0,
-                            0,
-                            1
-                        ]
-                    },
-                    {
-                        "code": 401,
-                        "indent": 0,
-                        "parameters": [
-                            "\\lyonThere you are..."
-                        ]
-                    },
                     {
                         "code": 121,
                         "indent": 0,
@@ -681,11 +658,17 @@
             {
                 "enemyId": 6,
                 "hidden": false,
-                "x": 408,
-                "y": 436
+                "x": 364,
+                "y": 342
+            },
+            {
+                "enemyId": 6,
+                "hidden": false,
+                "x": 303,
+                "y": 444
             }
         ],
-        "name": "",
+        "name": "Forest Demon*2",
         "pages": [
             {
                 "conditions": {
@@ -715,8 +698,15 @@
     },
     {
         "id": 9,
-        "members": [],
-        "name": "",
+        "members": [
+            {
+                "enemyId": 6,
+                "hidden": false,
+                "x": 316,
+                "y": 444
+            }
+        ],
+        "name": "Forest Demon",
         "pages": [
             {
                 "conditions": {
@@ -746,8 +736,15 @@
     },
     {
         "id": 10,
-        "members": [],
-        "name": "",
+        "members": [
+            {
+                "enemyId": 9,
+                "hidden": false,
+                "x": 28,
+                "y": 411
+            }
+        ],
+        "name": "Forest Bear",
         "pages": [
             {
                 "conditions": {
@@ -779,31 +776,19 @@
         "id": 11,
         "members": [
             {
-                "enemyId": 2,
+                "enemyId": 7,
                 "hidden": false,
-                "x": 185,
-                "y": 436
-            },
-            {
-                "enemyId": 4,
-                "hidden": false,
-                "x": 193,
-                "y": 421
-            },
-            {
-                "enemyId": 5,
-                "hidden": false,
-                "x": 450,
-                "y": 436
+                "x": 234,
+                "y": 333
             },
             {
                 "enemyId": 7,
                 "hidden": false,
-                "x": 671,
-                "y": 436
+                "x": 216,
+                "y": 444
             }
         ],
-        "name": "Hello",
+        "name": "Folf*2",
         "pages": [
             {
                 "conditions": {

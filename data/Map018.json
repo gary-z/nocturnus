@@ -1,8 +1,8 @@
 {
     "autoplayBgm": true,
     "autoplayBgs": true,
-    "battleback1Name": "",
-    "battleback2Name": "",
+    "battleback1Name": "Grassland",
+    "battleback2Name": "Forest",
     "bgm": {
         "name": "Mysterious Forest",
         "pan": 0,
@@ -9053,6 +9053,115 @@
             ],
             "x": 17,
             "y": 25
+        },
+        {
+            "id": 29,
+            "name": "EV029",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 46,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 6,
+                        "characterName": "Monster",
+                        "direction": 4,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 301,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                9,
+                                true,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 601,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 602,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 604,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    " this._chaseRange = 4"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    " this._chaseSpeed = 5"
+                                ]
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 3,
+                    "priorityType": 1,
+                    "stepAnime": true,
+                    "through": false,
+                    "trigger": 2,
+                    "walkAnime": true
+                }
+            ],
+            "x": 23,
+            "y": 2
         }
     ],
     "height": 30,
@@ -9064,7 +9173,7 @@
     "parallaxSx": 0,
     "parallaxSy": 0,
     "scrollType": 0,
-    "specifyBattleback": false,
+    "specifyBattleback": true,
     "tilesetId": 2,
     "width": 38
 }

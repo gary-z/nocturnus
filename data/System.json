@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 10
     },
-    "editMapId": 20,
+    "editMapId": 16,
     "elements": [
         "",
         "Physical",
@@ -327,9 +327,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 20,
-    "startX": 13,
-    "startY": 12,
+    "startMapId": 7,
+    "startX": 11,
+    "startY": 10,
     "switches": [
         "",
         "End Autorun1",
@@ -606,7 +606,7 @@
         "Damage",
         "RNGSteps",
         "CluesCave",
-        "",
+        "RNG",
         "",
         "",
         "",
@@ -698,7 +698,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 80602435,
+    "versionId": 91781365,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
