@@ -9780,6 +9780,11 @@
                             "parameters": []
                         },
                         {
+                            "code": 214,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
                             "code": 0,
                             "indent": 1,
                             "parameters": []
@@ -9939,6 +9944,11 @@
                             "parameters": []
                         },
                         {
+                            "code": 214,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
                             "code": 0,
                             "indent": 2,
                             "parameters": []
@@ -9981,6 +9991,11 @@
                         {
                             "code": 601,
                             "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 2,
                             "parameters": []
                         },
                         {
@@ -10033,7 +10048,7 @@
                                 "code": 45,
                                 "indent": null,
                                 "parameters": [
-                                    "this._chaseSpeed = 4"
+                                    "this._chaseSpeed = 5"
                                 ]
                             },
                             {
@@ -10069,7 +10084,7 @@
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
@@ -10153,6 +10168,11 @@
                             "parameters": []
                         },
                         {
+                            "code": 214,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
                             "code": 0,
                             "indent": 2,
                             "parameters": []
@@ -10195,6 +10215,11 @@
                         {
                             "code": 601,
                             "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 2,
                             "parameters": []
                         },
                         {
@@ -10283,7 +10308,7 @@
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
@@ -10297,6 +10322,249 @@
             ],
             "x": 3,
             "y": 9
+        },
+        null,
+        {
+            "id": 12,
+            "name": "EV012",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 46,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 6,
+                        "characterName": "Monster",
+                        "direction": 8,
+                        "pattern": 1,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 301,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                9,
+                                true,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 601,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 602,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 604,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseRange = 4"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseSpeed = 5"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._seePlayer = false"
+                                ]
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 3,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 2,
+                    "walkAnime": true
+                }
+            ],
+            "x": 11,
+            "y": 5
+        },
+        {
+            "id": 13,
+            "name": "EV013",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 46,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 6,
+                        "characterName": "Monster",
+                        "direction": 8,
+                        "pattern": 1,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 301,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                9,
+                                true,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 601,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 602,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 604,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseRange = 4"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseSpeed = 5"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._seePlayer = false"
+                                ]
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 3,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 2,
+                    "walkAnime": true
+                }
+            ],
+            "x": 24,
+            "y": 11
         }
     ],
     "height": 35,

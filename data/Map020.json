@@ -4351,7 +4351,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\elle\\msgevent[0]Huh?\\.\\. What's this place?"
+                                "\\elleHuh?\\.\\. What's this place?"
                             ]
                         },
                         {
@@ -4455,7 +4455,7 @@
                             "indent": 0,
                             "parameters": [
                                 "ElleFaceset",
-                                0,
+                                2,
                                 0,
                                 2
                             ]
@@ -4464,7 +4464,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\elle\\msgevent[0]It's absolutely beautiful up here..."
+                                "\\elleIt's absolutely beautiful up here..."
                             ]
                         },
                         {
@@ -4479,7 +4479,7 @@
                             "indent": 0,
                             "parameters": [
                                 "ElleFaceset",
-                                0,
+                                9,
                                 0,
                                 2
                             ]
@@ -4488,7 +4488,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\elle\\msgevent[0]Hmm,\\. is that a plank bridge leading into that cave?\\.\\. Could someone be in there?"
+                                "\\elleHmm,\\. is that a plank bridge leading into that cave?\\.\\. Could someone be in there?"
                             ]
                         },
                         {
@@ -4879,7 +4879,7 @@
                     },
                     "directionFix": false,
                     "image": {
-                        "characterIndex": 0,
+                        "characterIndex": 6,
                         "characterName": "Monster",
                         "direction": 8,
                         "pattern": 1,
@@ -5009,10 +5009,10 @@
                             "indent": 0,
                             "parameters": [
                                 {
-                                    "name": "Monster3",
+                                    "name": "Growl",
                                     "pan": 0,
                                     "pitch": 100,
-                                    "volume": 50
+                                    "volume": 70
                                 }
                             ]
                         },
@@ -5032,14 +5032,14 @@
                                 "LyonFaceset",
                                 3,
                                 0,
-                                2
+                                0
                             ]
                         },
                         {
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\lyonThis little thing was what made all that noise?"
+                                "\\lyonThis thing is what made all that noise?"
                             ]
                         },
                         {
@@ -5049,7 +5049,7 @@
                                 "LyonFaceset",
                                 5,
                                 0,
-                                2
+                                0
                             ]
                         },
                         {
@@ -5071,7 +5071,7 @@
                                             "indent": null,
                                             "parameters": [
                                                 {
-                                                    "name": "Monster3",
+                                                    "name": "Monster2",
                                                     "pan": 0,
                                                     "pitch": 140,
                                                     "volume": 50
@@ -5105,7 +5105,7 @@
                                     "indent": null,
                                     "parameters": [
                                         {
-                                            "name": "Monster3",
+                                            "name": "Monster2",
                                             "pan": 0,
                                             "pitch": 140,
                                             "volume": 50
@@ -5132,6 +5132,13 @@
                                     "code": 12,
                                     "indent": null
                                 }
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
                             ]
                         },
                         {

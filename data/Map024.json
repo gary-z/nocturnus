@@ -9233,6 +9233,288 @@
             ],
             "x": 0,
             "y": 2
+        },
+        {
+            "id": 37,
+            "name": "Bear",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 6,
+                        "characterName": "SF_Monster",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 301,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                10,
+                                true,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 601,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 602,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 604,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseRange = 4"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseSpeed = 4"
+                                ]
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 15,
+                                "indent": null,
+                                "parameters": [
+                                    90
+                                ]
+                            },
+                            {
+                                "code": 24,
+                                "indent": null
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 3,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 2,
+                    "walkAnime": true
+                }
+            ],
+            "x": 14,
+            "y": 10
+        },
+        {
+            "id": 38,
+            "name": "Bear",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 6,
+                        "characterName": "SF_Monster",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 301,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                10,
+                                true,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 601,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 214,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 602,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 604,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 5,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseRange = 4"
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "indent": null,
+                                "parameters": [
+                                    "this._chaseSpeed = 4"
+                                ]
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 15,
+                                "indent": null,
+                                "parameters": [
+                                    90
+                                ]
+                            },
+                            {
+                                "code": 24,
+                                "indent": null
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 3,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 2,
+                    "walkAnime": true
+                }
+            ],
+            "x": 18,
+            "y": 19
         }
     ],
     "height": 29,

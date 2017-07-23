@@ -370,8 +370,8 @@
             {
                 "enemyId": 5,
                 "hidden": false,
-                "x": 264,
-                "y": 418
+                "x": 276,
+                "y": 364
             }
         ],
         "name": "Forest Demon First",
@@ -664,8 +664,8 @@
             {
                 "enemyId": 6,
                 "hidden": false,
-                "x": 303,
-                "y": 444
+                "x": 309,
+                "y": 429
             }
         ],
         "name": "Forest Demon*2",
@@ -702,8 +702,8 @@
             {
                 "enemyId": 6,
                 "hidden": false,
-                "x": 316,
-                "y": 444
+                "x": 373,
+                "y": 345
             }
         ],
         "name": "Forest Demon",

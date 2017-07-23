@@ -2242,7 +2242,7 @@
         "tpGain": 0
     },
     {
-        "animationId": 54,
+        "animationId": 122,
         "damage": {
             "critical": true,
             "elementId": 0,
@@ -2257,7 +2257,7 @@
         "id": 66,
         "message1": " casts %1!",
         "message2": "",
-        "mpCost": 8,
+        "mpCost": 2,
         "name": "Fort\u00e9 Blast",
         "note": "",
         "occasion": 1,
@@ -2287,7 +2287,7 @@
         "id": 67,
         "message1": " casts %1!",
         "message2": "",
-        "mpCost": 18,
+        "mpCost": 6,
         "name": "Fortissimo Blast",
         "note": "",
         "occasion": 1,
@@ -2302,7 +2302,7 @@
         "tpGain": 10
     },
     {
-        "animationId": 42,
+        "animationId": 36,
         "damage": {
             "critical": false,
             "elementId": 0,
@@ -2317,7 +2317,7 @@
         "id": 68,
         "message1": " casts %1!",
         "message2": "",
-        "mpCost": 10,
+        "mpCost": 4,
         "name": "Tranquility",
         "note": "",
         "occasion": 0,
