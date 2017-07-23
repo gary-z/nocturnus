@@ -261,7 +261,7 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 5,
-        "name": "Flame",
+        "name": "Imbue: Flame",
         "note": "An Imbuement Spell.\n<cast speed: 300, agi>",
         "occasion": 0,
         "repeats": 1,
@@ -269,7 +269,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": 0,
-        "stypeId": 4,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -316,7 +316,7 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 5,
-        "name": "Frost",
+        "name": "Imbue: Frost",
         "note": "An Imbuement Spell.\n<cast speed: 200, agi>",
         "occasion": 0,
         "repeats": 1,
@@ -324,7 +324,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": 0,
-        "stypeId": 4,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -371,7 +371,7 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 5,
-        "name": "Wind",
+        "name": "Imbue: Wind",
         "note": "An Imbuement Spell.\n<cast speed: 175, agi>",
         "occasion": 0,
         "repeats": 1,
@@ -379,7 +379,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": -1,
-        "stypeId": 4,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -426,7 +426,7 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 5,
-        "name": "Earth",
+        "name": "Imbue: Earth",
         "note": "An Imbuement Spell.\n<cast speed: 200, agi>",
         "occasion": 0,
         "repeats": 1,
@@ -434,7 +434,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": 0,
-        "stypeId": 4,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -481,7 +481,7 @@
         "message1": " removes the power from his weapon.",
         "message2": "",
         "mpCost": 0,
-        "name": "Dispel",
+        "name": "Imbue: Removal",
         "note": "<cast speed: 200, agi>",
         "occasion": 0,
         "repeats": 1,
@@ -489,7 +489,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": 0,
-        "stypeId": 4,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -1136,7 +1136,7 @@
         "requiredWtypeId1": 0,
         "requiredWtypeId2": 0,
         "scope": 1,
-        "speed": 0,
+        "speed": -1,
         "stypeId": 1,
         "successRate": 100,
         "tpCost": 10,
@@ -1617,7 +1617,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 15,
         "tpGain": 0
@@ -1647,7 +1647,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 21,
         "tpGain": 0
@@ -1677,7 +1677,7 @@
         "requiredWtypeId2": 0,
         "scope": 3,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 13,
         "tpGain": 0
@@ -1707,7 +1707,7 @@
         "requiredWtypeId2": 0,
         "scope": 3,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 27,
         "tpGain": 0
@@ -1737,7 +1737,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 17,
         "tpGain": 0
@@ -1767,7 +1767,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 35,
         "tpGain": 0
@@ -1804,7 +1804,7 @@
         "requiredWtypeId2": 0,
         "scope": 11,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 20,
         "tpGain": 5
@@ -1841,7 +1841,7 @@
         "requiredWtypeId2": 0,
         "scope": 7,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 15,
         "tpGain": 0
@@ -1878,7 +1878,7 @@
         "requiredWtypeId2": 0,
         "scope": 8,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 30,
         "tpGain": 0
@@ -1915,7 +1915,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 50,
         "tpGain": 0
@@ -1952,7 +1952,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 25,
         "tpGain": 0
@@ -1989,7 +1989,7 @@
         "requiredWtypeId2": 0,
         "scope": 7,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 12,
         "tpGain": 0
@@ -2026,7 +2026,7 @@
         "requiredWtypeId2": 0,
         "scope": 8,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 28,
         "tpGain": 0
@@ -2056,7 +2056,7 @@
         "requiredWtypeId2": 0,
         "scope": 2,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 15,
         "tpGain": 0
@@ -2258,7 +2258,7 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 2,
-        "name": "Fort\u00e9 Blast",
+        "name": "Sforzando",
         "note": "",
         "occasion": 1,
         "repeats": 1,
@@ -2266,40 +2266,40 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 5
     },
     {
-        "animationId": 55,
+        "animationId": 0,
         "damage": {
-            "critical": true,
+            "critical": false,
             "elementId": 0,
-            "formula": "a.mat*5-b.mdf",
-            "type": 1,
+            "formula": "0",
+            "type": 0,
             "variance": 20
         },
-        "description": "Play an extremely loud penetrating note, dealing damage\nto an enemy.",
+        "description": "",
         "effects": [],
-        "hitType": 2,
+        "hitType": 0,
         "iconIndex": 0,
         "id": 67,
-        "message1": " casts %1!",
+        "message1": "",
         "message2": "",
-        "mpCost": 6,
-        "name": "Fortissimo Blast",
+        "mpCost": 0,
+        "name": "",
         "note": "",
-        "occasion": 1,
+        "occasion": 0,
         "repeats": 1,
         "requiredWtypeId1": 0,
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
-        "tpGain": 10
+        "tpGain": 0
     },
     {
         "animationId": 36,
@@ -2318,36 +2318,6 @@
         "message1": " casts %1!",
         "message2": "",
         "mpCost": 4,
-        "name": "Tranquility",
-        "note": "",
-        "occasion": 0,
-        "repeats": 1,
-        "requiredWtypeId1": 0,
-        "requiredWtypeId2": 0,
-        "scope": 7,
-        "speed": 0,
-        "stypeId": 3,
-        "successRate": 100,
-        "tpCost": 0,
-        "tpGain": 5
-    },
-    {
-        "animationId": 42,
-        "damage": {
-            "critical": false,
-            "elementId": 0,
-            "formula": "a.mat*6",
-            "type": 3,
-            "variance": 10
-        },
-        "description": "Instills calming waves of tranquil nature into the target, restoring their hit points.",
-        "effects": [],
-        "hitType": 0,
-        "iconIndex": 0,
-        "id": 69,
-        "message1": " casts %1!",
-        "message2": "",
-        "mpCost": 21,
         "name": "Instilled Tranquility",
         "note": "",
         "occasion": 0,
@@ -2356,10 +2326,40 @@
         "requiredWtypeId2": 0,
         "scope": 7,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
-        "tpGain": 10
+        "tpGain": 5
+    },
+    {
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "id": 69,
+        "message1": "",
+        "message2": "",
+        "mpCost": 0,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
     },
     {
         "animationId": 54,
@@ -2393,7 +2393,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 5
@@ -2430,7 +2430,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 10
@@ -2467,7 +2467,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 5
@@ -2504,7 +2504,7 @@
         "requiredWtypeId2": 0,
         "scope": 2,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 10
@@ -2541,7 +2541,7 @@
         "requiredWtypeId2": 0,
         "scope": 9,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 10,
         "tpGain": 1
@@ -2578,7 +2578,7 @@
         "requiredWtypeId2": 0,
         "scope": 10,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 20,
         "tpGain": 1
@@ -2651,7 +2651,7 @@
         "requiredWtypeId2": 0,
         "scope": 7,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 5
@@ -2724,7 +2724,7 @@
         "requiredWtypeId2": 0,
         "scope": 8,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 10
@@ -2754,7 +2754,7 @@
         "requiredWtypeId2": 0,
         "scope": 2,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 60,
         "tpGain": 0
@@ -2784,7 +2784,7 @@
         "requiredWtypeId2": 0,
         "scope": 2,
         "speed": 0,
-        "stypeId": 2,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 90,
         "tpGain": 0
@@ -2814,7 +2814,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2844,7 +2844,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2874,7 +2874,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2904,7 +2904,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2934,7 +2934,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2964,7 +2964,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -2994,7 +2994,7 @@
         "requiredWtypeId2": 0,
         "scope": 7,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -3097,7 +3097,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 30,
         "tpGain": 0
@@ -3164,7 +3164,7 @@
         "requiredWtypeId2": 0,
         "scope": 2,
         "speed": 0,
-        "stypeId": 3,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 50,
         "tpGain": 0
@@ -8010,7 +8010,7 @@
         "requiredWtypeId2": 0,
         "scope": 1,
         "speed": 0,
-        "stypeId": 0,
+        "stypeId": 1,
         "successRate": 100,
         "tpCost": 0,
         "tpGain": 0
@@ -8083,7 +8083,7 @@
         "tpGain": 5
     },
     {
-        "animationId": -1,
+        "animationId": 1,
         "damage": {
             "critical": true,
             "elementId": -1,
@@ -8120,7 +8120,7 @@
         "tpGain": 5
     },
     {
-        "animationId": -1,
+        "animationId": 6,
         "damage": {
             "critical": true,
             "elementId": -1,
@@ -8157,7 +8157,7 @@
         "tpGain": 5
     },
     {
-        "animationId": -1,
+        "animationId": 1,
         "damage": {
             "critical": true,
             "elementId": -1,
@@ -8339,7 +8339,7 @@
             }
         ],
         "hitType": 1,
-        "iconIndex": 76,
+        "iconIndex": 0,
         "id": 251,
         "message1": " attacks!",
         "message2": "",

@@ -10396,9 +10396,9 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
+        3570,
+        3556,
+        3572,
         0,
         0,
         0,
@@ -10408,7 +10408,7 @@
         3483,
         3473,
         3473,
-        3473,
+        3463,
         3479,
         0,
         0,
@@ -10483,19 +10483,19 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3538,
+        3556,
+        3556,
+        3556,
+        3556,
+        3572,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3472,
         0,
         0,
         0,
@@ -10570,19 +10570,19 @@
         0,
         0,
         0,
+        3576,
+        3564,
+        3564,
+        3564,
+        3544,
+        3536,
+        3536,
+        3560,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3472,
         0,
         0,
         0,
@@ -10661,15 +10661,15 @@
         0,
         0,
         0,
+        3576,
+        3564,
+        3544,
+        3538,
+        3572,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3472,
         0,
         0,
         0,
@@ -10750,9 +10750,13 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3560,
         0,
         0,
         0,
+        3472,
         0,
         0,
         0,
@@ -10833,9 +10837,13 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3560,
         0,
         0,
         0,
+        3472,
         0,
         0,
         0,
@@ -10915,8 +10923,14 @@
         0,
         0,
         0,
+        3570,
+        3537,
+        3536,
+        3538,
+        3572,
         0,
         0,
+        3472,
         0,
         0,
         0,
@@ -10995,6 +11009,15 @@
         0,
         0,
         0,
+        3579,
+        3565,
+        3564,
+        3564,
+        3564,
+        3574,
+        3475,
+        3473,
+        3479,
         0,
         0,
         0,
@@ -11070,6 +11093,16 @@
         0,
         0,
         0,
+        3483,
+        3473,
+        3473,
+        3473,
+        3473,
+        3473,
+        3473,
+        3473,
+        3473,
+        3479,
         0,
         0,
         0,
@@ -11150,6 +11183,10 @@
         0,
         0,
         0,
+        3579,
+        3558,
+        3556,
+        3572,
         0,
         0,
         0,
@@ -11234,6 +11271,10 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3542,
+        3581,
         0,
         0,
         0,
@@ -11316,6 +11357,10 @@
         0,
         0,
         0,
+        3570,
+        3537,
+        3536,
+        3560,
         0,
         0,
         0,
@@ -11399,6 +11444,10 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3540,
+        3574,
         0,
         0,
         0,
@@ -11482,6 +11531,9 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3560,
         0,
         0,
         0,
@@ -11565,6 +11617,10 @@
         0,
         0,
         0,
+        3570,
+        3537,
+        3536,
+        3560,
         0,
         0,
         0,
@@ -11648,6 +11704,10 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3540,
+        3574,
         0,
         0,
         0,
@@ -11731,6 +11791,9 @@
         0,
         0,
         0,
+        3552,
+        3536,
+        3560,
         0,
         0,
         0,
@@ -11815,6 +11878,9 @@
         0,
         0,
         0,
+        3576,
+        3544,
+        3560,
         0,
         0,
         0,
@@ -11900,6 +11966,8 @@
         0,
         0,
         0,
+        3554,
+        3574,
         0,
         0,
         0,
@@ -11985,75 +12053,7 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3580,
         0,
         0,
         0,
@@ -17443,14 +17443,10 @@
         0,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
         0,
-        26,
-        34,
         0,
         0,
         0,
@@ -17530,15 +17526,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
-        34,
-        34,
-        34,
-        34,
-        26,
         0,
         0,
         0,
@@ -17617,15 +17604,8 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
-        34,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
@@ -17705,14 +17685,10 @@
         0,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
@@ -17798,8 +17774,6 @@
         0,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
@@ -17885,8 +17859,6 @@
         0,
         0,
         0,
-        34,
-        34,
         0,
         0,
         0,
@@ -17971,9 +17943,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18058,9 +18027,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18144,10 +18110,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18231,10 +18193,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18318,10 +18276,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18405,10 +18359,6 @@
         0,
         0,
         0,
-        34,
-        34,
-        34,
-        34,
         0,
         0,
         0,
@@ -18493,8 +18443,6 @@
         0,
         0,
         0,
-        26,
-        34,
         0,
         0,
         0,
@@ -18581,7 +18529,6 @@
         0,
         0,
         0,
-        34,
         0,
         0,
         0,
@@ -18667,8 +18614,61 @@
         0,
         0,
         0,
-        34,
-        34,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -24403,15 +24403,9 @@
         0,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
-        26,
-        27,
-        43,
-        27,
         0,
         0,
         0,
@@ -24490,15 +24484,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
-        43,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -24577,15 +24562,8 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
@@ -24665,14 +24643,10 @@
         0,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
@@ -24758,8 +24732,6 @@
         0,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
@@ -24845,8 +24817,6 @@
         0,
         0,
         0,
-        43,
-        43,
         0,
         0,
         0,
@@ -24931,9 +24901,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25018,9 +24985,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25104,10 +25068,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25191,10 +25151,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25278,10 +25234,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25365,10 +25317,6 @@
         0,
         0,
         0,
-        43,
-        43,
-        43,
-        43,
         0,
         0,
         0,
@@ -25453,8 +25401,6 @@
         0,
         0,
         0,
-        27,
-        43,
         0,
         0,
         0,
@@ -25541,7 +25487,6 @@
         0,
         0,
         0,
-        43,
         0,
         0,
         0,
@@ -25627,8 +25572,63 @@
         0,
         0,
         0,
-        43,
-        43,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -42555,66 +42555,7 @@
             "x": 63,
             "y": 39
         },
-        {
-            "id": 3,
-            "name": "Elle NPC",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 13,
-                        "switch1Valid": true,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 1,
-                        "characterName": "Main",
-                        "direction": 4,
-                        "pattern": 1,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 1,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 54,
-            "y": 37
-        },
+        null,
         {
             "id": 4,
             "name": "EV004",
@@ -42749,2498 +42690,10 @@
             "x": 50,
             "y": 37
         },
-        {
-            "id": 5,
-            "name": "To the Inn!",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 111,
-                            "indent": 0,
-                            "parameters": [
-                                0,
-                                18,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                27,
-                                54,
-                                38,
-                                4,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                20
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 25,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 25,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Lyon.\\..\\.."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 19,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonYes?"
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]That inn there.\\..\\.. There's something I want to check out really quickly."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonHuh?\\. That's the Traveler's Inn..."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]I know we're trying to get to Rivelt.\\..\\.. But I promise I'll be quick!\\.\\. It's important."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonWell.\\..\\.. As long as you're quick, I suppose."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Thank you,\\. Lyon!"
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                4
-                                            ]
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        4
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                0
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                28,
-                                14,
-                                28,
-                                8,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                18,
-                                18,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 0,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 1,
-                    "walkAnime": true
-                }
-            ],
-            "x": 55,
-            "y": 37
-        },
-        {
-            "id": 6,
-            "name": "To the Inn!",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 111,
-                            "indent": 0,
-                            "parameters": [
-                                0,
-                                18,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                27,
-                                54,
-                                38,
-                                4,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                20
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 25,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 25,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Lyon.\\..\\.."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 19,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonYes?"
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]That inn there.\\..\\.. There's something I want to check out really quickly."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonHuh?\\. That's the Traveler's Inn..."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]I know we're trying to get to Rivelt.\\..\\.. But I promise I'll be quick!\\.\\. It's important."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonWell.\\..\\.. As long as you're quick, I suppose."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Thank you,\\. Lyon!"
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                4
-                                            ]
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        4
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                0
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                28,
-                                14,
-                                28,
-                                8,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                18,
-                                18,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 0,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 1,
-                    "walkAnime": true
-                }
-            ],
-            "x": 54,
-            "y": 38
-        },
-        {
-            "id": 7,
-            "name": "To the Inn!",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 111,
-                            "indent": 0,
-                            "parameters": [
-                                0,
-                                18,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                27,
-                                54,
-                                38,
-                                4,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                20
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 25,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 25,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Lyon.\\..\\.."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 19,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonYes?"
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]That inn there.\\..\\.. There's something I want to check out really quickly."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonHuh?\\. That's the Traveler's Inn..."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]I know we're trying to get to Rivelt.\\..\\.. But I promise I'll be quick!\\.\\. It's important."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonWell.\\..\\.. As long as you're quick, I suppose."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Thank you,\\. Lyon!"
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                4
-                                            ]
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        4
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                0
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                28,
-                                14,
-                                28,
-                                8,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                18,
-                                18,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 0,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 1,
-                    "walkAnime": true
-                }
-            ],
-            "x": 55,
-            "y": 39
-        },
-        {
-            "id": 8,
-            "name": "To the Inn!",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 111,
-                            "indent": 0,
-                            "parameters": [
-                                0,
-                                18,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                27,
-                                54,
-                                38,
-                                4,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                3
-                                            ]
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 2,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": true,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        3
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 2,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                20
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 25,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 25,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Lyon.\\..\\.."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 19,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonYes?"
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]That inn there.\\..\\.. There's something I want to check out really quickly."
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 17,
-                                            "indent": null
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 17,
-                                    "indent": null
-                                }
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonHuh?\\. That's the Traveler's Inn..."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]I know we're trying to get to Rivelt.\\..\\.. But I promise I'll be quick!\\.\\. It's important."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "LyonFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\lyonWell.\\..\\.. As long as you're quick, I suppose."
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 1,
-                            "parameters": [
-                                "ElleFaceset",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\elle\\msgevent[3]Thank you,\\. Lyon!"
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 230,
-                            "indent": 1,
-                            "parameters": [
-                                40
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 1,
-                            "parameters": [
-                                -1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 29,
-                                            "indent": null,
-                                            "parameters": [
-                                                4
-                                            ]
-                                        },
-                                        {
-                                            "code": 0
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": true
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 1,
-                            "parameters": [
-                                {
-                                    "code": 29,
-                                    "indent": null,
-                                    "parameters": [
-                                        4
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 216,
-                            "indent": 1,
-                            "parameters": [
-                                0
-                            ]
-                        },
-                        {
-                            "code": 201,
-                            "indent": 1,
-                            "parameters": [
-                                0,
-                                28,
-                                14,
-                                28,
-                                8,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                18,
-                                18,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 1,
-                            "parameters": [
-                                13,
-                                13,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 222,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 0,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 1,
-                    "walkAnime": true
-                }
-            ],
-            "x": 56,
-            "y": 39
-        },
+        null,
+        null,
+        null,
+        null,
         {
             "id": 9,
             "name": "EV009",
@@ -45540,15 +42993,6 @@
                     },
                     "list": [
                         {
-                            "code": 121,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                1,
-                                0
-                            ]
-                        },
-                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -45580,7 +43024,7 @@
         }
     ],
     "height": 80,
-    "note": "<fogName:fog27>\n<fogOpacity:110>\n<xMove:5>",
+    "note": "",
     "parallaxLoopX": false,
     "parallaxLoopY": false,
     "parallaxName": "",

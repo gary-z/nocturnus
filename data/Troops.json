@@ -740,7 +740,7 @@
             {
                 "enemyId": 9,
                 "hidden": false,
-                "x": 28,
+                "x": 322,
                 "y": 411
             }
         ],
@@ -784,8 +784,8 @@
             {
                 "enemyId": 7,
                 "hidden": false,
-                "x": 216,
-                "y": 444
+                "x": 309,
+                "y": 405
             }
         ],
         "name": "Folf*2",

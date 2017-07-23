@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 10
     },
-    "editMapId": 23,
+    "editMapId": 27,
     "elements": [
         "",
         "Physical",
@@ -159,7 +159,7 @@
     "optSlipDeath": false,
     "optTransparent": false,
     "partyMembers": [
-        19
+        1
     ],
     "ship": {
         "bgm": {
@@ -176,10 +176,7 @@
     },
     "skillTypes": [
         "",
-        "Spellcasting",
-        "Techniques",
-        "Soundweaving",
-        "Imbuement"
+        "Skills"
     ],
     "sounds": [
         {
@@ -327,9 +324,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 20,
-    "startX": 16,
-    "startY": 12,
+    "startMapId": 27,
+    "startX": 54,
+    "startY": 35,
     "switches": [
         "",
         "End Autorun1",
@@ -698,7 +695,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 88610492,
+    "versionId": 51246681,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

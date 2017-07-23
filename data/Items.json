@@ -342,11 +342,11 @@
         "damage": {
             "critical": false,
             "elementId": 0,
-            "formula": "0",
+            "formula": "maxHP",
             "type": 0,
-            "variance": 20
+            "variance": 0
         },
-        "description": "Removes all negatives states of one ally.",
+        "description": "Fully restore state, health, and resources.",
         "effects": [
             {
                 "code": 22,
@@ -395,6 +395,18 @@
                 "dataId": 15,
                 "value1": 1,
                 "value2": 0
+            },
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 12,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
             }
         ],
         "hitType": 0,
@@ -421,13 +433,13 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A recognizable insignia of a bandit group. ",
+        "description": "Not much of value within.  You could sell the pouch, though.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 0,
         "id": 10,
         "itypeId": 1,
-        "name": "Bandit Patch",
+        "name": "Bandit Pouch",
         "note": "",
         "occasion": 3,
         "price": 4,
@@ -447,13 +459,13 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Remains of a ghost...spooky.",
+        "description": "A strange cloth left behind by a demon.  This might sell for something.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 0,
         "id": 11,
         "itypeId": 1,
-        "name": "Ectoplasm",
+        "name": "Shadowy Cloth",
         "note": "",
         "occasion": 3,
         "price": 6,

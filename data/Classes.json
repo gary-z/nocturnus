@@ -33,6 +33,21 @@
                 "level": 3,
                 "note": "",
                 "skillId": 52
+            },
+            {
+                "level": 5,
+                "note": "",
+                "skillId": 8
+            },
+            {
+                "level": 5,
+                "note": "",
+                "skillId": 20
+            },
+            {
+                "level": 7,
+                "note": "",
+                "skillId": 55
             }
         ],
         "name": "Spellscythe",
@@ -882,16 +897,6 @@
                 "value": 1
             },
             {
-                "code": 41,
-                "dataId": 2,
-                "value": 1
-            },
-            {
-                "code": 41,
-                "dataId": 4,
-                "value": 1
-            },
-            {
                 "code": 51,
                 "dataId": 1,
                 "value": 1
@@ -968,39 +973,19 @@
                 "skillId": 70
             },
             {
-                "level": 4,
-                "note": "",
-                "skillId": 82
-            },
-            {
-                "level": 5,
+                "level": 8,
                 "note": "",
                 "skillId": 78
             },
             {
-                "level": 6,
+                "level": 5,
                 "note": "",
                 "skillId": 76
             },
             {
-                "level": 8,
-                "note": "",
-                "skillId": 86
-            },
-            {
-                "level": 9,
-                "note": "",
-                "skillId": 72
-            },
-            {
-                "level": 10,
+                "level": 7,
                 "note": "",
                 "skillId": 89
-            },
-            {
-                "level": 11,
-                "note": "",
-                "skillId": 74
             }
         ],
         "name": "Soundweaver",
@@ -1846,13 +1831,8 @@
             },
             {
                 "code": 41,
-                "dataId": 2,
+                "dataId": 1,
                 "value": 1
-            },
-            {
-                "code": 41,
-                "dataId": 3,
-                "value": 0
             },
             {
                 "code": 51,
