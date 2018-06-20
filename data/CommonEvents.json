@@ -1632,12 +1632,545 @@
         "id": 15,
         "list": [
             {
+                "code": 221,
+                "indent": 0,
+                "parameters": []
+            },
+            {
+                "code": 230,
+                "indent": 0,
+                "parameters": [
+                    60
+                ]
+            },
+            {
+                "code": 121,
+                "indent": 0,
+                "parameters": [
+                    13,
+                    13,
+                    0
+                ]
+            },
+            {
+                "code": 201,
+                "indent": 0,
+                "parameters": [
+                    0,
+                    27,
+                    54,
+                    41,
+                    4,
+                    0
+                ]
+            },
+            {
+                "code": 222,
+                "indent": 0,
+                "parameters": []
+            },
+            {
+                "code": 205,
+                "indent": 0,
+                "parameters": [
+                    -1,
+                    {
+                        "list": [
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    2
+                                ]
+                            },
+                            {
+                                "code": 30,
+                                "indent": null,
+                                "parameters": [
+                                    5
+                                ]
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 30,
+                                "indent": null,
+                                "parameters": [
+                                    5
+                                ]
+                            },
+                            {
+                                "code": 0
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": false
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            2
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 30,
+                        "indent": null,
+                        "parameters": [
+                            5
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 12,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 12,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 12,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            4
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 30,
+                        "indent": null,
+                        "parameters": [
+                            5
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 205,
+                "indent": 0,
+                "parameters": [
+                    6,
+                    {
+                        "list": [
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    1
+                                ]
+                            },
+                            {
+                                "code": 30,
+                                "indent": null,
+                                "parameters": [
+                                    5
+                                ]
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 12,
+                                "indent": null
+                            },
+                            {
+                                "code": 29,
+                                "indent": null,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 30,
+                                "indent": null,
+                                "parameters": [
+                                    5
+                                ]
+                            },
+                            {
+                                "code": 0
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": false
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            1
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 30,
+                        "indent": null,
+                        "parameters": [
+                            5
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 12,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 12,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 29,
+                        "indent": null,
+                        "parameters": [
+                            4
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 30,
+                        "indent": null,
+                        "parameters": [
+                            5
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    9,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elleIt's the Traveler's Inn!"
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "LyonFaceset",
+                    0,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\lyonWe need to keep heading west to Rivelt."
+                ]
+            },
+            {
+                "code": 205,
+                "indent": 0,
+                "parameters": [
+                    6,
+                    {
+                        "list": [
+                            {
+                                "code": 16,
+                                "indent": null
+                            },
+                            {
+                                "code": 0
+                            }
+                        ],
+                        "repeat": false,
+                        "skippable": false,
+                        "wait": true
+                    }
+                ]
+            },
+            {
+                "code": 505,
+                "indent": 0,
+                "parameters": [
+                    {
+                        "code": 16,
+                        "indent": null
+                    }
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    0,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elleLyon. Is it okay if we make a quick stop here?"
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "LyonFaceset",
+                    0,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\lyonWhat for?"
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    0,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elleI used to come here a lot as a kid. I would like to see if they are well. Especially\\..\\..\\.."
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    5,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elle\\..\\..\\.. since the attacks."
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "LyonFaceset",
+                    9,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\lyon\\..\\..\\.. Understood. Let's make it quick then."
+                ]
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    2,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elleThank you,\\. Lyon!"
+                ]
+            },
+            {
+                "code": 221,
+                "indent": 0,
+                "parameters": []
+            },
+            {
+                "code": 230,
+                "indent": 0,
+                "parameters": [
+                    60
+                ]
+            },
+            {
+                "code": 201,
+                "indent": 0,
+                "parameters": [
+                    0,
+                    28,
+                    14,
+                    14,
+                    8,
+                    0
+                ]
+            },
+            {
+                "code": 121,
+                "indent": 0,
+                "parameters": [
+                    13,
+                    13,
+                    1
+                ]
+            },
+            {
+                "code": 121,
+                "indent": 0,
+                "parameters": [
+                    18,
+                    18,
+                    0
+                ]
+            },
+            {
+                "code": 222,
+                "indent": 0,
+                "parameters": []
+            },
+            {
+                "code": 101,
+                "indent": 0,
+                "parameters": [
+                    "ElleFaceset",
+                    2,
+                    0,
+                    2
+                ]
+            },
+            {
+                "code": 401,
+                "indent": 0,
+                "parameters": [
+                    "\\elleI believe he should be in the Inn."
+                ]
+            },
+            {
                 "code": 0,
                 "indent": 0,
                 "parameters": []
             }
         ],
-        "name": "",
+        "name": "Approaching Traveler's Inn",
         "switchId": 1,
         "trigger": 0
     },
