@@ -324,9 +324,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 2,
-    "startX": 16,
-    "startY": 22,
+    "startMapId": 74,
+    "startX": 14,
+    "startY": 8,
     "switches": [
         "",
         "End Autorun1",
@@ -381,9 +381,9 @@
         "CutsceneP3",
         "Chest Opened",
         "Girl followin",
-        "",
-        "",
-        "",
+        "TalktoDarius",
+        "FreeTime",
+        "DariusDone",
         "",
         "",
         "",
@@ -695,7 +695,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 98879970,
+    "versionId": 30668050,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,
