@@ -8,11 +8,11 @@ Imported.YEP_FootstepSounds = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Footsteps = Yanfly.Footsteps || {};
-Yanfly.Footsteps.version = 1.00;
+Yanfly.Footsteps.version = 1.01;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 Set footstep sounds to play when the player and/or
+ * @plugindesc v1.01 Set footstep sounds to play when the player and/or
  * events walk over specific tiles.
  * @author Yanfly Engine Plugins + Chickie Collaboration
  *
@@ -20,15 +20,21 @@ Yanfly.Footsteps.version = 1.00;
  * @default
  *
  * @param Default Sound
+ * @parent ---Default---
+ * @type file
+ * @dir audio/se/
+ * @require 1
  * @desc The default SE sound used for all tiles.
  * @default Move1
  *
  * @param Default Volume
+ * @parent ---Default---
  * @desc Volume of the footsteps made by default.
  * Insert a number value.
  * @default 10
  *
  * @param Default Pitch
+ * @parent ---Default---
  * @desc Pitch of the footsteps made by default.
  * Insert a number value.
  * @default 150
@@ -37,16 +43,22 @@ Yanfly.Footsteps.version = 1.00;
  * @default
  *
  * @param Player Enable
+ * @parent ---Player Settings---
+ * @type boolean
+ * @on Enable
+ * @off Disable
  * @desc Play footstep sounds for the player character?
  * Disable - false     Enable - true
  * @default true
  *
  * @param Player Volume
+ * @parent ---Player Settings---
  * @desc What volume rate to play the footsteps at for player?
  * Use a float value. 1.00 = 100%    0.50 = 50%
  * @default 1.00
  *
  * @param Player Pitch
+ * @parent ---Player Settings---
  * @desc What pitch rate to play the footsteps at for player?
  * Use a float value. 1.00 = 100%    0.50 = 50%
  * @default 1.00
@@ -55,31 +67,40 @@ Yanfly.Footsteps.version = 1.00;
  * @default
  *
  * @param Event Enable
+ * @parent ---Event Settings---
+ * @type boolean
+ * @on Enable
+ * @off Disable
  * @desc Play footstep sounds for the events?
  * Disable - false     Enable - true
  * @default true
  *
  * @param Event Volume
+ * @parent ---Event Settings---
  * @desc What volume rate to play the footsteps at for events?
  * Use a float value. 1.00 = 100%    0.50 = 50%
  * @default 1.00
  *
  * @param Distance Volume
+ * @parent ---Event Settings---
  * @desc Change the volume by this much per tile difference
  * from event to player. Use a float value.
  * @default -0.10
  *
  * @param Event Pitch
+ * @parent ---Event Settings---
  * @desc What pitch rate to play the footsteps at for events?
  * Use a float value. 1.00 = 100%    0.50 = 50%
  * @default 1.00
  *
  * @param Distance Pitch
+ * @parent ---Event Settings---
  * @desc Change the pitch by this much per tile difference
  * from event to player. Use a float value.
  * @default -0.00
  *
  * @param Distance Pan
+ * @parent ---Event Settings---
  * @desc Change the pan by this much per tile difference
  * from event to player. Use an int value.
  * @default 10

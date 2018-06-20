@@ -8,11 +8,11 @@ Imported.YEP_X_EnemyBaseParam = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.EBP = Yanfly.EBP || {};
-Yanfly.EBP.version = 1.00;
+Yanfly.EBP.version = 1.01;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 (Requires YEP_EnemyLevels.js) Use formulas to calculate
+ * @plugindesc v1.01 (Requires YEP_EnemyLevels.js) Use formulas to calculate
  * the base parameter values of enemies.
  * @author Yanfly Engine Plugins
  *
@@ -98,6 +98,16 @@ Yanfly.EBP.version = 1.00;
  *   long as it returns a legal number.
  *   * Note: The 'exp' and 'gold' values here return the amount of experience
  *   points and gold the enemy gives when it dies.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.01:
+ * - Updated for RPG Maker MV version 1.5.0.
+ *
+ * Version 1.00:
+ * - Finished Plugin!
  */
 //=============================================================================
 

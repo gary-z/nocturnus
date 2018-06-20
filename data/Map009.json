@@ -5479,7 +5479,7 @@
         }
     ],
     "height": 25,
-    "note": "<light>\n<fogName:XPFog>\n<fogOpacity:15>\n<xMove:2>",
+    "note": "<light>\n<fogName:fog27>\n<fogOpacity:15>\n<yMove:-2>\n<xMove:0.4>",
     "parallaxLoopX": false,
     "parallaxLoopY": false,
     "parallaxName": "",

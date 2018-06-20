@@ -8,11 +8,11 @@ Imported.YEP_X_BattleSysATB = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.ATB = Yanfly.ATB || {};
-Yanfly.ATB.version = 1.25;
+Yanfly.ATB.version = 1.27;
 
 //=============================================================================
  /*:
- * @plugindesc v1.25 (Requires YEP_BattleEngineCore.js) Add ATB (Active
+ * @plugindesc v1.27 (Requires YEP_BattleEngineCore.js) Add ATB (Active
  * Turn Battle) into your game using this plugin!
  * @author Yanfly Engine Plugins
  *
@@ -20,30 +20,40 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param Per Tick
+ * @parent ---ATB Settings---
  * @desc This is how much speed is gained per tick.
  * @default user.agi
  *
  * @param Initial Speed
+ * @parent ---ATB Settings---
  * @desc The speed position of the battler at the start of battle.
  * This is a formula processed as an eval.
  * @default 0
  *
  * @param Full Gauge
+ * @parent ---ATB Settings---
  * @desc The target speed for an ATB gauge to be full.
  * This is a formula processed as an eval.
  * @default Math.max(5000, BattleManager.highestBaseAgi() * 100)
  *
  * @param Charge Gauge
+ * @parent ---ATB Settings---
  * @desc The wind-up time after selecting an action.
  * This is a formula processed as an eval.
  * @default Math.max(2000, BattleManager.highestBaseAgi() * 20)
  *
  * @param Pre-Emptive Bonuses
+ * @parent ---ATB Settings---
+ * @type number
+ * @decimals 1
  * @desc How much of the ATB bar do you want filled up for an
  * ATB pre-emptive bonus from 0 to 1.
  * @default 0.8
  *
  * @param Surprise Bonuses
+ * @parent ---ATB Settings---
+ * @type number
+ * @decimals 1
  * @desc How much of the ATB bar do you want filled up for an
  * ATB surprise bonus from 0 to 1.
  * @default 0.8
@@ -52,24 +62,33 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param Escape Ratio
+ * @parent ---Escape---
  * @desc How ATB calculates escape ratios.
  * Default: 0.5 * $gameParty.agility() / $gameTroop.agility()
  * @default 0.125 * $gameParty.agility() / $gameTroop.agility()
  *
  * @param Fail Escape Boost
+ * @parent ---Escape---
+ * @type number
+ * @decimals 3
  * @desc Each time the player fails escape, increase the success
- * rate by this much. Default: 0.1
+ * rate by this much. This is a formula. Default: 0.1
  * @default 0.025
  *
  * @param ---Turn---
  * @default
  *
  * @param Full Turn
+ * @parent ---Escape---
  * @desc This is how many ticks to equal a full battle turn.
  * This is a formula processed as an eval.
  * @default Math.min(200, BattleManager.lowestBaseAgi() * 8)
  *
  * @param Flash Enemy
+ * @parent ---Escape---
+ * @type boolean
+ * @on Flash
+ * @off Don't Flash
  * @desc Flash enemies when they start charging their skills?
  * NO - false     YES - true
  * @default true
@@ -78,16 +97,22 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param Enable Rubberband
+ * @parent ---Rubberband---
+ * @type boolean
+ * @on Enable
+ * @off Disable
  * @desc This is an auto-balance mechanic for AGI.
  * Disable - false     Enable - true
  * @default true
  *
  * @param Minimum Speed
+ * @parent ---Rubberband---
  * @desc If rubberbanding is enabled, what is the minimum
  * speed increase? This is a formula.
  * @default 0.5 * BattleManager.highestBaseAgi()
  *
  * @param Maximum Speed
+ * @parent ---Rubberband---
  * @desc If rubberbanding is enabled, what is the maximum
  * speed increase? This is a formula.
  * @default 1.5 * BattleManager.highestBaseAgi()
@@ -96,18 +121,33 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param Ready Sound
+ * @parent ---Sound---
+ * @type file
+ * @dir audio/se/
+ * @require 1
  * @desc This is the sound played when the battler is ready.
  * @default Decision1
  *
  * @param Ready Volume
+ * @parent ---Sound---
+ * @type number
+ * @min 0
+ * @max 100
  * @desc This is the volume of the ready sound.
  * @default 90
  *
  * @param Ready Pitch
+ * @parent ---Sound---
+ * @type number
+ * @min 0
  * @desc This is the pitch of the ready sound.
  * @default 120
  *
  * @param Ready Pan
+ * @parent ---Sound---
+ * @type number
+ * @min -100
+ * @max 100
  * @desc This is the pan of the ready sound.
  * @default 0
  *
@@ -115,10 +155,15 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param ATB Speed Text
+ * @parent ---Options---
  * @desc Text used for ATB speed in options window.
  * @default ATB Speed
  *
  * @param Default ATB Speed
+ * @parent ---Options---
+ * @type number
+ * @min 0
+ * @max 10
  * @desc Default speed at which the gauges fill up.
  * 1 - slowest     10 - fastest
  * @default 10
@@ -127,69 +172,135 @@ Yanfly.ATB.version = 1.25;
  * @default
  *
  * @param Lock Status Window
+ * @parent ---Windows---
+ * @type boolean
+ * @on Lock Status
+ * @off Don't Lock
  * @desc While ATB is active, lock the status window from moving?
  * OFF - false     ON - true
  * @default true
  *
  * @param Gauge Style
+ * @parent ---Windows---
+ * @type select
+ * @option None
+ * @value 0
+ * @option Under Name
+ * @value 1
+ * @option Right Side
+ * @value 2
  * @desc This is the style of the ATB gauges:
  * 0 - None     1 - Under Name     2 - Right Side
  * @default 1
  *
  * @param Gauge Text
+ * @parent ---Windows---
  * @desc If style 2 is used, this is the text displayed.
  * @default Turn
  *
  * @param Gauge Text Align
+ * @parent ---Windows---
+ * @type combo
+ * @option left
+ * @option center
+ * @option right
  * @desc If style 2 is used, this is the text alignment.
  * left     center     right
  * @default center
  *
  * @param ATB Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 1st gauge color of the ATB gauge as it loads up.
  * @default 13
  *
  * @param ATB Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 2nd gauge color of the ATB gauge as it loads up.
  * @default 5
  *
  * @param Slow Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 1st gauge color of the ATB gauge if actor is slowed.
  * @default 12
  *
  * @param Slow Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 2nd gauge color of the ATB gauge if actor is slowed.
  * @default 4
  *
  * @param Fast Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 1st gauge color of the ATB gauge if actor is hasted.
  * @default 26
  *
  * @param Fast Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 2nd gauge color of the ATB gauge if actor is hasted.
  * @default 27
  *
  * @param Stop Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 1st gauge color of the ATB gauge if actor is stopped.
  * @default 7
  *
  * @param Stop Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc 2nd gauge color of the ATB gauge if actor is stopped.
  * @default 8
  *
  * @param Full Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 1st gauge color of the ATB gauge when full.
  * @default 14
  *
  * @param Full Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 2nd gauge color of the ATB gauge when full.
  * @default 6
  *
  * @param Charge Gauge Color 1
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 1st gauge color of the ATB gauge when charging.
  * @default 2
  *
  * @param Charge Gauge Color 2
+ * @parent ---Windows---
+ * @type number
+ * @min 0
+ * @max 31
  * @desc The 2nd gauge color of the ATB gauge when charging.
  * @default 10
  *
@@ -432,8 +543,101 @@ Yanfly.ATB.version = 1.25;
  *=============================================================================
  *
  * ============================================================================
+ * Options Core Settings - Adding the New Options
+ * ============================================================================
+ *
+ * If you are using YEP_OptionsCore.js, you can add a new Option using this
+ * plugin. Here's the following code/parameter settings you can use with it.
+ *
+ * ---------
+ * Settings:
+ * ---------
+ * 
+ * Name:
+ * \i[87]ATB Speed
+ *
+ * Help Description:
+ * Determines how fast the ATB Gauge fills up during battle.
+ *
+ * Symbol:
+ * atbSpeed
+ *
+ * Show/Hide:
+ * if (Imported.YEP_X_BattleSysATB) {
+ *   show = $gameSystem.getBattleSystem() === 'atb';
+ * } else {
+ *   show = false;
+ * }
+ *
+ * Enable:
+ * enabled = true;
+ *
+ * Ext:
+ * ext = 0;
+ *
+ * ----------
+ * Functions:
+ * ----------
+ * 
+ * Make Option Code:
+ * this.addCommand(name, symbol, enabled, ext);
+ *
+ * Draw Option Code:
+ * var rect = this.itemRectForText(index);
+ * var statusWidth = this.statusWidth();
+ * var titleWidth = rect.width - statusWidth;
+ * this.resetTextColor();
+ * this.changePaintOpacity(this.isCommandEnabled(index));
+ * this.drawOptionsName(index);
+ * var value = this.getConfigValue(symbol);
+ * var rate = value / 10;
+ * var gaugeColor1 = this.textColor(13);
+ * var gaugeColor2 = this.textColor(5);
+ * this.drawOptionsGauge(index, rate, gaugeColor1, gaugeColor2);
+ * this.drawText(this.statusText(index), titleWidth, rect.y, statusWidth, 'center');
+ *
+ * Process OK Code:
+ * var index = this.index();
+ * var symbol = this.commandSymbol(index);
+ * var value = this.getConfigValue(symbol);
+ * value += 1;
+ * if (value > 10) value = 1;
+ * this.changeValue(symbol, value);
+ *
+ * Cursor Right Code:
+ * var index = this.index();
+ * var symbol = this.commandSymbol(index);
+ * var value = this.getConfigValue(symbol);
+ * value += 1;
+ * if (value > 10) value = 1;
+ * this.changeValue(symbol, value);
+ * 
+ * Cursor Left Code:
+ * var index = this.index();
+ * var symbol = this.commandSymbol(index);
+ * var value = this.getConfigValue(symbol);
+ * value -= 1;
+ * if (value < 1) value = 10;
+ * this.changeValue(symbol, value);
+ *
+ * Default Config Code:
+ * // Empty. Provided by this plugin.
+ *
+ * Save Config Code:
+ * // Empty. Provided by this plugin.
+ *
+ * Load Config Code:
+ * // Empty. Provided by this plugin.
+ *
+ * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.27:
+ * - Compatibility update with YEP_OptionsCore.js.
+ *
+ * Version 1.26:
+ * - Updated for RPG Maker MV version 1.5.0.
  *
  * Version 1.25:
  * - Lunatic Mode fail safes added.
@@ -2193,6 +2397,7 @@ Yanfly.ATB.Window_Options_addGeneralOptions =
     Window_Options.prototype.addGeneralOptions;
 Window_Options.prototype.addGeneralOptions = function() {
     Yanfly.ATB.Window_Options_addGeneralOptions.call(this);
+    if (Imported.YEP_OptionsCore) return;
     if ($gameSystem.getBattleSystem() === 'atb') this.addATBOptions();
 };
 
@@ -2210,6 +2415,8 @@ Window_Options.prototype.statusText = function(index) {
       return Yanfly.ATB.Window_Options_statusText.call(this, index);
     }
 };
+
+if (!Imported.YEP_OptionsCore) {
 
 Yanfly.ATB.Window_Options_processOk = Window_Options.prototype.processOk;
 Window_Options.prototype.processOk = function() {
@@ -2252,6 +2459,9 @@ Window_Options.prototype.cursorLeft = function(wrap) {
       Yanfly.ATB.Window_Options_cursorLeft.call(this, wrap);
     }
 };
+
+}; // Imported.YEP_OptionsCore
+
 
 //=============================================================================
 // Scene_Battle

@@ -112,7 +112,7 @@
         "pitch": 100,
         "volume": 10
     },
-    "editMapId": 16,
+    "editMapId": 74,
     "elements": [
         "",
         "Physical",
@@ -324,9 +324,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 28,
-    "startX": 14,
-    "startY": 14,
+    "startMapId": 2,
+    "startX": 16,
+    "startY": 22,
     "switches": [
         "",
         "End Autorun1",
@@ -380,7 +380,7 @@
         "CutsceneP2",
         "CutsceneP3",
         "Chest Opened",
-        "",
+        "Girl followin",
         "",
         "",
         "",
@@ -695,7 +695,7 @@
         "Self Var S",
         "Self Var T"
     ],
-    "versionId": 82030701,
+    "versionId": 98879970,
     "victoryMe": {
         "name": "Another Victory",
         "pan": 0,

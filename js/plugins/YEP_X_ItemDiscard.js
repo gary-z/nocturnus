@@ -8,23 +8,28 @@ Imported.YEP_X_ItemDiscard = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.ItemDiscard = Yanfly.ItemDiscard || {};
-Yanfly.ItemDiscard.version = 1.00;
+Yanfly.ItemDiscard.version = 1.02;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 (Requires YEP_ItemCore.js) Allow the player to discard
+ * @plugindesc v1.02 (Requires YEP_ItemCore.js) Allow the player to discard
  * items from their inventory.
- * @author Yanfly Engine Plugins
+ * @author Yanfly Engine Plugins + Sylvester Collaboration
  *
  * @param ---General---
  * @default
  *
  * @param Discard Command
+ * @parent ---General---
  * @desc The command text used for discarding items.
  * %1 - Item Name   %2 - Quantity   %3 - Stock
  * @default Discard %1 %2/%3
  *
  * @param Default Discard
+ * @parent ---General---
+ * @type boolean
+ * @on YES
+ * @off NO
  * @desc Can all items be discarded by default?
  * YES - true     NO - false
  * @default true
@@ -33,20 +38,27 @@ Yanfly.ItemDiscard.version = 1.00;
  * @default
  *
  * @param Confirm Discard
+ * @parent ---Confirm---
+ * @type boolean
+ * @on YES
+ * @off NO
  * @desc Do you wish to display a confirmation message?
  * YES - true     NO - false
  * @default true
  *
  * @param Confirm Message
+ * @parent ---Confirm---
  * @desc The command text used for discard confirmation.
  * %1 - Item Name   %2 - Quantity
  * @default Are you sure you want to discard %1 %2?
  *
  * @param Confirm Yes
+ * @parent ---Confirm---
  * @desc The text used for "Yes" when discarding.
  * @default Yes
  *
  * @param Confirm No
+ * @parent ---Confirm---
  * @desc The text used for "No" when discarding.
  * @default No
  *
@@ -89,6 +101,19 @@ Yanfly.ItemDiscard.version = 1.00;
  *   <Cannot Discard>
  *   - This will set the item, weapon, or armor unable to be discarded
  *   regardless of the Default Discard plugin parameter.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.02:
+ * - Updated for RPG Maker MV version 1.5.0.
+ *
+ * Version 1.01:
+ * - Fixed a problem with the notetags not working.
+ *
+ * Version 1.00:
+ * - Finished Plugin!
  */
 //=============================================================================
 
@@ -122,7 +147,9 @@ DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.ItemDiscard.DataManager_isDatabaseLoaded.call(this)) return false;
 
   if (!Yanfly._loaded_YEP_X_ItemDiscard) {
-    this.processItemDiscardNotetags1($dataActors);
+    this.processItemDiscardNotetags1($dataItems);
+    this.processItemDiscardNotetags1($dataWeapons);
+    this.processItemDiscardNotetags1($dataArmors);
     Yanfly._loaded_YEP_X_ItemDiscard = true;
   }
   
@@ -194,7 +221,7 @@ Window_ItemActionCommand.prototype.createDiscardCommandName = function() {
   if (this._item.textColor !== undefined) {
     name += '\\c[' + this._item.textColor + ']';
   }
-  name += this._item.name;
+  name += this._item.name + '\\c[0]';
   if ($gameParty.maxItems(this._item) > 1) {
     var quantity = '\u00d7' + Yanfly.Util.toGroup(this._discardAmount);
     var stock = $gameParty.numItems(this._item);

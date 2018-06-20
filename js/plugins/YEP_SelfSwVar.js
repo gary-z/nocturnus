@@ -8,11 +8,11 @@ Imported.YEP_SelfSwVar = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.SSV = Yanfly.SSV || {};
-Yanfly.SSV.version = 1.02;
+Yanfly.SSV.version = 1.03;
 
 //=============================================================================
  /*:
- * @plugindesc v1.02a Self Switches and Self Variables functionality
+ * @plugindesc v1.03 Self Switches and Self Variables functionality
  * without the need for plugin commands or script calls.
  * @author Yanfly Engine Plugins
  *
@@ -143,6 +143,9 @@ Yanfly.SSV.version = 1.02;
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.03:
+ * - Updated for RPG Maker MV version 1.5.0.
  *
  * Version 1.02a:
  * - Lunatic Mode fail safes added.

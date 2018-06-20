@@ -8,30 +8,42 @@ Imported.YEP_BattleAICore = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.CoreAI = Yanfly.CoreAI || {};
-Yanfly.CoreAI.version = 1.12;
+Yanfly.CoreAI.version = 1.13;
 
 //=============================================================================
  /*:
- * @plugindesc v1.12 This plugin allows you to structure battle A.I.
+ * @plugindesc v1.13 This plugin allows you to structure battle A.I.
  * patterns with more control.
  * @author Yanfly Engine Plugins
  *
  * @param Dynamic Actions
+ * @type boolean
+ * @on YES
+ * @off NO
  * @desc If enabled, enemy actions are decided on the spot instead
  * of at the start of turn.   NO - false     YES - true
  * @default true
  *
  * @param Dynamic Turn Count
+ * @type boolean
+ * @on YES
+ * @off NO
  * @desc Decide if the turn count dynamic is counted for earlier or later.
  * true - Current Turn + 1   false - Current Turn
  * @default false
  *
  * @param Element Testing
+ * @type boolean
+ * @on YES
+ * @off NO
  * @desc If enabled, enemies will test actors on their elements by
  * setting them to match first.   NO - false     YES - true
  * @default true
  *
  * @param Default AI Level
+ * @type number
+ * @min 0
+ * @max 100
  * @desc This is the default AI level of all enemies.
  * Level 0: Very Random     Level 100: Very Strict
  * @default 80
@@ -430,6 +442,9 @@ Yanfly.CoreAI.version = 1.12;
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.13:
+ * - Updated for RPG Maker MV version 1.5.0.
  *
  * Version 1.12:
  * - Added 'Dynamic Turn Count' plugin parameter for those who wish to push the

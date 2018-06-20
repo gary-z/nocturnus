@@ -8,11 +8,11 @@ Imported.YEP_X_ChangeBattleEquip = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.CBE = Yanfly.CBE || {};
-Yanfly.CBE.version = 1.02;
+Yanfly.CBE.version = 1.04;
 
 //=============================================================================
  /*:
- * @plugindesc v1.02 (Requires YEP_BattleEngineCore & YEP_EquipCore)
+ * @plugindesc v1.05 (Requires YEP_BattleEngineCore & YEP_EquipCore)
  * Allow your actors to change equipment mid-battle.
  * @author Yanfly Engine Plugins
  *
@@ -21,6 +21,8 @@ Yanfly.CBE.version = 1.02;
  * @default Equip
  *
  * @param Equip Cooldown
+ * @type number
+ * @min 0
  * @desc This is the default number of turns selecting the command
  * will place the command on cooldown for.
  * @default 1
@@ -59,6 +61,12 @@ Yanfly.CBE.version = 1.02;
  * ============================================================================
  * Changelog
  * ============================================================================
+ *
+ * Version 1.04:
+ * - Updated for RPG Maker MV version 1.6.1.
+ *
+ * Version 1.03:
+ * - Updated for RPG Maker MV version 1.5.0.
  *
  * Version 1.02:
  * - Game now refreshes all battlers upon reentry into the battle after
@@ -202,6 +210,7 @@ Game_Battler.prototype.onBattleEnd = function() {
 Yanfly.CBE.Game_Battler_regenerateAll = Game_Battler.prototype.regenerateAll;
 Game_Battler.prototype.regenerateAll = function() {
     Yanfly.CBE.Game_Battler_regenerateAll.call(this);
+    if (!$gameParty.inBattle()) return;
     if (this.isActor()) this.updateBattleEquipChangeCooldown();
 };
 

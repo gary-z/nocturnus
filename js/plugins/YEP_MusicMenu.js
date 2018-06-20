@@ -8,11 +8,11 @@ Imported.YEP_MusicMenu = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.MusicMenu = Yanfly.MusicMenu || {};
-Yanfly.MusicMenu.version = 1.00;
+Yanfly.MusicMenu.version = 1.01;
 
 //=============================================================================
  /*:
- * @plugindesc v1.00 Access and play music from a menu! Players can unlock
+ * @plugindesc v1.01 Access and play music from a menu! Players can unlock
  * songs from in the game as they play.
  * @author Yanfly Engine Plugins + Chickie Collaboration
  *
@@ -20,15 +20,18 @@ Yanfly.MusicMenu.version = 1.00;
  * @default
  *
  * @param Music Icon
+ * @parent ---General---
  * @desc This icon will be displayed next to each song entry!
  * @default 80
  *
  * @param Hidden Name
+ * @parent ---General---
  * @desc This will be a song's name in the song list if it hasn't been
  * unlocked in the music menu yet.
  * @default ? ? ? ? ?
  *
  * @param Hidden Help
+ * @parent ---General---
  * @desc This text will display in the help window at the top of the
  * page when a song hasn't been unlocked yet.
  * @default This song hasn't been unlocked yet.
@@ -37,501 +40,601 @@ Yanfly.MusicMenu.version = 1.00;
  * @default
  *
  * @param Song 1 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Theme1; Title Theme; 90; 100; 0; Title theme for this game!
  *
  * @param Song 2 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Battle1; Let's Battle; 100; 100; 0; En garde!
  *
  * @param Song 3 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Field1; World of Fantasy; 90; 110; 0; The overworld theme!
  *
  * @param Song 4 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Town1; Calm, Peaceful Days; 90; 100; 0; Our town theme!
  *
  * @param Song 5 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Castle1; Castle Royalty; 90; 100; 0; Living a life of royalty!
  *
  * @param Song 6 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Dungeon1; Depths of Dungeon Diving; 90; 100; 0; So mysterious!
  *
  * @param Song 7 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Scene1; Day to Day; 90; 100; 0; Living life one day at a time!
  *
  * @param Song 8 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default Ship1; Let's Set Sail!; 90; 100; 0; Ahoy! To open waters we go!
  *
  * @param Song 9 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 10 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 11 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 12 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 13 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 14 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 15 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 16 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 17 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 18 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 19 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 20 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 21 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 22 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 23 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 24 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 25 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 26 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 27 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 28 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 29 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 30 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 31 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 32 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 33 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 34 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 35 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 36 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 37 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 38 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 39 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 40 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 41 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 42 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 43 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 44 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 45 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 46 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 47 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 48 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 49 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 50 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 51 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 52 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 53 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 54 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 55 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 56 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 57 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 58 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 59 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 60 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 61 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 62 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 63 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 64 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 65 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 66 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 67 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 68 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 69 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 70 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 71 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 72 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 73 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 74 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 75 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 76 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 77 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 78 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 79 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 80 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 81 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 82 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 83 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 84 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 85 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 86 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 87 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 88 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 89 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 90 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 91 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 92 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 93 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 94 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 95 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 96 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 97 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 98 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 99 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
  *
  * @param Song 100 Data
+ * @parent ---Song List---
  * @desc Song data for this entry. Format:
  * filename; display name; volume; pitch; pan; description
  * @default
@@ -640,6 +743,16 @@ Yanfly.MusicMenu.version = 1.00;
  *   group of songs at once. x will refer to the ID found in the plugin's
  *   parameters. The referred song will be unlocked without the player needing
  *   to hear the song in the game at least once.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.01:
+ * - Updated for RPG Maker MV version 1.5.0.
+ *
+ * Version 1.00:
+ * - Finished Plugin!
  */
 //=============================================================================
 
