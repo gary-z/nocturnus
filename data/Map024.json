@@ -6769,7 +6769,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -6782,7 +6782,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -6962,7 +6962,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -6975,7 +6975,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -7155,7 +7155,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -7168,7 +7168,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -7348,7 +7348,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -7361,7 +7361,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -7541,7 +7541,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -7554,7 +7554,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -7734,7 +7734,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -7747,7 +7747,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -7927,7 +7927,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -7940,7 +7940,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -8120,7 +8120,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -8133,7 +8133,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -8313,7 +8313,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -8326,7 +8326,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -8506,7 +8506,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -8519,7 +8519,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -8699,7 +8699,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -8712,7 +8712,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -8892,7 +8892,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -8905,7 +8905,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
@@ -9085,7 +9085,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\msgevent[0]Exit to World Map?"
+                                "\\autoExit to World Map?"
                             ]
                         },
                         {
@@ -9098,7 +9098,7 @@
                                 ],
                                 1,
                                 0,
-                                2,
+                                1,
                                 2
                             ]
                         },
